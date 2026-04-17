@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const credentials = ["PT, DPT", "PhD", "Mount Sinai Research", "Bronx VA", "Since 2016"];
+const credentials = ["PT", "PhD", "Mount Sinai Research", "Bronx VA", "Since 2016"];
 
 export default function AboutSection() {
   return (
@@ -31,7 +31,7 @@ export default function AboutSection() {
             <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden rounded-2xl border border-brand-border">
               <Image
                 src="/assets/me.jpg"
-                alt="Dr. Yu-Kuang Wu, PT, DPT, PhD — Physical Therapist in Midtown Manhattan"
+                alt="Dr. Yu-Kuang Wu, PT, PhD — Physical Therapist in Midtown Manhattan"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 288px, 384px"
@@ -53,7 +53,7 @@ export default function AboutSection() {
 
             <div className="space-y-4 font-body font-light text-brand-muted text-base leading-relaxed mb-8">
               <p>
-                Dr. Yu-Kuang Wu, PT, DPT, PhD is a physical therapist and researcher based in
+                Dr. Yu-Kuang Wu, PT, PhD is a physical therapist and researcher based in
                 Midtown Manhattan. With a doctoral degree in physical therapy and a PhD focused on
                 neuroplasticity and mobility recovery, he brings academic precision to every
                 clinical decision.

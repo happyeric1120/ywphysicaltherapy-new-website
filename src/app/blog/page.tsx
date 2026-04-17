@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "PT Insights & Resources | YW Physical Therapy NYC",
   description:
-    "Physical therapy insights, research summaries, and movement guides from Dr. Yu-Kuang Wu, PT, DPT, PhD — Midtown Manhattan.",
+    "Physical therapy insights, research summaries, and movement guides from Dr. Yu-Kuang Wu, PT, PhD — Midtown Manhattan.",
   alternates: { canonical: "https://ywphysicaltherapy.com/blog" },
   openGraph: {
     title: "PT Insights & Resources | YW Physical Therapy NYC",
-    description: "Physical therapy insights from Dr. Yu-Kuang Wu, PT, DPT, PhD — Midtown Manhattan.",
+    description: "Physical therapy insights from Dr. Yu-Kuang Wu, PT, PhD — Midtown Manhattan.",
     url: "https://ywphysicaltherapy.com/blog",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -64,7 +64,7 @@ export default function BlogPage() {
           <h1 className="type-display-l text-brand-white mb-6">PT Insights & Resources</h1>
           <p className="type-body-l text-brand-muted max-w-2xl">
             Clinical education, research summaries, and movement insights from Dr. Yu-Kuang Wu,
-            PT, DPT, PhD.
+            PT, PhD.
           </p>
         </div>
       </section>

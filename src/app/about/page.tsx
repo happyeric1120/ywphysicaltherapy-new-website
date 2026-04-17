@@ -6,7 +6,7 @@ import BookingButton from "@/components/BookingButton";
 import Link from "next/link";
 
 const credentials = [
-  { label: "PT, DPT", desc: "Doctor of Physical Therapy" },
+  { label: "PT", desc: "Physical Therapist" },
   { label: "PhD", desc: "Neuroplasticity & Mobility Recovery" },
   { label: "Mount Sinai", desc: "Researcher, Hospital for Special Surgery" },
   { label: "Bronx VA", desc: "Clinical Researcher" },
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.75, delay: 0.1 }}
                 className="type-display-l text-brand-white mb-6"
               >
-                Dr. Yu-Kuang Wu,<br />PT, DPT, PhD
+                Dr. Yu-Kuang Wu,<br />PT, PhD
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 14 }}
@@ -101,7 +101,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="/assets/me.jpg"
-                  alt="Dr. Yu-Kuang Wu, PT, DPT, PhD — Physical Therapist in Midtown Manhattan at YW Physical Therapy"
+                  alt="Dr. Yu-Kuang Wu, PT, PhD — Physical Therapist in Midtown Manhattan at YW Physical Therapy"
                   fill
                   className="object-cover"
                   priority
@@ -136,7 +136,7 @@ export default function AboutPage() {
           </motion.h2>
           <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
             <p>
-              Dr. Yu-Kuang Wu, PT, DPT, PhD is a physical therapist and researcher based in Midtown
+              Dr. Yu-Kuang Wu, PT, PhD is a physical therapist and researcher based in Midtown
               Manhattan. With a Doctor of Physical Therapy degree and a PhD focused on neuroplasticity
               and mobility recovery, he brings the rigor of academic research to every clinical decision.
             </p>

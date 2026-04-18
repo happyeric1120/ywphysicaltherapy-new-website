@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Can you help with herniated disc / sciatica?",
-    a: "Yes. We commonly treat disc-related pain including radiculopathy (sciatica). Treatment addresses the mechanical load contributing to disc compression, the surrounding muscle dysfunction, and the nerve sensitization that amplifies pain.",
+    a: "Yes. I commonly treat disc-related pain including radiculopathy (sciatica). Treatment addresses the mechanical load contributing to disc compression, the surrounding muscle dysfunction, and the nerve sensitization that amplifies pain.",
   },
   {
     q: "I've had back pain for years. Is it too late to get better?",
@@ -33,11 +33,11 @@ const faqs = [
   },
   {
     q: "Do I need an MRI before I come in?",
-    a: "No. MRIs are often overused for back pain — most findings on imaging in adults over 40 are incidental and not causing symptoms. We assess your movement and function, which is far more clinically relevant than structural imaging.",
+    a: "No. MRIs are often overused for back pain — most findings on imaging in adults over 40 are incidental and not causing symptoms. I assess your movement and function, which is far more clinically relevant than structural imaging.",
   },
   {
     q: "Can I see you if I have insurance?",
-    a: "Yes. We accept most major commercial plans (Aetna, UHC, BCBS). See our Insurance & Pricing page for details.",
+    a: "I'm an out-of-network provider. Many patients use out-of-network benefits or HSA/FSA. Some plans may be covered through third-party billing — reach out and I'll check. See my Insurance & Pricing page for details.",
   },
 ];
 
@@ -98,14 +98,14 @@ export default function BackPainNYCPage() {
 
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">How We Treat It</p>
+          <p className="type-label text-brand-gold mb-4">How I Treat It</p>
           <h2 className="type-display-m text-brand-white mb-8">The Human System Reset™ Approach to Back Pain</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 phase: "REVEAL",
                 title: "Find the True Driver",
-                desc: "Full-body movement assessment using AI analysis. We identify which compensation patterns are loading your lumbar spine, and where those patterns originate — hip restriction, thoracic immobility, glute inhibition, or foot mechanics.",
+                desc: "Full-body movement assessment using AI analysis. I identify which compensation patterns are loading your lumbar spine, and where those patterns originate — hip restriction, thoracic immobility, glute inhibition, or foot mechanics.",
                 link: null,
               },
               {
@@ -123,7 +123,7 @@ export default function BackPainNYCPage() {
               {
                 phase: "REINFORCE",
                 title: "Build Lasting Resilience",
-                desc: "Progressive loading, functional strengthening, and a home program so your spine can tolerate the demands of your life — and you don&apos;t need us forever.",
+                desc: "Progressive loading, functional strengthening, and a home program so your spine can tolerate the demands of your life — and you don&apos;t need me forever.",
                 link: null,
               },
             ].map((item) => (
@@ -144,8 +144,8 @@ export default function BackPainNYCPage() {
 
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">Conditions We Treat</p>
-          <h2 className="type-display-m text-brand-white mb-8">Types of Back Pain We Address</h2>
+          <p className="type-label text-brand-gold mb-4">Conditions I Treat</p>
+          <h2 className="type-display-m text-brand-white mb-8">Types of Back Pain I Address</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
               "Chronic low back pain",

@@ -14,8 +14,8 @@ const steps = [
     number: "01",
     phase: "REVEAL",
     chinese: "找出根源",
-    tagline: "Pain is a symptom. We find the cause.",
-    desc: `Most treatment starts where the pain is. We start where the pain comes from. Using AI-assisted movement analysis and full-body clinical assessment, we map every compensation pattern, mobility restriction, and load deficit in your system — not just the area that hurts.`,
+    tagline: "Pain is a symptom. I find the cause.",
+    desc: `Most treatment starts where the pain is. I start where the pain comes from. Using AI-assisted movement analysis and full-body clinical assessment, I map every compensation pattern, mobility restriction, and load deficit in your system — not just the area that hurts.`,
     expanded: [
       "Full-body postural and movement screening",
       "Revenite AI movement analysis (10-movement scan)",
@@ -30,7 +30,7 @@ const steps = [
     phase: "RELEASE",
     chinese: "解除限制",
     tagline: "Before you can rebuild, you have to let go.",
-    desc: `Chronic tension, fascial adhesions, and inflammatory tissue are physical barriers to recovery. We remove them layer by layer — from the surface down to the structural level — using the most advanced non-invasive technologies available.`,
+    desc: `Chronic tension, fascial adhesions, and inflammatory tissue are physical barriers to recovery. I remove them layer by layer — from the surface down to the structural level — using the most advanced non-invasive technologies available.`,
     expanded: [
       "Manual therapy and IASTM (instrument-assisted soft tissue work)",
       "Focused + Radial Shockwave for deep tissue and tendons",
@@ -61,7 +61,7 @@ const steps = [
     phase: "REINFORCE",
     chinese: "強化防護",
     tagline: "A body that's strong doesn't break the same way twice.",
-    desc: `The final phase builds the capacity to stay well. We introduce targeted strength training, functional movement patterns, and a home maintenance program — so you don't need us forever. Progress should compound, not plateau.`,
+    desc: `The final phase builds the capacity to stay well. I introduce targeted strength training, functional movement patterns, and a home maintenance program — so you don't need me forever. Progress should compound, not plateau.`,
     expanded: [
       "Functional strength training (TRX, Aeke K1 smart gym)",
       "Compex EMS in high-intensity Power Phase",
@@ -76,7 +76,7 @@ const steps = [
 const faqs = [
   {
     q: "How long is a typical Human System Reset™ program?",
-    a: "Most clients complete the full 4R cycle in 6–12 sessions over 6–10 weeks, depending on chronicity, goals, and how quickly tissue responds. Some complex cases take longer. We don't set arbitrary timelines — we progress based on your body's response.",
+    a: "Most clients complete the full 4R cycle in 6–12 sessions over 6–10 weeks, depending on chronicity, goals, and how quickly tissue responds. Some complex cases take longer. I don't set arbitrary timelines — I progress based on your body's response.",
   },
   {
     q: "Is this different from regular physical therapy?",
@@ -84,15 +84,15 @@ const faqs = [
   },
   {
     q: "What if I've already had PT that didn't work?",
-    a: "That's actually the most common scenario we see. Prior PT often helped temporarily but didn't identify the true driver. The assessment phase alone frequently reveals compensations and restrictions that previous providers missed.",
+    a: "That's actually the most common scenario I see. Prior PT often helped temporarily but didn't identify the true driver. The assessment phase alone frequently reveals compensations and restrictions that previous providers missed.",
   },
   {
     q: "Do all four phases happen every session?",
-    a: "Not necessarily. Early sessions focus more on REVEAL and RELEASE. As tissue responds, we shift emphasis toward RESTORE and REINFORCE. But every session is adapted in real time based on how your body responds that day.",
+    a: "Not necessarily. Early sessions focus more on REVEAL and RELEASE. As tissue responds, I shift emphasis toward RESTORE and REINFORCE. But every session is adapted in real time based on how your body responds that day.",
   },
   {
     q: "Is this covered by insurance?",
-    a: "Standard PT sessions are covered by most major plans (Aetna, UHC, BCBS). Some advanced technologies (focused shockwave, TECAR) are self-pay upgrades. We're transparent about pricing from the start — see our Insurance & Pricing page for full details.",
+    a: "I'm an out-of-network provider, but many patients use out-of-network benefits or HSA/FSA. Some plans (Aetna, UHC, Anthem, Oscar) may be covered through third-party billing — reach out and I'll check. See my Insurance & Pricing page for full details.",
   },
 ];
 

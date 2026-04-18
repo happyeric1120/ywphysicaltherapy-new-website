@@ -8,8 +8,8 @@ const steps = [
     number: "01",
     phase: "REVEAL",
     chinese: "找出根源",
-    tagline: "Pain is a symptom. We find the cause.",
-    copy: "Full-body movement assessment powered by AI analysis and clinical expertise. We map how your entire system moves — not just where it hurts.",
+    tagline: "Pain is a symptom. I find the cause.",
+    copy: "Full-body movement assessment powered by AI analysis and clinical expertise. I map how your entire system moves — not just where it hurts.",
     tags: ["Full-Body Assessment", "Revenite AI", "Postural Screening", "Clinical Interview"],
   },
   {
@@ -33,7 +33,7 @@ const steps = [
     phase: "REINFORCE",
     chinese: "強化防護",
     tagline: "A body that's strong doesn't break the same way twice.",
-    copy: "Targeted strength work, functional training, and self-maintenance education — so progress sticks and you don't need us forever.",
+    copy: "Targeted strength work, functional training, and self-maintenance education — so progress sticks and you don't need me forever.",
     tags: ["Strength Training", "EMS Power Phase", "Home Program", "Performance Coaching"],
   },
 ];
@@ -61,7 +61,7 @@ export default function MethodSection() {
             transition={{ duration: 0.5 }}
             className="type-label text-brand-gold mb-5"
           >
-            Our Proprietary Method
+            My Proprietary Method
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 18 }}

@@ -36,7 +36,7 @@ const coverageOptions = [
   {
     title: "Out-of-Network Benefits",
     icon: "◎",
-    body: "If your plan includes out-of-network benefits (most PPO plans do), you can still use your insurance. You pay at the time of your visit, and we'll either provide a Superbill for you to submit yourself, or we can help submit the claim on your behalf — whichever is easier for you.",
+    body: "If your plan includes out-of-network benefits (most PPO plans do), you can still use your insurance. You pay at the time of your visit, and I'll either provide a Superbill for you to submit yourself, or I can help submit the claim on your behalf — whichever is easier for you.",
   },
   {
     title: "HSA / FSA",
@@ -46,7 +46,7 @@ const coverageOptions = [
   {
     title: "Aetna, Anthem, UnitedHealthcare, or Oscar",
     icon: "◎",
-    body: "Some plans under these carriers may be covered through our third-party billing partner. Just reach out and share your plan details — we'll look into it and let you know within a few business days.",
+    body: "Some plans under these carriers may be covered through my third-party billing partner. Just reach out and share your plan details — I'll look into it and let you know within a few business days.",
   },
 ];
 
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "How do I know if my plan has out-of-network benefits?",
-    a: "The easiest way is to call the member services number on the back of your insurance card and ask: \"Do I have out-of-network physical therapy benefits?\" If yes, ask about your out-of-network deductible and reimbursement percentage. We&apos;ll provide a Superbill after each visit so you can submit for reimbursement.",
+    a: "The easiest way is to call the member services number on the back of your insurance card and ask: \"Do I have out-of-network physical therapy benefits?\" If yes, ask about your out-of-network deductible and reimbursement percentage. I&apos;ll provide a Superbill after each visit so you can submit for reimbursement.",
   },
   {
     q: "Can I use HSA/FSA?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "What if I have Aetna, Anthem, UnitedHealthcare, or Oscar?",
-    a: "Some plans under these carriers may be covered through our third-party billing partner. Reach out and share your plan details — we&apos;ll check and get back to you within a few business days.",
+    a: "Some plans under these carriers may be covered through my third-party billing partner. Reach out and share your plan details — I&apos;ll check and get back to you within a few business days.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.14 }}
             className="type-body-l text-brand-muted mb-10 max-w-2xl"
           >
-            We&apos;re an out-of-network provider — which sounds complicated, but for most people
+            I&apos;m an out-of-network provider — which sounds complicated, but for most people
             it&apos;s actually pretty straightforward. Here&apos;s how you can still get coverage:
           </motion.p>
 
@@ -157,7 +157,7 @@ export default function InsurancePricingPage() {
           <div className="p-8 border border-brand-gold/20 bg-brand-black max-w-2xl" style={{ borderRadius: "2px" }}>
             <p className="type-label text-brand-gold mb-3">Not Sure What You Have?</p>
             <p className="type-body-m text-brand-muted mb-5">
-              No worries — just reach out and share your insurance card info. We&apos;ll take a
+              No worries — just reach out and share your insurance card info. I&apos;ll take a
               look and let you know what your options are.
             </p>
             <a
@@ -230,7 +230,7 @@ export default function InsurancePricingPage() {
             <p className="type-label text-brand-gold mb-3">Insurance Patients: Upgrade Options</p>
             <p className="type-body-m text-brand-muted mb-3">
               Standard PT visits are covered by insurance. For first-time insurance patients who want
-              to experience advanced technologies, we offer reduced first-visit rates:
+              to experience advanced technologies, I offer reduced first-visit rates:
             </p>
             <ul className="space-y-2 font-body font-light text-brand-muted text-sm">
               <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span>
@@ -272,7 +272,7 @@ export default function InsurancePricingPage() {
         <div className="max-w-3xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-5">Get Started</p>
           <h2 className="type-display-m text-brand-white mb-6">
-            Have Questions? We&apos;ll Help You Figure It Out.
+            Have Questions? I&apos;ll Help You Figure It Out.
           </h2>
           <p className="type-body-l text-brand-muted mb-4">
             <a href="tel:3475715717" className="text-brand-white hover:text-brand-gold transition-colors">347-571-5717</a>

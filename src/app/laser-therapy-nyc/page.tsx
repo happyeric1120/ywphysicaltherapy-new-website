@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Is laser covered by insurance?",
-    a: "Class IV laser is available as a self-pay upgrade (often paired with radial shockwave, $60 combined). We&apos;re transparent about all pricing — see our Insurance & Pricing page.",
+    a: "Class IV laser is available as a self-pay upgrade (often paired with radial shockwave, $60 combined). I&apos;m transparent about all pricing — see my Insurance & Pricing page.",
   },
 ];
 
@@ -129,7 +129,7 @@ export default function LaserTherapyNYCPage() {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 font-body font-light text-brand-muted text-base leading-relaxed">
               <p>
-                Our most popular self-pay option combines Class IV laser with radial shockwave in
+                My most popular self-pay option combines Class IV laser with radial shockwave in
                 a single 30-minute session. The laser reduces surface inflammation and prepares
                 tissue for shockwave penetration — the two modalities work synergistically.
               </p>

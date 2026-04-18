@@ -20,19 +20,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Can I train while doing PT?",
-    a: "In most cases, yes — with appropriate load management. We don&apos;t believe in full rest unless tissue acuity requires it. We work with your training schedule, modifying what needs to be modified while keeping you active.",
+    a: "In most cases, yes — with appropriate load management. I don&apos;t believe in full rest unless tissue acuity requires it. I work with your training schedule, modifying what needs to be modified while keeping you active.",
   },
   {
     q: "Do you work with professional athletes?",
-    a: "Yes. We work with athletes at all levels — from weekend warriors to competitive and professional athletes. The tools and methodology are the same; the performance targets and timelines differ.",
+    a: "Yes. I work with athletes at all levels — from weekend warriors to competitive and professional athletes. The tools and methodology are the same; the performance targets and timelines differ.",
   },
   {
     q: "What if I have a competition coming up?",
-    a: "Tell us upfront. We&apos;ll build a timeline-aware plan that prioritizes return to performance for your event, while managing tissue load to avoid making the injury worse.",
+    a: "Tell me upfront. I&apos;ll build a timeline-aware plan that prioritizes return to performance for your event, while managing tissue load to avoid making the injury worse.",
   },
   {
     q: "I keep getting the same injury. How do you break the cycle?",
-    a: "Recurring injuries almost always indicate an unresolved movement pattern — a compensation that puts the same tissue under the same load repeatedly. The REVEAL phase maps this pattern precisely so we can address the actual driver.",
+    a: "Recurring injuries almost always indicate an unresolved movement pattern — a compensation that puts the same tissue under the same load repeatedly. The REVEAL phase maps this pattern precisely so I can address the actual driver.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function SportsInjuryNYCPage() {
       eyebrow="Sports Injury · Human System Reset™"
       h1="Sports Injury Physical Therapy in Manhattan"
       heroTagline="Train hard. Recover smarter."
-      lead="You already invest in performance. We identify the movement inefficiencies quietly limiting you — and restore function faster when injuries happen — so you stay in the game, not on the sideline."
+      lead="You already invest in performance. I identify the movement inefficiencies quietly limiting you — and restore function faster when injuries happen — so you stay in the game, not on the sideline."
       faqs={faqs}
       ctaHeading="Book Your Performance Assessment"
     >
@@ -57,7 +57,7 @@ export default function SportsInjuryNYCPage() {
               stress on a specific structure until it fails. The pain is the last event in a long sequence.
             </p>
             <p>
-              We work with athletes in two modes: reactive (treating the injury) and proactive (identifying
+              I work with athletes in two modes: reactive (treating the injury) and proactive (identifying
               and correcting the pattern before it becomes one). Both use the same assessment technology
               and the same systematic protocol.
             </p>
@@ -67,8 +67,8 @@ export default function SportsInjuryNYCPage() {
 
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">Conditions We Treat</p>
-          <h2 className="type-display-m text-brand-white mb-8">Sports Injuries We Address</h2>
+          <p className="type-label text-brand-gold mb-4">Conditions I Treat</p>
+          <h2 className="type-display-m text-brand-white mb-8">Sports Injuries I Address</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
               "ACL tear / post-surgical rehab",
@@ -95,12 +95,12 @@ export default function SportsInjuryNYCPage() {
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">Return to Sport</p>
-          <h2 className="type-display-m text-brand-white mb-8">Our Sports Rehab Protocol</h2>
+          <h2 className="type-display-m text-brand-white mb-8">My Sports Rehab Protocol</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 title: "Injury-Specific Load Management",
-                desc: "We calculate tissue stress tolerance and design a loading progression that heals the injury without deconditioning the athlete. No arbitrary rest timelines.",
+                desc: "I calculate tissue stress tolerance and design a loading progression that heals the injury without deconditioning the athlete. No arbitrary rest timelines.",
               },
               {
                 title: "Advanced Tissue Healing",
@@ -108,7 +108,7 @@ export default function SportsInjuryNYCPage() {
               },
               {
                 title: "Sport-Specific Movement Retraining",
-                desc: "We retrain the movement patterns specific to your sport — not generic rehab exercises. The final phase of rehab should look like the first phase of performance.",
+                desc: "I retrain the movement patterns specific to your sport — not generic rehab exercises. The final phase of rehab should look like the first phase of performance.",
               },
               {
                 title: "Strength & Power Restoration",

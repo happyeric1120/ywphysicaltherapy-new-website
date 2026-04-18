@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Can you treat headaches caused by my neck?",
-    a: "Yes — cervicogenic headaches (headaches that originate from cervical joint and muscle dysfunction) are very effectively treated with PT. We address the upper cervical joints, suboccipital muscle tension, and the postural patterns that create sustained load on the cervical spine.",
+    a: "Yes — cervicogenic headaches (headaches that originate from cervical joint and muscle dysfunction) are very effectively treated with PT. I address the upper cervical joints, suboccipital muscle tension, and the postural patterns that create sustained load on the cervical spine.",
   },
   {
     q: "How long does neck pain PT take?",
@@ -42,7 +42,7 @@ export default function NeckPainNYCPage() {
       eyebrow="Neck Pain · Human System Reset™"
       h1="Neck Pain Physical Therapy in Manhattan"
       heroTagline="Neck pain is a posture problem that became a structural problem."
-      lead="Sustained loading from poor posture, sedentary work, and unresolved muscle tension creates cervical dysfunction that compounds over time. We find the driver and reset the system — before it becomes a disc problem."
+      lead="Sustained loading from poor posture, sedentary work, and unresolved muscle tension creates cervical dysfunction that compounds over time. I find the driver and reset the system — before it becomes a disc problem."
       faqs={faqs}
       ctaHeading="Start Your Neck Pain Assessment"
     >
@@ -58,7 +58,7 @@ export default function NeckPainNYCPage() {
             </p>
             <p>
               But neck pain rarely resolves by fixing the neck alone. The thoracic spine and shoulder
-              complex have to contribute — when they don&apos;t, the cervical spine compensates. We assess
+              complex have to contribute — when they don&apos;t, the cervical spine compensates. I assess
               the whole chain, not just the painful segment.
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function NeckPainNYCPage() {
 
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">Conditions We Treat</p>
+          <p className="type-label text-brand-gold mb-4">Conditions I Treat</p>
           <h2 className="type-display-m text-brand-white mb-8">Neck and Cervical Conditions</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
@@ -95,7 +95,7 @@ export default function NeckPainNYCPage() {
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">Treatment Approach</p>
-          <h2 className="type-display-m text-brand-white mb-8">How We Address Neck Pain</h2>
+          <h2 className="type-display-m text-brand-white mb-8">How I Address Neck Pain</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -108,11 +108,11 @@ export default function NeckPainNYCPage() {
               },
               {
                 title: "Postural Retraining",
-                desc: "We retrain the deep cervical flexors, scapular stabilizers, and thoracic extensors — the muscles that have to work for posture to be sustainable, not effortful.",
+                desc: "I retrain the deep cervical flexors, scapular stabilizers, and thoracic extensors — the muscles that have to work for posture to be sustainable, not effortful.",
               },
               {
                 title: "Workspace & Lifestyle Integration",
-                desc: "We review your actual work environment and make specific modifications — monitor height, laptop position, phone use — so the retraining actually holds.",
+                desc: "I review your actual work environment and make specific modifications — monitor height, laptop position, phone use — so the retraining actually holds.",
               },
             ].map((item) => (
               <div key={item.title} className="p-7 border border-brand-border bg-brand-black" style={{ borderRadius: "2px" }}>

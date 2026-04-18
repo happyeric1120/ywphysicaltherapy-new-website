@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Can TECAR be used after surgery?",
-    a: "Yes — TECAR is particularly valuable for post-surgical recovery. It accelerates tissue healing, reduces fibrosis formation, and improves circulation in the healing zone. We typically begin after your surgeon clears soft tissue work.",
+    a: "Yes — TECAR is particularly valuable for post-surgical recovery. It accelerates tissue healing, reduces fibrosis formation, and improves circulation in the healing zone. I typically begin after your surgeon clears soft tissue work.",
   },
   {
     q: "Is TECAR different from ultrasound?",
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Is TECAR covered by insurance?",
-    a: "TECAR is offered as a self-pay advanced therapy. We&apos;re transparent about pricing upfront — see our Insurance & Pricing page for full details.",
+    a: "TECAR is offered as a self-pay advanced therapy. I&apos;m transparent about pricing upfront — see my Insurance & Pricing page for full details.",
   },
 ];
 

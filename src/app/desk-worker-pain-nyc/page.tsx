@@ -24,15 +24,15 @@ const faqs = [
   },
   {
     q: "How many sessions will I need?",
-    a: "Most desk workers with straightforward pain patterns see meaningful improvement in 4–8 sessions. Complex cases with multiple affected regions take longer. We set clear benchmarks so you always know where you are in the process.",
+    a: "Most desk workers with straightforward pain patterns see meaningful improvement in 4–8 sessions. Complex cases with multiple affected regions take longer. I set clear benchmarks so you always know where you are in the process.",
   },
   {
     q: "Can you help me with my workstation setup?",
-    a: "Yes. Ergonomic assessment is part of the process. We look at monitor height, keyboard position, chair setup, and how you use your devices — and make specific recommendations based on your body mechanics, not generic checklists.",
+    a: "Yes. Ergonomic assessment is part of the process. I look at monitor height, keyboard position, chair setup, and how you use your devices — and make specific recommendations based on your body mechanics, not generic checklists.",
   },
   {
     q: "I travel for work and can&apos;t come in consistently. Can you still help?",
-    a: "Yes. We build a substantial home program into your care so you can maintain progress between sessions. Dr. Wu also provides specific guidance for travel (hotel rooms, airplanes, client sites).",
+    a: "Yes. I build a substantial home program into your care so you can maintain progress between sessions and provide specific guidance for travel (hotel rooms, airplanes, client sites).",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function DeskWorkerPainNYCPage() {
       eyebrow="Desk Worker Pain · Human System Reset™"
       h1="Physical Therapy for Desk Workers in NYC"
       heroTagline="Your chair isn&apos;t the problem. Your movement pattern is."
-      lead="Neck, back, shoulders, hips — desk work loads your body the same way, every day, until something breaks down. We find where the pattern is failing and fix it at the source — in sessions, not months."
+      lead="Neck, back, shoulders, hips — desk work loads your body the same way, every day, until something breaks down. I find where the pattern is failing and fix it at the source — in sessions, not months."
       faqs={faqs}
       ctaHeading="Book Your Desk Worker Assessment"
     >
@@ -76,8 +76,8 @@ export default function DeskWorkerPainNYCPage() {
 
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">What We Fix</p>
-          <h2 className="type-display-m text-brand-white mb-8">Desk Worker Conditions We Treat</h2>
+          <p className="type-label text-brand-gold mb-4">What I Fix</p>
+          <h2 className="type-display-m text-brand-white mb-8">Desk Worker Conditions I Treat</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
               "Chronic neck pain",
@@ -112,7 +112,7 @@ export default function DeskWorkerPainNYCPage() {
               inhibitions, and load transfer failures that desk work creates over years of repetition.
             </p>
             <p>
-              We use TECAR therapy and manual work to restore mobility in the restricted areas, then
+              I use TECAR therapy and manual work to restore mobility in the restricted areas, then
               systematically retrain the stabilizers that have stopped working. The result is a body
               that can tolerate desk work without accumulating damage — not just one that hurts less
               for a few days after treatment.

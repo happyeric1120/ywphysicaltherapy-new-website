@@ -168,7 +168,7 @@ export default function BookPage() {
                   { item: "Photo ID", note: "Required for all new patients" },
                   { item: "Insurance card", note: "If using insurance coverage" },
                   { item: "Referral / prescription", note: "Only if required by your plan" },
-                  { item: "Comfortable athletic clothing", note: "We assess full-body movement" },
+                  { item: "Comfortable athletic clothing", note: "I assess full-body movement" },
                   { item: "List of prior treatments", note: "Previous PT, injections, surgeries" },
                   { item: "Any relevant imaging", note: "MRI, X-ray reports if you have them" },
                 ].map((b) => (
@@ -219,7 +219,7 @@ export default function BookPage() {
         <div className="max-w-2xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">Questions?</p>
           <p className="type-body-l text-brand-muted mb-2">
-            Text or email is the fastest way to reach us — we&apos;re a one-person clinic.
+            Text or email is the fastest way to reach me — I&apos;m a one-person clinic.
           </p>
           <p className="type-body-l text-brand-muted mb-1">
             <a href="tel:3475715717" className="text-brand-white hover:text-brand-gold transition-colors">347-571-5717</a>

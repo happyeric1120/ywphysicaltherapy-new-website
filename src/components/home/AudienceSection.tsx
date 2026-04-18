@@ -7,7 +7,7 @@ const audiences = [
   {
     label: "The Desk Worker",
     headline: "Neck. Back. Hips. From sitting all day.",
-    copy: "You've adjusted your chair, bought a standing desk, done the stretches. The pain keeps coming back because the source was never addressed. We fix that — in sessions, not months.",
+    copy: "You've adjusted your chair, bought a standing desk, done the stretches. The pain keeps coming back because the source was never addressed. I fix that — in sessions, not months.",
     cta: "This is for me →",
     href: "/desk-worker-pain-nyc",
   },
@@ -21,7 +21,7 @@ const audiences = [
   {
     label: "The Chronic Pain Sufferer",
     headline: "You've tried everything. You haven't tried this.",
-    copy: "Multiple providers, no lasting results. Chronic pain rarely lives where it appears. We start from scratch — assessing your whole system — and rebuild from the real source.",
+    copy: "Multiple providers, no lasting results. Chronic pain rarely lives where it appears. I start from scratch — assessing your whole system — and rebuild from the real source.",
     cta: "This is for me →",
     href: "/back-pain-nyc",
   },
@@ -38,7 +38,7 @@ export default function AudienceSection() {
           transition={{ duration: 0.5 }}
           className="font-mono text-xs text-brand-gold tracking-[0.3em] uppercase mb-4"
         >
-          Who We Help
+          Who I Help
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 16 }}

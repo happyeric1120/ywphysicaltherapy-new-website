@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "How many EMS sessions do I need?",
-    a: "This depends entirely on your goal. For re-education after injury or surgery: 8–12 sessions. For strength augmentation in athletes: ongoing as part of a performance program. We&apos;ll build a specific EMS protocol into your Human System Reset™ plan.",
+    a: "This depends entirely on your goal. For re-education after injury or surgery: 8–12 sessions. For strength augmentation in athletes: ongoing as part of a performance program. I&apos;ll build a specific EMS protocol into your Human System Reset™ plan.",
   },
 ];
 

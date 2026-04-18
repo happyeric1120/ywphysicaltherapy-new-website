@@ -14,7 +14,7 @@ export default function LocationSection() {
           transition={{ duration: 0.5 }}
           className="font-mono text-xs text-brand-gold tracking-[0.3em] uppercase mb-4"
         >
-          Find Us
+          Find Me
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 16 }}

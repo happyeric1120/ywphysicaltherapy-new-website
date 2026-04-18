@@ -32,11 +32,11 @@ const faqs = [
   },
   {
     q: "Is shockwave covered by insurance?",
-    a: "Focused shockwave is offered as a self-pay advanced therapy ($150/session, or $60 for radial shockwave + laser). If you have insurance-covered PT visits, we can integrate shockwave as an affordable upgrade.",
+    a: "Focused shockwave is offered as a self-pay advanced therapy ($150/session, or $60 for radial shockwave + laser). If you have out-of-network benefits, I can integrate shockwave as part of your session.",
   },
   {
     q: "What's the difference between focused and radial shockwave?",
-    a: "Radial shockwave spreads energy outward — best for larger, more superficial areas. Focused shockwave concentrates energy at a precise depth, reaching tissues other treatments can't. We often use both strategically in the same session.",
+    a: "Radial shockwave spreads energy outward — best for larger, more superficial areas. Focused shockwave concentrates energy at a precise depth, reaching tissues other treatments can't. I often use both strategically in the same session.",
   },
 ];
 
@@ -141,7 +141,7 @@ export default function ShockwaveTherapyNYCPage() {
             {[
               {
                 title: "Root-Cause First",
-                desc: "We use AI movement analysis to identify why the tissue is being overloaded before we treat it — so shockwave addresses the right location for the right reason.",
+                desc: "I use AI movement analysis to identify why the tissue is being overloaded before treating it — so shockwave addresses the right location for the right reason.",
               },
               {
                 title: "Strategic Combination",
@@ -153,7 +153,7 @@ export default function ShockwaveTherapyNYCPage() {
               },
               {
                 title: "Followed by Retraining",
-                desc: "After RELEASE, we move into RESTORE — so the shockwave gains are reinforced by corrective movement, not just repeated until the symptoms return.",
+                desc: "After RELEASE, I move into RESTORE — so the shockwave gains are reinforced by corrective movement, not just repeated until the symptoms return.",
               },
             ].map((item) => (
               <div

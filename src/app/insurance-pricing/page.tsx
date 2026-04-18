@@ -36,7 +36,7 @@ const coverageOptions = [
   {
     title: "Out-of-Network Benefits",
     icon: "◎",
-    body: "If your plan includes out-of-network benefits (most PPO plans do), you can still use your insurance. You pay at the time of your visit, and we'll provide a detailed receipt and Superbill so you can submit directly to your insurance for reimbursement.",
+    body: "If your plan includes out-of-network benefits (most PPO plans do), you can still use your insurance. You pay at the time of your visit, and we'll either provide a Superbill for you to submit yourself, or we can help submit the claim on your behalf — whichever is easier for you.",
   },
   {
     title: "HSA / FSA",

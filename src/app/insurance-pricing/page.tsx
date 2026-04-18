@@ -7,12 +7,12 @@ import Link from "next/link";
 const selfPayTable = [
   {
     service: "PT Evaluation",
-    price: "$150",
+    price: "$200",
     desc: "Full-body movement screening + AI scan + personalized treatment roadmap. First step in the Human System Reset™ protocol.",
   },
   {
     service: "Follow-Up PT Session (60 min)",
-    price: "$120",
+    price: "$150",
     desc: "Manual therapy, mobility training, neuromuscular retraining, and technology application. Always one-on-one with Dr. Wu.",
   },
   {
@@ -32,13 +32,22 @@ const selfPayTable = [
   },
 ];
 
-const insurancePlans = [
-  "Aetna",
-  "UnitedHealthcare (UHC)",
-  "Blue Cross Blue Shield (BCBS)",
-  "Oxford",
-  "Empire BlueCross",
-  "Most commercial PPO plans",
+const coverageOptions = [
+  {
+    title: "Out-of-Network Benefits",
+    icon: "◎",
+    body: "If your plan includes out-of-network benefits (most PPO plans do), you can still use your insurance. You pay at the time of your visit, and we'll provide a detailed receipt and Superbill so you can submit directly to your insurance for reimbursement.",
+  },
+  {
+    title: "HSA / FSA",
+    icon: "◎",
+    body: "Physical therapy is an approved HSA and FSA expense. You can use your HSA or FSA card directly at checkout — no extra paperwork needed.",
+  },
+  {
+    title: "Aetna, Anthem, UnitedHealthcare, or Oscar",
+    icon: "◎",
+    body: "Some plans under these carriers may be covered through our third-party billing partner. Just reach out and share your plan details — we'll look into it and let you know within a few business days.",
+  },
 ];
 
 const faqs = [
@@ -47,8 +56,8 @@ const faqs = [
     a: "Most patients in New York State can see a physical therapist directly without a referral — this is called Direct Access. Some insurance plans require a referral for coverage; Dr. Wu will let you know if yours does.",
   },
   {
-    q: "How do I know what my insurance will cover?",
-    a: "Contact us before your first visit. We&apos;ll verify your benefits and explain your expected copay, deductible, and visit limits. No surprises.",
+    q: "How do I know if my plan has out-of-network benefits?",
+    a: "The easiest way is to call the member services number on the back of your insurance card and ask: \"Do I have out-of-network physical therapy benefits?\" If yes, ask about your out-of-network deductible and reimbursement percentage. We&apos;ll provide a Superbill after each visit so you can submit for reimbursement.",
   },
   {
     q: "Can I use HSA/FSA?",
@@ -59,8 +68,8 @@ const faqs = [
     a: "Standard PT sessions are covered by insurance. Advanced technology upgrades (focused shockwave, TECAR) are self-pay additions. Many patients use the standard PT session for the base work and add the technology upgrade for targeted treatment.",
   },
   {
-    q: "What if I have Medicaid or Medicare?",
-    a: "Please contact us directly — coverage depends on your specific plan. Some managed Medicare/Medicaid plans are accepted. We&apos;ll review your card and let you know within 3 business days.",
+    q: "What if I have Aetna, Anthem, UnitedHealthcare, or Oscar?",
+    a: "Some plans under these carriers may be covered through our third-party billing partner. Reach out and share your plan details — we&apos;ll check and get back to you within a few business days.",
   },
 ];
 
@@ -115,7 +124,7 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.08 }}
             className="type-display-m text-brand-white mb-6"
           >
-            Plans Currently Accepted
+            How Insurance Works Here
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -124,28 +133,32 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.14 }}
             className="type-body-l text-brand-muted mb-10 max-w-2xl"
           >
-            We accept most major commercial insurance plans. Standard PT sessions — evaluation,
-            manual therapy, therapeutic exercise — are covered under these plans subject to your
-            copay, deductible, and visit limits.
+            We&apos;re an out-of-network provider — which sounds complicated, but for most people
+            it&apos;s actually pretty straightforward. Here&apos;s how you can still get coverage:
           </motion.p>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mb-10">
-            {insurancePlans.map((plan) => (
-              <div
-                key={plan}
-                className="px-5 py-4 border border-brand-border bg-brand-black font-body font-light text-brand-white text-sm"
+          <div className="space-y-4 mb-10">
+            {coverageOptions.map((opt, i) => (
+              <motion.div
+                key={opt.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="p-7 border border-brand-border bg-brand-black"
                 style={{ borderRadius: "2px" }}
               >
-                {plan}
-              </div>
+                <h3 className="font-body font-medium text-brand-white text-base mb-2">{opt.title}</h3>
+                <p className="font-body text-brand-muted text-sm leading-relaxed">{opt.body}</p>
+              </motion.div>
             ))}
           </div>
 
           <div className="p-8 border border-brand-gold/20 bg-brand-black max-w-2xl" style={{ borderRadius: "2px" }}>
-            <p className="type-label text-brand-gold mb-3">Not Sure If You&apos;re Covered?</p>
+            <p className="type-label text-brand-gold mb-3">Not Sure What You Have?</p>
             <p className="type-body-m text-brand-muted mb-5">
-              Contact us before your first visit. We&apos;ll verify your benefits and explain what
-              to expect — copay, deductible, visit limits — within 3 business days.
+              No worries — just reach out and share your insurance card info. We&apos;ll take a
+              look and let you know what your options are.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScqejyOiePPbtYuqYxp8nyU72RRFlQv6encnne7-noMVKlexA/viewform?usp=header"
@@ -154,7 +167,7 @@ export default function InsurancePricingPage() {
               className="inline-block font-body text-sm font-medium px-6 py-2.5 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-black transition-all duration-200"
               style={{ borderRadius: "2px" }}
             >
-              Check Insurance Coverage →
+              Contact Us About Coverage →
             </a>
           </div>
         </div>

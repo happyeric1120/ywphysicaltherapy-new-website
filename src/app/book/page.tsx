@@ -7,6 +7,8 @@ import Link from "next/link";
 const BOOKING_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xZH1VXDVjTyJGYTH-ygHvf3JFgbZ7DLUxk3epoqNZwxFwLcQqb4Fti-C2z8kkThjHPylSlBno";
 
+const INTAKE_URL = "https://fill.boloforms.com/signature/form/ywpt_intakeform";
+
 const steps = [
   {
     num: "01",
@@ -119,6 +121,49 @@ export default function BookPage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Intake Form */}
+      <section className="py-16 bg-brand-black border-y border-brand-border">
+        <div className="max-w-5xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col md:flex-row md:items-center gap-8 p-8 md:p-10 border border-brand-gold/30 bg-brand-surface"
+            style={{ borderRadius: "2px" }}
+          >
+            {/* Left: text */}
+            <div className="flex-1">
+              <p className="type-label text-brand-gold mb-3">New Patients · Do This After Booking</p>
+              <h2 className="font-display font-bold text-brand-white mb-3" style={{ fontSize: "clamp(20px, 2.5vw, 28px)", letterSpacing: "-0.02em" }}>
+                Complete Your Patient Intake Form
+              </h2>
+              <p className="font-body text-brand-muted text-sm leading-relaxed max-w-xl">
+                Fill this out at your own pace before your first visit — it takes about 5 minutes.
+                It gives me a head start on your history, previous treatments, and goals, so I can
+                make the most of every minute of your assessment.
+              </p>
+            </div>
+
+            {/* Right: CTA */}
+            <div className="shrink-0 flex flex-col items-start md:items-end gap-3">
+              <a
+                href={INTAKE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-body font-medium text-sm tracking-wide px-8 py-3 bg-brand-gold text-brand-black hover:bg-brand-gold-light transition-all duration-200"
+                style={{ borderRadius: "2px" }}
+              >
+                Complete Intake Form →
+              </a>
+              <p className="font-mono text-[10px] text-brand-muted tracking-widest uppercase">
+                ~5 min · Secure online form
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

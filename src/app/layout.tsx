@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const GA_ID = "G-3YEWLJK86Q";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -50,6 +53,20 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col bg-brand-black text-brand-white" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">{children}</main>

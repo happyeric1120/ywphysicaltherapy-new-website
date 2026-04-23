@@ -136,7 +136,7 @@ export default function WellnessBodyResetPage() {
             animate={{ opacity: 1, y: 0 }}
             className="type-label text-brand-gold mb-5"
           >
-            Wellness Movement · YW Physical Therapy · Midtown Manhattan
+            Body Reset Wellness · YW Physical Therapy · Midtown Manhattan
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -176,7 +176,7 @@ export default function WellnessBodyResetPage() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 2 — WHAT IS HUMAN SYSTEM RESET™
+          SECTION 2 — WHAT IS BODY RESET
       ══════════════════════════════════════════════ */}
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
@@ -195,7 +195,7 @@ export default function WellnessBodyResetPage() {
             transition={{ delay: 0.08 }}
             className="type-display-m text-brand-white mb-6"
           >
-            What is Human System Reset™?
+            What is Body Reset?
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-10 items-start">
@@ -207,7 +207,7 @@ export default function WellnessBodyResetPage() {
                 transition={{ delay: 0.12 }}
                 className="type-body-l text-brand-muted"
               >
-                Human System Reset™ is a wellness-focused approach that combines
+                Body Reset is a wellness-focused approach that combines
                 movement analysis, tension release, and guided movement optimization
                 into a single cohesive experience.
               </motion.p>

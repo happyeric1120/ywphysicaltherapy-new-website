@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const BOOKING_URL =
@@ -300,7 +301,7 @@ export default function LandingPage() {
               fontStyle: "italic",
             }}
           >
-            "Nothing was fixed — only managed."
+            &ldquo;Nothing was fixed — only managed.&rdquo;
           </motion.p>
         </div>
       </section>
@@ -403,7 +404,7 @@ export default function LandingPage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              "If nothing else has worked — this is different."
+              &ldquo;If nothing else has worked — this is different.&rdquo;
             </p>
             <p
               className="font-body text-sm"
@@ -906,12 +907,12 @@ export default function LandingPage() {
             347-571-5717
           </a>{" "}
           ·{" "}
-          <a
+          <Link
             href="/"
             style={{ color: "rgba(245,243,238,0.38)" }}
           >
             Full Website
-          </a>
+          </Link>
         </p>
       </footer>
 

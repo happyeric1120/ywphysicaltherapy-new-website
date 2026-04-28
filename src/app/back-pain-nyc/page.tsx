@@ -3,54 +3,65 @@ import ServicePageShell from "@/components/ServicePageShell";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Back Pain Physical Therapy in Manhattan | YW Physical Therapy",
+  title: "Back Pain Physical Therapy NYC | Midtown Manhattan | YW Physical Therapy",
   description:
-    "Physical therapy for chronic and acute back pain in Midtown Manhattan. Dr. Wu uses the Human System Reset™ method to find the root cause — not just treat the symptoms. Near Penn Station.",
-  alternates: { canonical: "https://ywphysicaltherapy.com/back-pain-nyc" },
+    "Chronic back pain in NYC? Dr. Wu uses full-body AI movement assessment to find the real mechanical driver — not just where it hurts. One-on-one PT near Penn Station.",
   openGraph: {
-    title: "Back Pain Physical Therapy in Manhattan | YW Physical Therapy",
+    title: "Back Pain Physical Therapy NYC | YW Physical Therapy",
     description:
-      "Root-cause physical therapy for back pain in Midtown Manhattan. Book near Penn Station.",
+      "Full-body assessment to find the root cause of your back pain. One-on-one PT in Midtown Manhattan near Penn Station.",
     url: "https://ywphysicaltherapy.com/back-pain-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
   },
+  alternates: { canonical: "https://ywphysicaltherapy.com/back-pain-nyc" },
 };
 
 const faqs = [
   {
-    q: "How is your approach to back pain different?",
-    a: "Most back pain treatment targets the painful area and strengthens generically. Dr. Wu begins with a full-body movement assessment to identify the actual mechanical driver — which is often not where the pain is. Only then does treatment begin.",
+    q: "How is your approach to back pain different from other NYC physical therapists?",
+    a: "Dr. Wu begins with a full-body AI movement assessment to identify the actual mechanical driver of your back pain — which is often not where the pain appears. Only then does treatment begin.",
   },
   {
-    q: "Can you help with herniated disc / sciatica?",
-    a: "Yes. I commonly treat disc-related pain including radiculopathy (sciatica). Treatment addresses the mechanical load contributing to disc compression, the surrounding muscle dysfunction, and the nerve sensitization that amplifies pain.",
+    q: "Can physical therapy help herniated disc or sciatica in NYC?",
+    a: "Yes. Treatment addresses the mechanical load contributing to disc compression, surrounding muscle dysfunction, and nerve sensitization.",
   },
   {
-    q: "I've had back pain for years. Is it too late to get better?",
-    a: "Chronic back pain (12+ months) is fully treatable in the majority of cases. Chronicity often means the underlying drivers have never been properly identified — which is exactly what the REVEAL phase addresses.",
+    q: "Do I need an MRI before starting physical therapy?",
+    a: "No. MRIs are often overused for back pain. Most imaging findings in adults over 40 are incidental and not causing symptoms.",
   },
   {
-    q: "Do I need an MRI before I come in?",
-    a: "No. MRIs are often overused for back pain — most findings on imaging in adults over 40 are incidental and not causing symptoms. I assess your movement and function, which is far more clinically relevant than structural imaging.",
-  },
-  {
-    q: "Can I see you if I have insurance?",
-    a: "I'm an out-of-network provider. Many patients use out-of-network benefits or HSA/FSA. Some plans may be covered through third-party billing — reach out and I'll check. See my Insurance & Pricing page for details.",
+    q: "How many sessions does back pain treatment take?",
+    a: "Most cases respond within 6–10 sessions when the correct mechanical driver is identified and treated.",
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function BackPainNYCPage() {
   return (
-    <ServicePageShell
-      eyebrow="Back Pain · Human System Reset™"
-      h1="Back Pain Physical Therapy in Manhattan"
-      heroTagline="You&apos;ve tried everything. You haven&apos;t tried this."
-      lead="Chronic back pain rarely lives where it appears. Dr. Wu uses a full-body assessment to find the actual mechanical driver, then systematically removes barriers and rebuilds your movement — so results last."
-      faqs={faqs}
-      ctaHeading="Start Your Back Pain Assessment"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageShell
+        eyebrow="Back Pain · Human System Reset™"
+        h1="Back Pain Physical Therapy in Manhattan"
+        heroTagline="You&apos;ve tried everything. You haven&apos;t tried this."
+        lead="Chronic back pain rarely lives where it appears. Dr. Wu uses a full-body assessment to find the actual mechanical driver, then systematically removes barriers and rebuilds your movement — so results last."
+        faqs={faqs}
+        ctaHeading="Start Your Back Pain Assessment"
+      >
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">Why Back Pain Keeps Coming Back</p>
@@ -65,6 +76,11 @@ export default function BackPainNYCPage() {
               The reason is that these interventions treat the sensation of pain without addressing
               the mechanical forces that created it. The back becomes the symptom site for a movement
               problem that originates elsewhere — often in the hips, thoracic spine, or lower extremities.
+              This is common in{" "}
+              <Link href="/desk-worker-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                desk worker
+              </Link>{" "}
+              pain patterns.
             </p>
           </div>
 
@@ -139,6 +155,25 @@ export default function BackPainNYCPage() {
               </div>
             ))}
           </div>
+          <p className="type-body-m text-brand-muted mt-8 max-w-3xl">
+            Back pain treatment may include{" "}
+            <Link href="/tecar-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              TECAR therapy
+            </Link>
+            ,{" "}
+            <Link href="/shockwave-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              focused shockwave
+            </Link>
+            , and{" "}
+            <Link href="/laser-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              Class IV laser
+            </Link>{" "}
+            when they fit your{" "}
+            <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              Human System Reset™
+            </Link>{" "}
+            plan.
+          </p>
         </div>
       </section>
 
@@ -168,6 +203,7 @@ export default function BackPainNYCPage() {
           </div>
         </div>
       </section>
-    </ServicePageShell>
+      </ServicePageShell>
+    </>
   );
 }

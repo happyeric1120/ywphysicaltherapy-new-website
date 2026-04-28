@@ -31,7 +31,7 @@ export default function AboutSection() {
             <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden rounded-2xl border border-brand-border">
               <Image
                 src="/assets/me.jpg"
-                alt="Dr. Yu-Kuang Wu, PT, PhD — Physical Therapist in Midtown Manhattan"
+                alt="Dr. Yu-Kuang Wu, PT PhD — Physical Therapist in Midtown Manhattan near Penn Station"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 288px, 384px"
@@ -67,6 +67,21 @@ export default function AboutSection() {
                 He developed the Human System Reset™ method after years of finding that standard
                 PT protocols addressed symptoms without addressing systems. Every client receives
                 the same clinician from assessment to discharge — no handoffs, no aides.
+              </p>
+              <p>
+                Learn more about Dr. Wu&apos;s approach to{" "}
+                <Link href="/back-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                  back pain
+                </Link>
+                ,{" "}
+                <Link href="/neck-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                  neck pain
+                </Link>
+                , and{" "}
+                <Link href="/desk-worker-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                  desk worker pain
+                </Link>
+                .
               </p>
             </div>
 

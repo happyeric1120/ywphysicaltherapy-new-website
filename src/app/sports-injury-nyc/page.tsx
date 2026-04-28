@@ -2,19 +2,10 @@ import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
 
 export const metadata: Metadata = {
-  title: "Sports Injury Physical Therapy in Manhattan | YW Physical Therapy",
+  title: "Sports Injury Physical Therapy NYC | Midtown Manhattan | YW Physical Therapy",
   description:
-    "Sports injury rehabilitation and performance optimization in Midtown Manhattan. Dr. Wu identifies movement inefficiencies before they become injuries — and restores function faster when they do.",
+    "Sports injury PT in NYC for runners, gym athletes, and active professionals. Movement inefficiency assessment before injuries become setbacks. One-on-one care near Penn Station.",
   alternates: { canonical: "https://ywphysicaltherapy.com/sports-injury-nyc" },
-  openGraph: {
-    title: "Sports Injury Physical Therapy in Manhattan | YW Physical Therapy",
-    description:
-      "Rehab and performance PT for athletes in Midtown Manhattan near Penn Station.",
-    url: "https://ywphysicaltherapy.com/sports-injury-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
-  },
 };
 
 const faqs = [

@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Physical Therapy for Desk Workers in NYC | YW Physical Therapy",
+  title: "Physical Therapy for Desk Workers NYC | Neck, Back & Hip Pain | YW Physical Therapy",
   description:
-    "Neck, back, shoulder, and hip pain from sitting all day — treated at the root in Midtown Manhattan. Dr. Wu identifies the patterns behind desk-related pain and fixes them in sessions, not months.",
-  alternates: { canonical: "https://ywphysicaltherapy.com/desk-worker-pain-nyc" },
+    "NYC office worker with neck, back, or hip pain from sitting? Dr. Wu treats the root cause in sessions — not months. One-on-one PT in Midtown Manhattan near Penn Station.",
   openGraph: {
-    title: "Physical Therapy for Desk Workers in NYC | YW Physical Therapy",
+    title: "Physical Therapy for Desk Workers NYC | YW Physical Therapy",
     description:
-      "Root-cause PT for desk-related neck, back, and shoulder pain. Midtown Manhattan near Penn Station.",
+      "Neck, back, and hip pain from sitting all day in NYC. Root-cause PT near Penn Station — results in sessions, not months.",
     url: "https://ywphysicaltherapy.com/desk-worker-pain-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
   },
+  alternates: { canonical: "https://ywphysicaltherapy.com/desk-worker-pain-nyc" },
 };
 
 const faqs = [
@@ -107,7 +105,11 @@ export default function DeskWorkerPainNYCPage() {
           <h2 className="type-display-m text-brand-white mb-8">Why This Works When Stretching Doesn&apos;t</h2>
           <div className="grid md:grid-cols-2 gap-8 font-body font-light text-brand-muted text-base leading-relaxed">
             <p>
-              Stretching and ergonomic adjustments address symptoms. The Human System Reset™ method
+              Stretching and ergonomic adjustments address symptoms. The{" "}
+              <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                Human System Reset™
+              </Link>{" "}
+              method
               addresses the underlying movement dysfunction — the specific restriction patterns, muscle
               inhibitions, and load transfer failures that desk work creates over years of repetition.
             </p>
@@ -118,6 +120,21 @@ export default function DeskWorkerPainNYCPage() {
               for a few days after treatment.
             </p>
           </div>
+          <p className="type-body-m text-brand-muted mt-8 max-w-3xl">
+            Desk work commonly shows up as{" "}
+            <Link href="/neck-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              neck pain
+            </Link>
+            ,{" "}
+            <Link href="/back-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              back pain
+            </Link>
+            , and stubborn tissue irritation that may benefit from{" "}
+            <Link href="/shockwave-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              shockwave therapy
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </ServicePageShell>

@@ -15,6 +15,7 @@ const servicesCol = [
   { label: "Compex EMS", href: "/compex-ems-nyc" },
   { label: "Back Pain PT", href: "/back-pain-nyc" },
   { label: "Neck Pain PT", href: "/neck-pain-nyc" },
+  { label: "Hip Pain PT", href: "/hip-pain-nyc" },
   { label: "Sports Injury PT", href: "/sports-injury-nyc" },
   { label: "Desk Worker Pain", href: "/desk-worker-pain-nyc" },
 ];
@@ -60,14 +61,14 @@ export default function Footer() {
               itemScope
               itemType="https://schema.org/LocalBusiness"
             >
-              <p itemProp="name" className="sr-only">YW Physical Therapy</p>
+              <p itemProp="name">YW Physical Therapy</p>
               <p>
                 <span itemProp="streetAddress">224 W 35th St #301-5</span><br />
                 <span itemProp="addressLocality">New York</span>,{" "}
                 <span itemProp="addressRegion">NY</span>{" "}
                 <span itemProp="postalCode">10001</span>
               </p>
-              <p><a href="tel:3475715717" itemProp="telephone" className="hover:text-brand-white transition-colors">347-571-5717</a></p>
+              <p><a href="tel:3475715717" itemProp="telephone" className="hover:text-brand-white transition-colors">(347) 571-5717</a></p>
               <p><a href="mailto:ywphysicaltherapy@gmail.com" itemProp="email" className="hover:text-brand-white transition-colors">ywphysicaltherapy@gmail.com</a></p>
               <div className="pt-2 space-y-1 text-xs text-brand-muted">
                 <p>Mon / Wed / Thu</p>

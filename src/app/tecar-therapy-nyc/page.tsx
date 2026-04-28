@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "TECAR Therapy in Manhattan, NYC | YW Physical Therapy",
+  title: "TECAR Therapy NYC | Deep Tissue Healing | YW Physical Therapy Midtown Manhattan",
   description:
-    "TECAR therapy (capacitive and resistive energy transfer) in Midtown Manhattan. Deep thermal healing for chronic pain, muscle injuries, and post-surgical recovery near Penn Station.",
+    "TECAR therapy in NYC for deep tissue healing, chronic pain, and post-injury recovery. Used in the RELEASE phase of the Human System Reset™ method. Near Penn Station.",
   alternates: { canonical: "https://ywphysicaltherapy.com/tecar-therapy-nyc" },
-  openGraph: {
-    title: "TECAR Therapy in Manhattan, NYC | YW Physical Therapy",
-    description:
-      "Deep thermal energy therapy for accelerated healing and chronic pain relief. Midtown Manhattan near Penn Station.",
-    url: "https://ywphysicaltherapy.com/tecar-therapy-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
-  },
 };
 
 const faqs = [
@@ -158,6 +150,33 @@ export default function TECARTherapyNYCPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="py-12 bg-brand-black">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="type-body-m text-brand-muted max-w-3xl">
+            TECAR therapy is most effective when combined with{" "}
+            <Link href="/shockwave-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              shockwave therapy
+            </Link>{" "}
+            and{" "}
+            <Link href="/laser-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              Class IV laser
+            </Link>{" "}
+            as part of the{" "}
+            <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              Human System Reset™ method
+            </Link>
+            . Commonly used for{" "}
+            <Link href="/back-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              back pain
+            </Link>{" "}
+            and{" "}
+            <Link href="/neck-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              neck pain
+            </Link>{" "}
+            in NYC office workers.
+          </p>
         </div>
       </section>
     </ServicePageShell>

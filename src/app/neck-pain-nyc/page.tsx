@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Neck Pain Physical Therapy in Manhattan | YW Physical Therapy",
+  title: "Neck Pain Physical Therapy NYC | Midtown Manhattan | YW Physical Therapy",
   description:
-    "Physical therapy for neck pain, cervical radiculopathy, and headaches in Midtown Manhattan. Root-cause assessment and advanced technology near Penn Station.",
-  alternates: { canonical: "https://ywphysicaltherapy.com/neck-pain-nyc" },
+    "Neck pain from sitting at a desk all day? Dr. Wu identifies the real cause — posture, thoracic mobility, muscle imbalance — and fixes it. One-on-one PT near Penn Station, NYC.",
   openGraph: {
-    title: "Neck Pain Physical Therapy in Manhattan | YW Physical Therapy",
+    title: "Neck Pain Physical Therapy NYC | YW Physical Therapy",
     description:
-      "Root-cause PT for neck pain and cervical conditions. Midtown Manhattan near Penn Station.",
+      "One-on-one neck pain PT in Midtown Manhattan. AI movement assessment finds the root cause. Near Penn Station.",
     url: "https://ywphysicaltherapy.com/neck-pain-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
   },
+  alternates: { canonical: "https://ywphysicaltherapy.com/neck-pain-nyc" },
 };
 
 const faqs = [
@@ -59,9 +57,28 @@ export default function NeckPainNYCPage() {
             <p>
               But neck pain rarely resolves by fixing the neck alone. The thoracic spine and shoulder
               complex have to contribute — when they don&apos;t, the cervical spine compensates. I assess
-              the whole chain, not just the painful segment.
+              the whole chain, not just the painful segment, especially for{" "}
+              <Link href="/desk-worker-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                desk workers
+              </Link>
+              .
             </p>
           </div>
+          <p className="type-body-m text-brand-muted mt-8 max-w-3xl">
+            Care may include{" "}
+            <Link href="/tecar-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              TECAR for deep tissue
+            </Link>
+            ,{" "}
+            <Link href="/shockwave-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              shockwave for muscle trigger points
+            </Link>
+            , and the{" "}
+            <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              Human System Reset™ method
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

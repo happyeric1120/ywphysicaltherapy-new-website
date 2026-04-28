@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Shockwave Therapy Manhattan, NYC | YW Physical Therapy",
+  title: "Shockwave Therapy NYC | Focused & Radial | YW Physical Therapy Near Penn Station",
   description:
-    "Focused and radial shockwave therapy in Midtown Manhattan near Penn Station. Effective for plantar fasciitis, Achilles tendinopathy, tennis elbow, and chronic tendon pain. Book today.",
-  alternates: { canonical: "https://ywphysicaltherapy.com/shockwave-therapy-nyc" },
+    "Focused and radial shockwave therapy in Midtown Manhattan. Research-backed treatment for tendon pain, plantar fasciitis, calcific tendinitis, and chronic muscle issues that haven't responded to standard care.",
   openGraph: {
-    title: "Shockwave Therapy in Manhattan, NYC | YW Physical Therapy",
+    title: "Shockwave Therapy NYC | YW Physical Therapy",
     description:
-      "Focused and radial shockwave therapy for stubborn tendon pain and chronic injuries. Midtown Manhattan near Penn Station.",
+      "Focused & radial shockwave in Midtown Manhattan. For tendon pain, plantar fasciitis, and chronic conditions that haven't responded to standard PT.",
     url: "https://ywphysicaltherapy.com/shockwave-therapy-nyc",
-    siteName: "YW Physical Therapy",
-    locale: "en_US",
-    type: "website",
   },
+  alternates: { canonical: "https://ywphysicaltherapy.com/shockwave-therapy-nyc" },
 };
 
 const faqs = [
@@ -23,34 +21,48 @@ const faqs = [
     a: "Most people feel a strong tapping or pressure sensation — intense over sensitive spots, but manageable. Dr. Wu always adjusts energy levels to your comfort. You stay in control throughout.",
   },
   {
-    q: "How many sessions will I need?",
-    a: "Most tendon conditions respond within 3–6 sessions, typically spaced one week apart. The exact number depends on how long the problem has been present and how your tissue responds.",
+    q: "How many shockwave therapy sessions will I need?",
+    a: "Most tendon conditions respond within 3–6 sessions, typically spaced one week apart.",
   },
   {
-    q: "Is there downtime after treatment?",
-    a: "Most people return to normal activity the same day. Mild soreness for 24–48 hours is common and expected — it's a sign the tissue is responding. Dr. Wu will guide you on activity modification.",
+    q: "Is shockwave therapy covered by insurance in NYC?",
+    a: "Focused shockwave is offered as a self-pay advanced therapy ($150/session, or $60 for radial shockwave + laser). Out-of-network benefits may apply.",
   },
   {
-    q: "Is shockwave covered by insurance?",
-    a: "Focused shockwave is offered as a self-pay advanced therapy ($150/session, or $60 for radial shockwave + laser). If you have out-of-network benefits, I can integrate shockwave as part of your session.",
-  },
-  {
-    q: "What's the difference between focused and radial shockwave?",
-    a: "Radial shockwave spreads energy outward — best for larger, more superficial areas. Focused shockwave concentrates energy at a precise depth, reaching tissues other treatments can't. I often use both strategically in the same session.",
+    q: "What conditions does shockwave therapy treat?",
+    a: "Shockwave is effective for plantar fasciitis, Achilles tendinopathy, patellar tendinopathy, tennis elbow, calcific shoulder tendinitis, hip tendon pain, and chronic low back pain.",
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function ShockwaveTherapyNYCPage() {
   return (
-    <ServicePageShell
-      eyebrow="Release Phase · Human System Reset™"
-      h1="Shockwave Therapy in Manhattan, NYC"
-      heroTagline="When everything else has failed, shockwave often delivers."
-      lead="Non-invasive, research-backed sound wave therapy that breaks through stubborn tendon pain, scar tissue, and deep inflammation — delivering results that stretching and massage alone can't reach."
-      phase="RELEASE"
-      faqs={faqs}
-      ctaHeading="Start with a Shockwave Consultation"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageShell
+        eyebrow="Release Phase · Human System Reset™"
+        h1="Shockwave Therapy NYC — Midtown Manhattan"
+        heroTagline="When everything else has failed, shockwave often delivers."
+        lead="Non-invasive, research-backed sound wave therapy that breaks through stubborn tendon pain, scar tissue, and deep inflammation — delivering results that stretching and massage alone can't reach."
+        phase="RELEASE"
+        faqs={faqs}
+        ctaHeading="Start with a Shockwave Consultation"
+      >
       {/* What is it */}
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
@@ -65,8 +77,12 @@ export default function ShockwaveTherapyNYCPage() {
             </p>
             <p>
               At YW Physical Therapy, Dr. Wu uses both focused and radial shockwave as part of the
-              RELEASE phase of the Human System Reset™ method — not as a standalone add-on, but as
-              a precisely chosen tool for specific tissue layers and conditions.
+              RELEASE phase of the{" "}
+              <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                Human System Reset™ method
+              </Link>{" "}
+              — not as a standalone add-on, but as a precisely chosen tool for specific tissue
+              layers and conditions.
             </p>
           </div>
 
@@ -79,7 +95,14 @@ export default function ShockwaveTherapyNYCPage() {
                 <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span> Energy spreads outward like ripples</li>
                 <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span> Best for larger, more superficial areas</li>
                 <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span> Great for muscle tension and mild tendon issues</li>
-                <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span> Often combined with Class IV Laser ($60/session)</li>
+                <li className="flex gap-2">
+                  <span className="text-brand-gold shrink-0">—</span>
+                  Often combined with{" "}
+                  <Link href="/laser-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                    Class IV Laser
+                  </Link>{" "}
+                  ($60/session)
+                </li>
               </ul>
             </div>
             <div className="p-8 border border-cyan-400/30 bg-brand-black" style={{ borderRadius: "2px" }}>
@@ -129,6 +152,17 @@ export default function ShockwaveTherapyNYCPage() {
               </div>
             ))}
           </div>
+          <p className="type-body-m text-brand-muted mt-8 max-w-2xl">
+            Back pain that won&apos;t resolve? Dr. Wu may combine shockwave with{" "}
+            <Link href="/tecar-therapy-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              TECAR therapy
+            </Link>{" "}
+            and movement retraining as part of a{" "}
+            <Link href="/back-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              back pain physical therapy
+            </Link>{" "}
+            plan.
+          </p>
         </div>
       </section>
 
@@ -168,6 +202,7 @@ export default function ShockwaveTherapyNYCPage() {
           </div>
         </div>
       </section>
-    </ServicePageShell>
+      </ServicePageShell>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const BOOKING_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xZH1VXDVjTyJGYTH-ygHvf3JFgbZ7DLUxk3epoqNZwxFwLcQqb4Fti-C2z8kkThjHPylSlBno";
@@ -617,7 +616,7 @@ export default function WellnessBodyResetPage() {
           </div>
           <div>
             <p className="type-label text-brand-muted/60 mb-1">Hours</p>
-            <p className="font-body text-brand-muted text-sm">Mon · Wed · Thu · 10am–4pm</p>
+            <p className="font-body text-brand-muted text-sm">Mon · Wed 10am–4pm · Thu 10am–7pm</p>
           </div>
           <div>
             <p className="type-label text-brand-muted/60 mb-1">Contact</p>

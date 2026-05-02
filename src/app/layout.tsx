@@ -34,7 +34,7 @@ const localBusinessSchema = {
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "10:00", closes: "16:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "10:00", closes: "16:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "10:00", closes: "16:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "10:00", closes: "19:00" },
   ],
   priceRange: "$$",
   paymentAccepted: "Cash, Credit Card, HSA, FSA, Insurance",

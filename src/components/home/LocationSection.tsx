@@ -59,7 +59,7 @@ export default function LocationSection() {
               <div className="space-y-1 font-body font-light text-brand-muted text-sm">
                 <p>Monday · 10am – 4pm</p>
                 <p>Wednesday · 10am – 4pm</p>
-                <p>Thursday · 10am – 4pm</p>
+                <p>Thursday · 10am – 7pm</p>
                 <p className="text-brand-muted/60 text-xs mt-2">By appointment only</p>
               </div>
             </div>

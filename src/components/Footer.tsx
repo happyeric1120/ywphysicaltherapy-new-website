@@ -71,8 +71,8 @@ export default function Footer() {
               <p><a href="tel:3475715717" itemProp="telephone" className="hover:text-brand-white transition-colors">(347) 571-5717</a></p>
               <p><a href="mailto:ywphysicaltherapy@gmail.com" itemProp="email" className="hover:text-brand-white transition-colors">ywphysicaltherapy@gmail.com</a></p>
               <div className="pt-2 space-y-1 text-xs text-brand-muted">
-                <p>Mon / Wed / Thu</p>
-                <p>10am – 4pm · By appointment only</p>
+                <p>Mon / Wed · 10am – 4pm</p>
+                <p>Thu · 10am – 7pm · By appointment only</p>
               </div>
             </address>
 

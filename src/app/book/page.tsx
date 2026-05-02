@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import BookingButton from "@/components/BookingButton";
-import Link from "next/link";
 
 const BOOKING_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xZH1VXDVjTyJGYTH-ygHvf3JFgbZ7DLUxk3epoqNZwxFwLcQqb4Fti-C2z8kkThjHPylSlBno";
@@ -13,7 +11,7 @@ const steps = [
   {
     num: "01",
     title: "Choose a Time",
-    desc: "Select an available slot from the booking calendar. Sessions are Monday, Wednesday, and Thursday, 10am–4pm.",
+    desc: "Select an available slot from the booking calendar. Sessions are Monday and Wednesday 10am–4pm, and Thursday 10am–7pm.",
   },
   {
     num: "02",
@@ -61,7 +59,7 @@ export default function BookPage() {
             className="type-body-l text-brand-muted max-w-2xl mx-auto mb-10"
           >
             One-on-one physical therapy in Midtown Manhattan, two blocks from Penn Station.
-            By appointment only — Mon / Wed / Thu, 10am–4pm.
+            By appointment only — Mon / Wed 10am–4pm, Thu 10am–7pm.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -192,7 +190,7 @@ export default function BookPage() {
                   <div className="space-y-1 text-brand-muted">
                     <p>Monday · 10am – 4pm</p>
                     <p>Wednesday · 10am – 4pm</p>
-                    <p>Thursday · 10am – 4pm</p>
+                    <p>Thursday · 10am – 7pm</p>
                     <p className="text-xs text-brand-muted/50 mt-2">By appointment only</p>
                   </div>
                 </div>

@@ -201,7 +201,7 @@ export default function LandingPage() {
             className="mt-8 type-label"
             style={{ color: "rgba(245,243,238,0.25)" }}
           >
-            Mon / Wed / Thu · 10am–4pm · By appointment only
+            Mon / Wed 10am–4pm · Thu 10am–7pm · By appointment only
           </motion.p>
         </div>
       </section>

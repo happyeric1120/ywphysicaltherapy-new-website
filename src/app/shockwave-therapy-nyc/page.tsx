@@ -89,6 +89,14 @@ export default function ShockwaveTherapyNYCPage() {
           {/* Focused vs Radial */}
           <div className="grid md:grid-cols-2 gap-5">
             <div className="p-8 border border-brand-border bg-brand-black" style={{ borderRadius: "2px" }}>
+              <div className="relative aspect-[4/3] overflow-hidden border border-brand-border mb-6 bg-brand-surface" style={{ borderRadius: "2px" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/radial-shockwave-therapy-nyc.png"
+                  alt="Radial shockwave therapy device at YW Physical Therapy in Midtown Manhattan"
+                  className="h-full w-full object-cover"
+                />
+              </div>
               <p className="type-label text-cyan-400/80 mb-3">Radial Shockwave (RSWT)</p>
               <h3 className="font-display font-bold text-brand-white text-xl mb-4">Surface to Mid-Depth</h3>
               <ul className="space-y-2 font-body font-light text-brand-muted text-sm">
@@ -106,6 +114,14 @@ export default function ShockwaveTherapyNYCPage() {
               </ul>
             </div>
             <div className="p-8 border border-cyan-400/30 bg-brand-black" style={{ borderRadius: "2px" }}>
+              <div className="relative aspect-[4/3] overflow-hidden border border-cyan-400/25 mb-6 bg-brand-surface" style={{ borderRadius: "2px" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/focused-shockwave-therapy-nyc.png"
+                  alt="Focused shockwave therapy device at YW Physical Therapy in Midtown Manhattan"
+                  className="h-full w-full object-cover"
+                />
+              </div>
               <p className="type-label text-cyan-400 mb-3">Focused Shockwave (FSWT)</p>
               <h3 className="font-display font-bold text-brand-white text-xl mb-4">Deep Tissue Precision</h3>
               <ul className="space-y-2 font-body font-light text-brand-muted text-sm">

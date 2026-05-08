@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import BookingButton from "@/components/BookingButton";
 import Link from "next/link";
 
@@ -151,6 +152,54 @@ export default function HumanSystemResetPage() {
               Explore the Method ↓
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Studio environment */}
+      <section className="py-20 bg-brand-surface border-y border-brand-border">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative aspect-square overflow-hidden border border-brand-gold/25 bg-brand-black shadow-[0_24px_80px_rgba(0,0,0,0.18)]"
+              style={{ borderRadius: "2px" }}
+            >
+              <Image
+                src="/assets/human-system-reset-studio-equipment-midtown-manhattan.png"
+                alt="YW Physical Therapy studio and advanced recovery equipment for Human System Reset in Midtown Manhattan"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 540px"
+                priority
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+            >
+              <p className="type-label text-brand-gold mb-4">The Studio</p>
+              <h2 className="type-display-m text-brand-white mb-6">
+                Human System Reset™ happens in a private Midtown Manhattan treatment environment.
+              </h2>
+              <div className="space-y-4 font-body font-light text-brand-muted text-base leading-relaxed">
+                <p>
+                  The space is designed for one-on-one care: assessment, hands-on treatment,
+                  advanced recovery technology, and corrective movement without aides or handoffs.
+                </p>
+                <p>
+                  Each tool supports a specific phase of the method, from AI-assisted movement
+                  analysis in REVEAL to soft tissue recovery in RELEASE and progressive retraining
+                  in RESTORE and REINFORCE.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

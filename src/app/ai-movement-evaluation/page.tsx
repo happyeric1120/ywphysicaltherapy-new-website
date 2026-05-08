@@ -71,22 +71,41 @@ export default function AIMovementEvaluationPage() {
       >
         <section className="py-24 bg-brand-surface border-y border-brand-border">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="type-label text-brand-gold mb-4">Short Definition</p>
-            <h2 className="type-display-m text-brand-white mb-6">What Is AI-Assisted Movement Evaluation?</h2>
-            <div className="grid md:grid-cols-2 gap-8 font-body font-light text-brand-muted text-base leading-relaxed">
-              <p>
-                AI-assisted movement evaluation is a structured screen that uses motion analysis
-                technology to support the clinical assessment. It can help reveal patterns that are
-                difficult to explain from symptoms alone.
-              </p>
-              <p>
-                At YW Physical Therapy, AI is used inside the{" "}
-                <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
-                  Human System Reset™
-                </Link>{" "}
-                framework. The technology helps clarify the pattern; Dr. Wu decides what the pattern
-                means and how to treat it.
-              </p>
+            <div className="grid lg:grid-cols-[1fr_0.88fr] gap-10 items-center">
+              <div>
+                <p className="type-label text-brand-gold mb-4">Short Definition</p>
+                <h2 className="type-display-m text-brand-white mb-6">What Is AI-Assisted Movement Evaluation?</h2>
+                <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
+                  <p>
+                    AI-assisted movement evaluation is a structured screen that uses motion analysis
+                    technology to support the clinical assessment. It can help reveal patterns that are
+                    difficult to explain from symptoms alone.
+                  </p>
+                  <p>
+                    At YW Physical Therapy, AI is used inside the{" "}
+                    <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                      Human System Reset™
+                    </Link>{" "}
+                    framework. The technology helps clarify the pattern; Dr. Wu decides what the pattern
+                    means and how to treat it.
+                  </p>
+                  <p>
+                    Reports can make asymmetry and movement quality easier to understand, then connect
+                    those findings to hands-on care, corrective exercise, and long-term reinforcement.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden border border-brand-border bg-white shadow-[0_24px_80px_rgba(0,0,0,0.14)]" style={{ borderRadius: "2px" }}>
+                <div className="relative aspect-[4/5]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/assets/ai-movement-analysis-report-nyc.png"
+                    alt="AI-assisted movement analysis report with squat score and movement metrics at YW Physical Therapy"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

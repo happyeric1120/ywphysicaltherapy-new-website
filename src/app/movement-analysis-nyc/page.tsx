@@ -71,22 +71,42 @@ export default function MovementAnalysisNYCPage() {
       >
         <section className="py-24 bg-brand-surface border-y border-brand-border">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="type-label text-brand-gold mb-4">What This Page Is About</p>
-            <h2 className="type-display-m text-brand-white mb-6">What Movement Analysis Can Reveal</h2>
-            <div className="grid md:grid-cols-2 gap-8 font-body font-light text-brand-muted text-base leading-relaxed">
-              <p>
-                Movement analysis is the REVEAL phase of the{" "}
-                <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
-                  Human System Reset™
-                </Link>
-                . It looks at how your body organizes movement under real demand: where you
-                compensate, where you overwork, and where your system avoids load.
-              </p>
-              <p>
-                For Manhattan office workers and active NYC professionals, the same daily positions
-                often create predictable patterns: limited thoracic motion, reduced hip extension,
-                neck tension, shallow breathing, and low back overload.
-              </p>
+            <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
+              <div>
+                <p className="type-label text-brand-gold mb-4">What This Page Is About</p>
+                <h2 className="type-display-m text-brand-white mb-6">What Movement Analysis Can Reveal</h2>
+                <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
+                  <p>
+                    Movement analysis is the REVEAL phase of the{" "}
+                    <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                      Human System Reset™
+                    </Link>
+                    . It looks at how your body organizes movement under real demand: where you
+                    compensate, where you overwork, and where your system avoids load.
+                  </p>
+                  <p>
+                    For Manhattan office workers and active NYC professionals, the same daily positions
+                    often create predictable patterns: limited thoracic motion, reduced hip extension,
+                    neck tension, shallow breathing, and low back overload.
+                  </p>
+                  <p>
+                    The goal is to turn compensation patterns into visible information: side-to-side
+                    asymmetry, knee alignment, pelvic control, toe alignment, and movement quality
+                    findings that guide the treatment plan.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden border border-brand-border bg-white shadow-[0_24px_80px_rgba(0,0,0,0.16)]" style={{ borderRadius: "2px" }}>
+                <div className="relative aspect-[4/5]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/assets/ai-movement-analysis-report-nyc.png"
+                    alt="AI-assisted movement analysis report showing single leg squat metrics at YW Physical Therapy in NYC"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

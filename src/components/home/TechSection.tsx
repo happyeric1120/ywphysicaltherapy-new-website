@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const phaseStyles = {
@@ -54,6 +55,38 @@ export default function TechSection() {
         >
           Every device is assigned to a specific phase of the Human System Reset™ protocol — not used as random add-ons.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="grid lg:grid-cols-[1.08fr_0.92fr] gap-8 items-center mb-14"
+        >
+          <div className="relative aspect-square overflow-hidden border border-brand-gold/25 bg-brand-black shadow-[0_24px_80px_rgba(0,0,0,0.16)]" style={{ borderRadius: "2px" }}>
+            <Image
+              src="/assets/human-system-reset-studio-equipment-midtown-manhattan.png"
+              alt="YW Physical Therapy studio and advanced recovery equipment for Human System Reset in Midtown Manhattan"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 560px"
+            />
+          </div>
+          <div className="border border-brand-border bg-white p-8 md:p-10" style={{ borderRadius: "2px" }}>
+            <p className="type-label text-brand-gold mb-4">Studio & Equipment</p>
+            <h3 className="font-display font-bold text-brand-white text-2xl md:text-3xl leading-tight mb-5">
+              A private one-on-one studio built around assessment, recovery, and retraining.
+            </h3>
+            <p className="type-body-m text-brand-muted mb-6">
+              The Midtown Manhattan space is intentionally compact and focused: treatment table,
+              movement floor, AI-assisted assessment tools, shockwave, TECAR, EMS, IASTM, and
+              corrective training equipment in one private session environment.
+            </p>
+            <Link href="/human-system-reset" className="type-body-m text-brand-gold hover:text-brand-gold-light transition-colors">
+              See how the Human System Reset™ uses this setup →
+            </Link>
+          </div>
+        </motion.div>
 
         {/* Phase legend */}
         <div className="flex flex-wrap gap-3 mb-10">

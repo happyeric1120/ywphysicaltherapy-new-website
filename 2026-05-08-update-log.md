@@ -59,6 +59,19 @@ This file records the website changes completed on May 8, 2026.
   - `/about` and `/about-dr-eric-wu` through the shared About page component.
 - Added a new "One-on-One Care" section between the bio and research sections to show Dr. Wu providing treatment directly.
 
+### Meta Ad Landing Page Visuals
+
+- Updated `/lp`, the Meta ads landing page.
+- Added the one-on-one treatment photo to the hero section to establish immediate trust with cold traffic.
+- Changed the hero from centered text-only layout to a desktop two-column layout:
+  - Left: headline, supporting copy, CTA buttons, hours.
+  - Right: Dr. Wu treatment photo and one-on-one care proof caption.
+- Added the movement analysis report image to the "Your First Visit" section.
+- Changed the first-visit section to a desktop two-column layout:
+  - Left: assessment session steps.
+  - Right: AI-assisted movement analysis report proof image.
+- Kept the page focused on assessment booking and avoided adding shockwave/equipment collage imagery to prevent ad funnel distraction.
+
 ## Dev / Hydration Note
 
 - Added `suppressHydrationWarning` to the root `<html>` in `src/app/layout.tsx`.

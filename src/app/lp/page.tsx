@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -118,7 +119,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════
           SECTION 1 — HERO
       ══════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20 overflow-hidden">
+      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-28 pb-20 overflow-hidden">
         {/* Top coral glow */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -137,72 +138,112 @@ export default function LandingPage() {
           }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="type-label mb-6"
-            style={{ color: "#FF7759" }}
-          >
-            Human System Reset™ · YW Physical Therapy · Midtown Manhattan
-          </motion.p>
+        <div className="relative z-10 max-w-6xl mx-auto w-full grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
+          <div className="text-center lg:text-left">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="type-label mb-6"
+              style={{ color: "#FF7759" }}
+            >
+              Human System Reset™ · YW Physical Therapy · Midtown Manhattan
+            </motion.p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="font-display font-bold mb-6"
-            style={{
-              fontSize: "clamp(38px, 6vw, 82px)",
-              lineHeight: 1.04,
-              letterSpacing: "-0.03em",
-              color: "#f5f3ee",
-            }}
-          >
-            Fix the Root Cause —<br className="hidden sm:block" />
-            Not Just the Pain
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="font-body text-lg leading-relaxed max-w-2xl mx-auto mb-10"
-            style={{ color: "rgba(245,243,238,0.62)" }}
-          >
-            AI-assisted physical therapy that identifies and corrects the real source
-            of your pain — not just where it hurts. One-on-one with Dr. Wu, every session.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <BookCTA label="Book Your Assessment" className="text-sm px-9 py-4" />
-            <a
-              href="#method"
-              className="inline-block font-body font-medium text-sm tracking-wide px-9 py-4 transition-all duration-200"
+            <motion.h1
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="font-display font-bold mb-6"
               style={{
-                border: "1px solid rgba(245,243,238,0.18)",
-                color: "rgba(245,243,238,0.65)",
-                borderRadius: "2px",
+                fontSize: "clamp(38px, 6vw, 82px)",
+                lineHeight: 1.04,
+                letterSpacing: "-0.03em",
+                color: "#f5f3ee",
               }}
             >
-              See How It Works ↓
-            </a>
-          </motion.div>
+              Fix the Root Cause —<br className="hidden sm:block" />
+              Not Just the Pain
+            </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.55 }}
-            className="mt-8 type-label"
-            style={{ color: "rgba(245,243,238,0.25)" }}
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="font-body text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10"
+              style={{ color: "rgba(245,243,238,0.62)" }}
+            >
+              AI-assisted physical therapy that identifies and corrects the real source
+              of your pain — not just where it hurts. One-on-one with Dr. Wu, every session.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <BookCTA label="Book Your Assessment" className="text-sm px-9 py-4" />
+              <a
+                href="#method"
+                className="inline-block font-body font-medium text-sm tracking-wide px-9 py-4 transition-all duration-200"
+                style={{
+                  border: "1px solid rgba(245,243,238,0.18)",
+                  color: "rgba(245,243,238,0.65)",
+                  borderRadius: "2px",
+                }}
+              >
+                See How It Works ↓
+              </a>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.55 }}
+              className="mt-8 type-label"
+              style={{ color: "rgba(245,243,238,0.25)" }}
+            >
+              Mon / Wed 10am–4pm · Thu 10am–7pm · By appointment only
+            </motion.p>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.75 }}
+            className="relative max-w-sm sm:max-w-md lg:max-w-none mx-auto w-full"
           >
-            Mon / Wed 10am–4pm · Thu 10am–7pm · By appointment only
-          </motion.p>
+            <div
+              className="relative aspect-[3/4] overflow-hidden"
+              style={{
+                border: "1px solid rgba(255,119,89,0.2)",
+                borderRadius: "2px",
+                boxShadow: "0 28px 90px rgba(0,0,0,0.42)",
+                backgroundColor: "#111111",
+              }}
+            >
+              <Image
+                src="/assets/dr-eric-wu-one-on-one-treatment-midtown-manhattan.png"
+                alt="Dr. Yu-Kuang Wu providing one-on-one physical therapy treatment in Midtown Manhattan"
+                fill
+                priority
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 448px, 520px"
+              />
+            </div>
+            <div
+              className="mt-4 px-5 py-4"
+              style={{
+                border: "1px solid rgba(255,255,255,0.07)",
+                borderRadius: "2px",
+                backgroundColor: "rgba(17,17,17,0.9)",
+              }}
+            >
+              <p className="font-body text-sm leading-relaxed" style={{ color: "rgba(245,243,238,0.66)" }}>
+                One-on-one assessment and treatment with Dr. Wu. No aides, no handoffs.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -522,7 +563,7 @@ export default function LandingPage() {
           SECTION 5 — FIRST VISIT EXPERIENCE
       ══════════════════════════════════════════════ */}
       <section style={{ backgroundColor: "#0a0a0a" }} className="py-24 px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -548,64 +589,90 @@ export default function LandingPage() {
             What happens in your assessment session
           </motion.h2>
 
-          <div className="space-y-4 mb-12">
-            {[
-              {
-                step: "01",
-                title: "AI-Assisted Movement Analysis",
-                body: "10-movement Revenite AI scan identifies your exact compensation patterns — before I touch anything. You see your dysfunction map on screen.",
-              },
-              {
-                step: "02",
-                title: "Full-Body Clinical Assessment",
-                body: "I examine how your whole system moves — mobility, strength, load distribution, neural tension. Not just the area that hurts.",
-              },
-              {
-                step: "03",
-                title: "Immediate Treatment",
-                body: "Your first session includes active treatment, not just evaluation. Most patients feel a measurable difference before they leave.",
-              },
-              {
-                step: "04",
-                title: "A Clear Recovery Roadmap",
-                body: "You leave with a specific plan: what's driving your problem, exactly what we'll do about it, and what to expect over the next few sessions.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={item.step}
-                initial={{ opacity: 0, x: -16 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex gap-6 items-start p-6"
-                style={{
-                  border: "1px solid rgba(255,255,255,0.07)",
-                  borderRadius: "2px",
-                  backgroundColor: "#111111",
-                }}
-              >
-                <span
-                  className="type-label shrink-0 mt-1"
-                  style={{ color: "#FF7759" }}
+          <div className="grid lg:grid-cols-[1fr_0.9fr] gap-10 lg:gap-12 items-start mb-12">
+            <div className="space-y-4">
+              {[
+                {
+                  step: "01",
+                  title: "AI-Assisted Movement Analysis",
+                  body: "10-movement Revenite AI scan identifies your exact compensation patterns — before I touch anything. You see your dysfunction map on screen.",
+                },
+                {
+                  step: "02",
+                  title: "Full-Body Clinical Assessment",
+                  body: "I examine how your whole system moves — mobility, strength, load distribution, neural tension. Not just the area that hurts.",
+                },
+                {
+                  step: "03",
+                  title: "Immediate Treatment",
+                  body: "Your first session includes active treatment, not just evaluation. Most patients feel a measurable difference before they leave.",
+                },
+                {
+                  step: "04",
+                  title: "A Clear Recovery Roadmap",
+                  body: "You leave with a specific plan: what's driving your problem, exactly what we'll do about it, and what to expect over the next few sessions.",
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.step}
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className="flex gap-6 items-start p-6"
+                  style={{
+                    border: "1px solid rgba(255,255,255,0.07)",
+                    borderRadius: "2px",
+                    backgroundColor: "#111111",
+                  }}
                 >
-                  {item.step}
-                </span>
-                <div>
-                  <h3
-                    className="font-body font-medium text-base mb-1.5"
-                    style={{ color: "#f5f3ee" }}
+                  <span
+                    className="type-label shrink-0 mt-1"
+                    style={{ color: "#FF7759" }}
                   >
-                    {item.title}
-                  </h3>
-                  <p
-                    className="font-body text-sm leading-relaxed"
-                    style={{ color: "rgba(245,243,238,0.52)" }}
-                  >
-                    {item.body}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+                    {item.step}
+                  </span>
+                  <div>
+                    <h3
+                      className="font-body font-medium text-base mb-1.5"
+                      style={{ color: "#f5f3ee" }}
+                    >
+                      {item.title}
+                    </h3>
+                    <p
+                      className="font-body text-sm leading-relaxed"
+                      style={{ color: "rgba(245,243,238,0.52)" }}
+                    >
+                      {item.body}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 18 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.12 }}
+              className="relative overflow-hidden"
+              style={{
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: "2px",
+                backgroundColor: "#f5f3ee",
+                boxShadow: "0 24px 80px rgba(0,0,0,0.3)",
+              }}
+            >
+              <div className="relative aspect-[4/5]">
+                <Image
+                  src="/assets/ai-movement-analysis-report-nyc.png"
+                  alt="AI-assisted movement analysis report shown during a first visit assessment"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 460px"
+                />
+              </div>
+            </motion.div>
           </div>
 
           <motion.p

@@ -163,6 +163,67 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Clinical care */}
+      <section className="py-24 bg-brand-black">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative overflow-hidden border border-brand-gold/20 bg-brand-surface shadow-[0_24px_80px_rgba(0,0,0,0.24)]"
+              style={{ borderRadius: "2px" }}
+            >
+              <div className="relative aspect-[3/4]">
+                <Image
+                  src="/assets/dr-eric-wu-one-on-one-treatment-midtown-manhattan.png"
+                  alt="Dr. Yu-Kuang Wu providing one-on-one physical therapy treatment with advanced recovery technology in Midtown Manhattan"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 520px"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+            >
+              <p className="type-label text-brand-gold mb-4">One-on-One Care</p>
+              <h2 className="type-display-m text-brand-white mb-6">
+                One-on-one care, start to finish.
+              </h2>
+              <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed mb-8">
+                <p>
+                  Every session is delivered directly by Dr. Wu — no aides, no handoffs, and no
+                  generic machine time. Treatment may combine hands-on assessment, advanced recovery
+                  technology, and movement retraining based on what your evaluation reveals.
+                </p>
+                <p>
+                  The goal is not to use technology for its own sake. Each tool is selected for a
+                  specific phase of the Human System Reset™: identifying the driver, reducing tissue
+                  barriers, restoring movement, and reinforcing long-term capacity.
+                </p>
+                <p>
+                  This is the practical side of the method: clinical reasoning, precise treatment,
+                  and clear education in a private Midtown Manhattan treatment environment.
+                </p>
+              </div>
+              <Link
+                href="/human-system-reset"
+                className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
+                style={{ borderRadius: "2px" }}
+              >
+                See the Method →
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Research */}
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">

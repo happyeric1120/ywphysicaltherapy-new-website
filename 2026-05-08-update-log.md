@@ -50,6 +50,15 @@ This file records the website changes completed on May 8, 2026.
   - `/movement-analysis-nyc` first content section as a primary proof image.
   - `/ai-movement-evaluation` first content section as a supporting proof image.
 
+### One-on-One Treatment Photo
+
+- Source image: `treatment-photo.PNG`
+- Added asset:
+  - `public/assets/dr-eric-wu-one-on-one-treatment-midtown-manhattan.png`
+- Added image placement:
+  - `/about` and `/about-dr-eric-wu` through the shared About page component.
+- Added a new "One-on-One Care" section between the bio and research sections to show Dr. Wu providing treatment directly.
+
 ## Dev / Hydration Note
 
 - Added `suppressHydrationWarning` to the root `<html>` in `src/app/layout.tsx`.

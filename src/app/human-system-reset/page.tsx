@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Metadata } from "next";
 import BookingButton from "@/components/BookingButton";
 import Link from "next/link";
 
@@ -300,7 +299,7 @@ export default function HumanSystemResetPage() {
               {
                 who: "The Desk Worker",
                 copy: "Chronic neck, shoulder, or low back pain from sustained postures that never fully resolves with stretching or massage.",
-                href: "/desk-worker-pain-nyc",
+                href: "/desk-worker-body-reset",
               },
               {
                 who: "The Chronic Pain Patient",
@@ -386,6 +385,13 @@ export default function HumanSystemResetPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingButton variant="primary" label="Book Your Assessment" />
+            <Link
+              href="/movement-analysis-nyc"
+              className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
+              style={{ borderRadius: "2px" }}
+            >
+              Movement Analysis →
+            </Link>
             <Link
               href="/insurance-pricing"
               className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"

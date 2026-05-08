@@ -5,8 +5,9 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "Method", href: "/human-system-reset" },
-  { label: "Services", href: "/#technology" },
-  { label: "About", href: "/about" },
+  { label: "Movement Analysis", href: "/movement-analysis-nyc" },
+  { label: "Desk Reset", href: "/desk-worker-body-reset" },
+  { label: "About", href: "/about-dr-eric-wu" },
   { label: "Insurance", href: "/insurance-pricing" },
 ];
 

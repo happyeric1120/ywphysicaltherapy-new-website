@@ -34,16 +34,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function NeckPainNYCPage() {
   return (
-    <ServicePageShell
-      eyebrow="Neck Pain · Human System Reset™"
-      h1="Neck Pain Physical Therapy in Manhattan"
-      heroTagline="Neck pain is a posture problem that became a structural problem."
-      lead="Sustained loading from poor posture, sedentary work, and unresolved muscle tension creates cervical dysfunction that compounds over time. I find the driver and reset the system — before it becomes a disc problem."
-      faqs={faqs}
-      ctaHeading="Start Your Neck Pain Assessment"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageShell
+        eyebrow="Neck Pain · Human System Reset™"
+        h1="Neck Pain Physical Therapy in Manhattan"
+        heroTagline="Neck pain is a posture problem that became a structural problem."
+        lead="Sustained loading from poor posture, sedentary work, and unresolved muscle tension creates cervical dysfunction that compounds over time. I find the driver and reset the system — before it becomes a disc problem."
+        faqs={faqs}
+        ctaHeading="Start Your Neck Pain Assessment"
+      >
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">The Pattern</p>
@@ -58,7 +76,7 @@ export default function NeckPainNYCPage() {
               But neck pain rarely resolves by fixing the neck alone. The thoracic spine and shoulder
               complex have to contribute — when they don&apos;t, the cervical spine compensates. I assess
               the whole chain, not just the painful segment, especially for{" "}
-              <Link href="/desk-worker-pain-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              <Link href="/desk-worker-body-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                 desk workers
               </Link>
               .
@@ -140,6 +158,7 @@ export default function NeckPainNYCPage() {
           </div>
         </div>
       </section>
-    </ServicePageShell>
+      </ServicePageShell>
+    </>
   );
 }

@@ -2,13 +2,16 @@ import Link from "next/link";
 
 const navCol = [
   { label: "Method", href: "/human-system-reset" },
-  { label: "About Dr. Wu", href: "/about" },
+  { label: "About Dr. Wu", href: "/about-dr-eric-wu" },
   { label: "Insurance & Pricing", href: "/insurance-pricing" },
   { label: "Blog", href: "/blog" },
   { label: "Book a Session", href: "/book" },
 ];
 
 const servicesCol = [
+  { label: "Movement Analysis", href: "/movement-analysis-nyc" },
+  { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
+  { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
   { label: "TECAR Therapy", href: "/tecar-therapy-nyc" },
   { label: "Class IV Laser", href: "/laser-therapy-nyc" },

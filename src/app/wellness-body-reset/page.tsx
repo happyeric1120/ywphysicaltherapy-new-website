@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const BOOKING_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xZH1VXDVjTyJGYTH-ygHvf3JFgbZ7DLUxk3epoqNZwxFwLcQqb4Fti-C2z8kkThjHPylSlBno";
@@ -118,7 +119,7 @@ export default function WellnessBodyResetPage() {
       {/* ══════════════════════════════════════════════
           SECTION 1 — HERO
       ══════════════════════════════════════════════ */}
-      <section className="grain gold-glow relative pt-32 pb-24 md:pt-44 md:pb-32 bg-brand-black overflow-hidden text-center">
+      <section className="grain gold-glow relative pt-32 pb-24 md:pt-44 md:pb-32 bg-brand-black overflow-hidden">
         <div className="absolute inset-0 bg-brand-black" />
         {/* Dot grid */}
         <div
@@ -129,47 +130,70 @@ export default function WellnessBodyResetPage() {
             backgroundSize: "28px 28px",
           }}
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="type-label text-brand-gold mb-5"
-          >
-            Body Reset Wellness · YW Physical Therapy · Midtown Manhattan
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="type-display-l text-brand-white mb-6"
-          >
-            Understand Your Body.<br className="hidden sm:block" />
-            Move Better.
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="type-body-l text-brand-muted max-w-2xl mx-auto mb-10"
-          >
-            A wellness-focused movement analysis and body reset experience designed to
-            help you feel less tension, move more freely, and understand how your
-            body actually works.
-          </motion.p>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 grid lg:grid-cols-[1fr_0.92fr] gap-12 lg:gap-16 items-center">
+          <div className="text-center lg:text-left">
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="type-label text-brand-gold mb-5"
+            >
+              Body Reset Wellness · YW Physical Therapy · Midtown Manhattan
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="type-display-l text-brand-white mb-6"
+            >
+              Understand Your Body.<br className="hidden sm:block" />
+              Move Better.
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="type-body-l text-brand-muted max-w-2xl mx-auto lg:mx-0 mb-10"
+            >
+              A wellness-focused movement analysis and body reset experience designed to
+              help you feel less tension, move more freely, and understand how your
+              body actually works.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <BookBtn label="Book a Session" />
+              <a
+                href="#pricing"
+                className="inline-block font-body font-medium text-sm tracking-wide px-8 py-4 border border-brand-border text-brand-muted hover:border-brand-white hover:text-brand-white transition-all duration-200"
+                style={{ borderRadius: "2px" }}
+              >
+                View Pricing ↓
+              </a>
+            </motion.div>
+          </div>
+
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.18, duration: 0.75 }}
+            className="relative max-w-md lg:max-w-none mx-auto w-full"
           >
-            <BookBtn label="Book a Session" />
-            <a
-              href="#pricing"
-              className="inline-block font-body font-medium text-sm tracking-wide px-8 py-4 border border-brand-border text-brand-muted hover:border-brand-white hover:text-brand-white transition-all duration-200"
+            <div
+              className="relative aspect-square overflow-hidden border border-brand-gold/25 bg-brand-surface shadow-[0_24px_80px_rgba(0,0,0,0.28)]"
               style={{ borderRadius: "2px" }}
             >
-              View Pricing ↓
-            </a>
+              <Image
+                src="/assets/human-system-reset-studio-equipment-midtown-manhattan.png"
+                alt="Private Body Reset wellness studio and recovery equipment at YW Physical Therapy in Midtown Manhattan"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 448px, 520px"
+              />
+            </div>
           </motion.div>
         </div>
       </section>
@@ -197,7 +221,7 @@ export default function WellnessBodyResetPage() {
             What is Body Reset?
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid lg:grid-cols-[1fr_0.9fr] gap-10 items-start">
             <div className="space-y-5">
               <motion.p
                 initial={{ opacity: 0, y: 12 }}
@@ -224,37 +248,58 @@ export default function WellnessBodyResetPage() {
               </motion.p>
             </div>
 
-            <div className="grid gap-4">
-              {[
-                {
-                  label: "Movement Analysis",
-                  desc: "Understand how your body moves using AI-assisted technology and professional assessment.",
-                },
-                {
-                  label: "Tension Release",
-                  desc: "Targeted advanced wellness techniques to release built-up tension throughout the body.",
-                },
-                {
-                  label: "Movement Optimization",
-                  desc: "Practical guidance to help you move more efficiently and with greater ease in daily life.",
-                },
-              ].map((item, i) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0, x: 16 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex gap-4 items-start p-5 border border-brand-border bg-brand-black"
-                  style={{ borderRadius: "2px" }}
-                >
-                  <span className="shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-brand-gold/60" />
-                  <div>
-                    <p className="font-body font-medium text-brand-white text-sm mb-1">{item.label}</p>
-                    <p className="font-body font-light text-brand-muted text-xs leading-relaxed">{item.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
+            <div className="space-y-5">
+              <motion.div
+                initial={{ opacity: 0, x: 16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="relative overflow-hidden border border-brand-border bg-white shadow-[0_18px_60px_rgba(0,0,0,0.12)]"
+                style={{ borderRadius: "2px" }}
+              >
+                <div className="relative aspect-[4/5]">
+                  <Image
+                    src="/assets/ai-movement-analysis-report-nyc.png"
+                    alt="AI-assisted movement analysis report used during Body Reset wellness sessions"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 440px"
+                  />
+                </div>
+              </motion.div>
+
+              <div className="grid gap-4">
+                {[
+                  {
+                    label: "Movement Analysis",
+                    desc: "Understand how your body moves using AI-assisted technology and professional assessment.",
+                  },
+                  {
+                    label: "Tension Release",
+                    desc: "Targeted advanced wellness techniques to release built-up tension throughout the body.",
+                  },
+                  {
+                    label: "Movement Optimization",
+                    desc: "Practical guidance to help you move more efficiently and with greater ease in daily life.",
+                  },
+                ].map((item, i) => (
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, x: 16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex gap-4 items-start p-5 border border-brand-border bg-brand-black"
+                    style={{ borderRadius: "2px" }}
+                  >
+                    <span className="shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-brand-gold/60" />
+                    <div>
+                      <p className="font-body font-medium text-brand-white text-sm mb-1">{item.label}</p>
+                      <p className="font-body font-light text-brand-muted text-xs leading-relaxed">{item.desc}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

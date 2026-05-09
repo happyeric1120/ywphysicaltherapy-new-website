@@ -72,6 +72,14 @@ This file records the website changes completed on May 8, 2026.
   - Right: AI-assisted movement analysis report proof image.
 - Kept the page focused on assessment booking and avoided adding shockwave/equipment collage imagery to prevent ad funnel distraction.
 
+### Wellness Body Reset Visuals
+
+- Updated `/wellness-body-reset`.
+- Added the studio/equipment collage to the hero section to make the page feel more like a private wellness experience.
+- Changed the hero from centered text-only to a desktop two-column layout.
+- Added the movement analysis report image to the "What is Body Reset?" section to show that the session starts with concrete movement understanding.
+- Avoided shockwave-only imagery on this page to keep the positioning wellness-focused rather than modality-focused.
+
 ## Dev / Hydration Note
 
 - Added `suppressHydrationWarning` to the root `<html>` in `src/app/layout.tsx`.

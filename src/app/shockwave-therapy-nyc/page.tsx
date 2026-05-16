@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
 import Link from "next/link";
+import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
   title: "Shockwave Therapy NYC | Focused & Radial | YW Physical Therapy Near Penn Station",
@@ -34,26 +35,31 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-};
+const pageSchemas = [
+  faqPageSchema(faqs),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Shockwave Therapy NYC", path: "/shockwave-therapy-nyc" },
+  ]),
+  serviceSchema({
+    name: "Shockwave Therapy NYC",
+    description:
+      "Focused and radial shockwave therapy in Midtown Manhattan for chronic tendon, muscle, neck, back, and soft tissue issues.",
+    path: "/shockwave-therapy-nyc",
+    serviceType: "Shockwave Therapy",
+  }),
+];
 
 export default function ShockwaveTherapyNYCPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {pageSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(schema)}
+        />
+      ))}
       <ServicePageShell
         eyebrow="Release Phase · Human System Reset™"
         h1="Shockwave Therapy NYC — Midtown Manhattan"
@@ -178,6 +184,14 @@ export default function ShockwaveTherapyNYCPage() {
               back pain physical therapy
             </Link>{" "}
             plan.
+          </p>
+          <p className="type-body-m text-brand-muted mt-4 max-w-2xl">
+            Not sure which type of shockwave matters? Read the focused vs radial comparison for a
+            clearer explanation of depth, spread, and clinical use cases:{" "}
+            <Link href="/focused-shockwave-vs-radial-shockwave" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              focused shockwave vs radial shockwave
+            </Link>
+            .
           </p>
         </div>
       </section>

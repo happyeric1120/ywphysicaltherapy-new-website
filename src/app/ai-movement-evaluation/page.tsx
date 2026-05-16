@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
+import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
   title: "AI Movement Evaluation NYC | YW Physical Therapy Midtown Manhattan",
@@ -41,26 +42,31 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-};
+const pageSchemas = [
+  faqPageSchema(faqs),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "AI Movement Evaluation", path: "/ai-movement-evaluation" },
+  ]),
+  serviceSchema({
+    name: "AI Movement Evaluation NYC",
+    description:
+      "AI-assisted movement evaluation in Midtown Manhattan to identify compensation patterns, asymmetry, and movement limitations.",
+    path: "/ai-movement-evaluation",
+    serviceType: "AI-assisted movement evaluation",
+  }),
+];
 
 export default function AIMovementEvaluationPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {pageSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(schema)}
+        />
+      ))}
       <ServicePageShell
         eyebrow="AI-Assisted Evaluation · Human System Reset™"
         h1="AI-Assisted Movement Evaluation in NYC"

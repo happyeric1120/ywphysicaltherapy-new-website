@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ServicePageShell from "@/components/ServicePageShell";
 import Link from "next/link";
+import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
   title: "Neck Pain Physical Therapy NYC | Midtown Manhattan | YW Physical Therapy",
@@ -34,26 +35,31 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-};
+const pageSchemas = [
+  faqPageSchema(faqs),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Neck Pain Physical Therapy NYC", path: "/neck-pain-nyc" },
+  ]),
+  serviceSchema({
+    name: "Neck Pain Physical Therapy NYC",
+    description:
+      "One-on-one physical therapy in Midtown Manhattan for desk-related neck pain, cervical tension, and movement-driven neck symptoms.",
+    path: "/neck-pain-nyc",
+    serviceType: "Neck pain physical therapy",
+  }),
+];
 
 export default function NeckPainNYCPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {pageSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(schema)}
+        />
+      ))}
       <ServicePageShell
         eyebrow="Neck Pain · Human System Reset™"
         h1="Neck Pain Physical Therapy in Manhattan"

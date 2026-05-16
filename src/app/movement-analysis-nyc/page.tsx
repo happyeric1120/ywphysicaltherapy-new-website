@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
+import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
   title: "Movement Analysis NYC | Compensation Mapping in Midtown Manhattan",
@@ -41,26 +42,31 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-};
+const pageSchemas = [
+  faqPageSchema(faqs),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Movement Analysis NYC", path: "/movement-analysis-nyc" },
+  ]),
+  serviceSchema({
+    name: "Movement Analysis NYC",
+    description:
+      "One-on-one movement analysis in Midtown Manhattan to identify compensation patterns, asymmetry, and movement limitations.",
+    path: "/movement-analysis-nyc",
+    serviceType: "Movement Analysis",
+  }),
+];
 
 export default function MovementAnalysisNYCPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {pageSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(schema)}
+        />
+      ))}
       <ServicePageShell
         eyebrow="Reveal Phase · Human System Reset™"
         h1="Movement Analysis NYC | Identify Compensation Patterns Before They Become Pain"

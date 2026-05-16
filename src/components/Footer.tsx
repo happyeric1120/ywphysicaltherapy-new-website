@@ -9,10 +9,12 @@ const navCol = [
 ];
 
 const servicesCol = [
+  { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
   { label: "Movement Analysis", href: "/movement-analysis-nyc" },
   { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
   { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
+  { label: "Focused vs Radial Shockwave", href: "/focused-shockwave-vs-radial-shockwave" },
   { label: "TECAR Therapy", href: "/tecar-therapy-nyc" },
   { label: "Class IV Laser", href: "/laser-therapy-nyc" },
   { label: "Compex EMS", href: "/compex-ems-nyc" },

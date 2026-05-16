@@ -97,6 +97,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "YW Physical Therapy — Human System Reset™",
+    description:
+      "Premium one-on-one physical therapy, shockwave therapy, and AI movement analysis near Penn Station in Midtown Manhattan.",
+    images: ["https://ywphysicaltherapy.com/assets/human-system-reset-studio-equipment-midtown-manhattan.png"],
+  },
 };
 
 export default function RootLayout({

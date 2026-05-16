@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
+import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
   title: "Desk Worker Body Reset™ NYC | Neck & Back Recovery for Office Workers",
@@ -41,26 +42,31 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-};
+const pageSchemas = [
+  faqPageSchema(faqs),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Desk Worker Body Reset", path: "/desk-worker-body-reset" },
+  ]),
+  serviceSchema({
+    name: "Desk Worker Body Reset NYC",
+    description:
+      "One-on-one movement and recovery care in Midtown Manhattan for desk-related neck, back, hip, and posture tension.",
+    path: "/desk-worker-body-reset",
+    serviceType: "Desk worker physical therapy and movement optimization",
+  }),
+];
 
 export default function DeskWorkerBodyResetPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {pageSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(schema)}
+        />
+      ))}
       <ServicePageShell
         eyebrow="Desk Worker Recovery · Human System Reset™"
         h1="Desk Worker Body Reset™ | Neck, Back & Posture Recovery for Manhattan Professionals"

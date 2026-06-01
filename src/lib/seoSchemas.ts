@@ -1,4 +1,5 @@
 const SITE_URL = "https://ywphysicaltherapy.com";
+const CLINIC_ID = `${SITE_URL}/#clinic`;
 
 type Faq = {
   q: string;
@@ -16,26 +17,6 @@ type ServiceSchemaInput = {
   path: string;
   serviceType: string;
   areaServed?: string[];
-};
-
-const provider = {
-  "@type": "MedicalBusiness",
-  name: "YW Physical Therapy",
-  url: SITE_URL,
-  telephone: "+13475715717",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "224 W 35th St #301-5",
-    addressLocality: "New York",
-    addressRegion: "NY",
-    postalCode: "10001",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 40.7488,
-    longitude: -73.9967,
-  },
 };
 
 export function faqPageSchema(faqs: Faq[]) {
@@ -80,7 +61,7 @@ export function serviceSchema({
     description,
     serviceType,
     url: `${SITE_URL}${path}`,
-    provider,
+    provider: { "@id": CLINIC_ID },
     areaServed: areaServed.map((area) => ({
       "@type": "Place",
       name: area,

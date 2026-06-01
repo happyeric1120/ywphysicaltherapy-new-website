@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
 import TensionSection from "@/components/home/TensionSection";
 import MethodSection from "@/components/home/MethodSection";
+import MovementMatrixSection from "@/components/home/MovementMatrixSection";
 import AudienceSection from "@/components/home/AudienceSection";
 import TechSection from "@/components/home/TechSection";
 import AboutSection from "@/components/home/AboutSection";
@@ -33,6 +34,7 @@ export default function HomePage() {
       <HeroSection />
       <TensionSection />
       <MethodSection />
+      <MovementMatrixSection />
       <AudienceSection />
       <TechSection />
       <AboutSection />

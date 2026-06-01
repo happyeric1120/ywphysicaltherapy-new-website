@@ -5,62 +5,82 @@ import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 
 const GA_ID = "G-3YEWLJK86Q";
+const SITE_URL = "https://ywphysicaltherapy.com";
 
-const localBusinessSchema = {
+const siteIdentitySchema = {
   "@context": "https://schema.org",
-  "@type": ["MedicalBusiness", "LocalBusiness"],
-  name: "YW Physical Therapy",
-  alternateName: "YW Physical Therapy PLLC",
-  url: "https://ywphysicaltherapy.com",
-  logo: "https://ywphysicaltherapy.com/assets/logo.png",
-  image: "https://ywphysicaltherapy.com/assets/me.jpg",
-  description:
-    "One-on-one physical therapy in Midtown Manhattan using shockwave, TECAR, and AI movement analysis to find and fix the root cause of pain.",
-  telephone: "+13475715717",
-  email: "ywphysicaltherapy@gmail.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "224 W 35th St #301-5",
-    addressLocality: "New York",
-    addressRegion: "NY",
-    postalCode: "10001",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 40.7488,
-    longitude: -73.9967,
-  },
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "10:00", closes: "16:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "10:00", closes: "16:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "10:00", closes: "19:00" },
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: "YW Physical Therapy",
+      publisher: { "@id": `${SITE_URL}/#clinic` },
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": `${SITE_URL}/#clinic`,
+      name: "YW Physical Therapy",
+      legalName: "YW Physical Therapy PLLC",
+      url: `${SITE_URL}/`,
+      medicalSpecialty: "Physiotherapy",
+      telephone: "+1-347-571-5717",
+      email: "ywphysicaltherapy@gmail.com",
+      image: `${SITE_URL}/assets/human-system-reset-studio-equipment-midtown-manhattan.png`,
+      priceRange: "$$$",
+      paymentAccepted: "Cash, Credit Card, HSA, FSA, Insurance",
+      hasMap: "https://www.google.com/maps?cid=8278782662710746620",
+      sameAs: ["https://www.google.com/maps?cid=8278782662710746620"],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "224 W 35th St #301-5",
+        addressLocality: "New York",
+        addressRegion: "NY",
+        postalCode: "10001",
+        addressCountry: "US",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "40.7516",
+        longitude: "-73.9905",
+      },
+      areaServed: { "@type": "City", name: "New York" },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Wednesday"],
+          opens: "10:00",
+          closes: "16:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: "Thursday",
+          opens: "10:00",
+          closes: "19:00",
+        },
+      ],
+      founder: { "@id": `${SITE_URL}/#drwu` },
+      employee: { "@id": `${SITE_URL}/#drwu` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#drwu`,
+      name: "Yu-Kuang Wu",
+      honorificPrefix: "Dr.",
+      jobTitle: "Doctor of Physical Therapy, PhD",
+      worksFor: { "@id": `${SITE_URL}/#clinic` },
+      url: `${SITE_URL}/about-dr-eric-wu/`,
+      image: `${SITE_URL}/assets/me.jpg`,
+      knowsLanguage: ["en", "zh", "yue"],
+      knowsAbout: [
+        "Movement analysis",
+        "Neuroplasticity and mobility recovery",
+        "Motor control",
+        "Spinal cord injury rehabilitation",
+        "Non-invasive rehabilitation technology",
+      ],
+    },
   ],
-  priceRange: "$$",
-  paymentAccepted: "Cash, Credit Card, HSA, FSA, Insurance",
-  medicalSpecialty: "PhysicalTherapy",
-  hasMap: "https://www.google.com/maps?cid=8278782662710746620",
-  sameAs: ["https://www.google.com/maps?cid=8278782662710746620"],
-  employee: {
-    "@type": "Physician",
-    name: "Dr. Yu-Kuang Wu",
-    jobTitle: "Doctor of Physical Therapy",
-    description: "PT, PhD. Researcher at Mount Sinai Hospital and Bronx VA.",
-    knowsAbout: [
-      "Physical Therapy",
-      "Shockwave Therapy",
-      "TECAR Therapy",
-      "Neuroplasticity",
-      "Movement Science",
-    ],
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    bestRating: "5",
-    worstRating: "1",
-    ratingCount: "4",
-  },
 };
 
 const inter = Inter({
@@ -121,7 +141,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
+            __html: JSON.stringify(siteIdentitySchema),
           }}
         />
         <Script

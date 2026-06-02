@@ -3,6 +3,8 @@ import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
+const MOVEMENT_ANALYSIS_BOOKING_URL = "https://calendar.app.google/UBFwrnLQVYxQq7t77";
+
 export const metadata: Metadata = {
   title: "Movement Analysis NYC | Compensation Mapping in Midtown Manhattan",
   description:
@@ -74,6 +76,7 @@ export default function MovementAnalysisNYCPage() {
         phase="REVEAL"
         faqs={faqs}
         ctaHeading="Schedule a Movement Analysis"
+        bookingUrl={MOVEMENT_ANALYSIS_BOOKING_URL}
       >
         <section className="py-24 bg-brand-surface border-y border-brand-border">
           <div className="max-w-5xl mx-auto px-6">

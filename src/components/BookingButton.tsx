@@ -8,6 +8,7 @@ interface BookingButtonProps {
   label?: string;
   className?: string;
   external?: boolean;
+  href?: string;
 }
 
 export default function BookingButton({
@@ -15,6 +16,7 @@ export default function BookingButton({
   label = "Book Your Session",
   className = "",
   external = true,
+  href = BOOKING_URL,
 }: BookingButtonProps) {
   const base =
     "inline-block font-body font-medium text-sm tracking-wide px-7 py-3 rounded-full transition-all duration-200";
@@ -26,7 +28,7 @@ export default function BookingButton({
 
   if (external) {
     return (
-      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={styles}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={styles}>
         {label}
       </a>
     );

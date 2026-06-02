@@ -20,6 +20,7 @@ interface Props {
   children: React.ReactNode;
   faqs?: { q: string; a: string }[];
   ctaHeading?: string;
+  bookingUrl?: string;
 }
 
 export default function ServicePageShell({
@@ -31,6 +32,7 @@ export default function ServicePageShell({
   children,
   faqs,
   ctaHeading = "Book Your Reset Session",
+  bookingUrl,
 }: Props) {
   return (
     <>
@@ -83,7 +85,7 @@ export default function ServicePageShell({
             transition={{ duration: 0.6, delay: 0.32 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <BookingButton variant="primary" label="Book a Consultation" />
+            <BookingButton variant="primary" label="Book a Consultation" href={bookingUrl} />
             <Link
               href="/human-system-reset"
               className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
@@ -179,7 +181,7 @@ export default function ServicePageShell({
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <BookingButton variant="primary" label="Book Your Session" />
+            <BookingButton variant="primary" label="Book Your Session" href={bookingUrl} />
             <Link
               href="/insurance-pricing"
               className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"

@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const GOOGLE_BUSINESS_URL =
-  "https://www.google.com/maps/search/?api=1&query=YW%20Physical%20Therapy%20224%20W%2035th%20St%20%23301-5%20New%20York%20NY%2010001";
+const GOOGLE_BUSINESS_URL = "https://maps.app.goo.gl/o1A2ubZQXV9teScC6";
 
 const reviews = [
   {

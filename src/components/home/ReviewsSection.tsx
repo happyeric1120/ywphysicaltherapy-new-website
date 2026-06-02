@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 
+const GOOGLE_BUSINESS_URL =
+  "https://www.google.com/maps/search/?api=1&query=YW%20Physical%20Therapy%20224%20W%2035th%20St%20%23301-5%20New%20York%20NY%2010001";
+
 const reviews = [
   {
     name: "MC C",
@@ -110,7 +113,7 @@ export default function ReviewsSection() {
           className="mt-10 text-center"
         >
           <a
-            href="https://www.google.com/maps?cid=8278782662710746620"
+            href={GOOGLE_BUSINESS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-sm text-brand-muted hover:text-brand-gold transition-colors tracking-wide"

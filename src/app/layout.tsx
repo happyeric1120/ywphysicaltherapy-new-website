@@ -6,6 +6,8 @@ import SiteChrome from "@/components/SiteChrome";
 
 const GA_ID = "G-3YEWLJK86Q";
 const SITE_URL = "https://ywphysicaltherapy.com";
+const GOOGLE_BUSINESS_URL =
+  "https://www.google.com/maps/search/?api=1&query=YW%20Physical%20Therapy%20224%20W%2035th%20St%20%23301-5%20New%20York%20NY%2010001";
 
 const siteIdentitySchema = {
   "@context": "https://schema.org",
@@ -29,8 +31,8 @@ const siteIdentitySchema = {
       image: `${SITE_URL}/assets/human-system-reset-studio-equipment-midtown-manhattan.png`,
       priceRange: "$$$",
       paymentAccepted: "Cash, Credit Card, HSA, FSA, Insurance",
-      hasMap: "https://www.google.com/maps?cid=8278782662710746620",
-      sameAs: ["https://www.google.com/maps?cid=8278782662710746620"],
+      hasMap: GOOGLE_BUSINESS_URL,
+      sameAs: [GOOGLE_BUSINESS_URL],
       address: {
         "@type": "PostalAddress",
         streetAddress: "224 W 35th St #301-5",

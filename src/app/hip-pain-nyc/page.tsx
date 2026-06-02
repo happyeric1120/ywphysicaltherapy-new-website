@@ -33,7 +33,7 @@ export default function HipPainNYCPage() {
     <ServicePageShell
       eyebrow="Hip Pain · Human System Reset™"
       h1="Hip Pain Physical Therapy in NYC"
-      heroTagline="Most hip pain isn&apos;t a hip problem. It&apos;s a movement problem."
+      heroTagline="Most hip pain isn't a hip problem. It's a movement problem."
       lead="Hip pain can come from the joint, the glutes, the back, or the way your body transfers load. Dr. Wu identifies the actual source, then rebuilds the movement pattern so the pain does not keep returning."
       faqs={faqs}
       ctaHeading="Book Your Hip Pain Assessment"

@@ -154,8 +154,8 @@ export default function ShockwaveTherapyNYCPage() {
             {[
               "Plantar fasciitis / heel pain",
               "Achilles tendinopathy",
-              "Patellar tendinopathy (jumper&apos;s knee)",
-              "Tennis elbow / golfer&apos;s elbow",
+              "Patellar tendinopathy (jumper's knee)",
+              "Tennis elbow / golfer's elbow",
               "Calcific shoulder tendinitis",
               "Hip / gluteal tendon pain",
               "Recurrent muscle trigger points",

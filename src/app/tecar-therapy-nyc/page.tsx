@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What does TECAR feel like?",
-    a: "Most patients feel a gentle, progressive warmth that builds in the tissue — not on the skin. It&apos;s deeply relaxing. Some describe it as &ldquo;heat from the inside.&rdquo; There is no discomfort.",
+    a: "Most patients feel a gentle, progressive warmth that builds in the tissue — not on the skin. It's deeply relaxing. Some describe it as &ldquo;heat from the inside.&rdquo; There is no discomfort.",
   },
   {
     q: "How quickly does TECAR work?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Is TECAR covered by insurance?",
-    a: "TECAR is offered as a self-pay advanced therapy. I&apos;m transparent about pricing upfront — see my Insurance & Pricing page for full details.",
+    a: "TECAR is offered as a self-pay advanced therapy. I'm transparent about pricing upfront — see my Insurance & Pricing page for full details.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function TECARTherapyNYCPage() {
       eyebrow="Release Phase · Human System Reset™"
       h1="TECAR Therapy in Manhattan, NYC"
       heroTagline="Deep thermal healing that works from the inside out."
-      lead="Capacitive and resistive energy transfer (TECAR) uses radiofrequency energy to generate deep, sustained warmth in injured tissue — accelerating healing, reducing fibrosis, and improving circulation at depths ultrasound can&apos;t reach."
+      lead="Capacitive and resistive energy transfer (TECAR) uses radiofrequency energy to generate deep, sustained warmth in injured tissue — accelerating healing, reducing fibrosis, and improving circulation at depths ultrasound can't reach."
       phase="RELEASE"
       faqs={faqs}
       ctaHeading="Book a TECAR Therapy Session"
@@ -129,7 +129,7 @@ export default function TECARTherapyNYCPage() {
               },
               {
                 title: "Fibrosis Reduction",
-                desc: "Post-injury or post-surgical scar tissue impedes function. TECAR&apos;s deep heat softens and reorganizes collagen fibers, restoring tissue extensibility.",
+                desc: "Post-injury or post-surgical scar tissue impedes function. TECAR's deep heat softens and reorganizes collagen fibers, restoring tissue extensibility.",
               },
               {
                 title: "Circulation Enhancement",

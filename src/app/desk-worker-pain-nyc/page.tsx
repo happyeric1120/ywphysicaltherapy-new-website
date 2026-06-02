@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "I have bought a standing desk and done stretching. Why am I still in pain?",
-    a: "Because standing desks and stretching address posture, not the underlying movement dysfunction. If your thoracic spine doesn&apos;t extend, your hip flexors won&apos;t lengthen, and your deep stabilizers aren&apos;t activating — standing up just loads the same dysfunctional system differently.",
+    a: "Because standing desks and stretching address posture, not the underlying movement dysfunction. If your thoracic spine doesn't extend, your hip flexors won't lengthen, and your deep stabilizers aren't activating — standing up just loads the same dysfunctional system differently.",
   },
   {
     q: "How many sessions will I need?",
@@ -29,7 +29,7 @@ const faqs = [
     a: "Yes. Ergonomic assessment is part of the process. I look at monitor height, keyboard position, chair setup, and how you use your devices — and make specific recommendations based on your body mechanics, not generic checklists.",
   },
   {
-    q: "I travel for work and can&apos;t come in consistently. Can you still help?",
+    q: "I travel for work and can't come in consistently. Can you still help?",
     a: "Yes. I build a substantial home program into your care so you can maintain progress between sessions and provide specific guidance for travel (hotel rooms, airplanes, client sites).",
   },
 ];
@@ -39,7 +39,7 @@ export default function DeskWorkerPainNYCPage() {
     <ServicePageShell
       eyebrow="Desk Worker Pain · Human System Reset™"
       h1="Physical Therapy for Desk Workers in NYC"
-      heroTagline="Your chair isn&apos;t the problem. Your movement pattern is."
+      heroTagline="Your chair isn't the problem. Your movement pattern is."
       lead="Neck, back, shoulders, hips — desk work loads your body the same way, every day, until something breaks down. I find where the pattern is failing and fix it at the source — in sessions, not months."
       faqs={faqs}
       ctaHeading="Book Your Desk Worker Assessment"
@@ -56,7 +56,7 @@ export default function DeskWorkerPainNYCPage() {
               },
               {
                 area: "Thoracic Spine",
-                desc: "Thoracic kyphosis becomes fixed. When the mid-back can&apos;t extend, the neck and lower back compensate — creating compressive load in both areas.",
+                desc: "Thoracic kyphosis becomes fixed. When the mid-back can't extend, the neck and lower back compensate — creating compressive load in both areas.",
               },
               {
                 area: "Hip Flexors & Glutes",

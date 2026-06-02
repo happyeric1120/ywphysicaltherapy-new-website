@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "How do I know if my plan has out-of-network benefits?",
-    a: "The easiest way is to call the member services number on the back of your insurance card and ask: \"Do I have out-of-network physical therapy benefits?\" If yes, ask about your out-of-network deductible and reimbursement percentage. I&apos;ll provide a Superbill after each visit so you can submit for reimbursement.",
+    a: "The easiest way is to call the member services number on the back of your insurance card and ask: \"Do I have out-of-network physical therapy benefits?\" If yes, ask about your out-of-network deductible and reimbursement percentage. I'll provide a Superbill after each visit so you can submit for reimbursement.",
   },
   {
     q: "Can I use HSA/FSA?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "What if I have Aetna, Anthem, UnitedHealthcare, or Oscar?",
-    a: "Some plans under these carriers may be covered through my third-party billing partner. Reach out and share your plan details — I&apos;ll check and get back to you within a few business days.",
+    a: "Some plans under these carriers may be covered through my third-party billing partner. Reach out and share your plan details — I'll check and get back to you within a few business days.",
   },
 ];
 

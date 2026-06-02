@@ -19,7 +19,7 @@ const faqs = [
     a: "Many patients notice reduced pain and improved range of motion within 24–48 hours of the first session. For chronic inflammatory conditions, cumulative results build over 6–10 sessions.",
   },
   {
-    q: "What&apos;s the difference between Class III and Class IV laser?",
+    q: "What's the difference between Class III and Class IV laser?",
     a: "Class III (cold) laser uses milliwatt power — limited tissue penetration, minimal biological effect in deep structures. Class IV uses watt-level power, penetrating 5–10cm into tissue to produce meaningful photobiomodulation effects where the pathology actually lives.",
   },
   {
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Is laser covered by insurance?",
-    a: "Class IV laser is available as a self-pay upgrade (often paired with radial shockwave, $60 combined). I&apos;m transparent about all pricing — see my Insurance & Pricing page.",
+    a: "Class IV laser is available as a self-pay upgrade (often paired with radial shockwave, $60 combined). I'm transparent about all pricing — see my Insurance & Pricing page.",
   },
 ];
 

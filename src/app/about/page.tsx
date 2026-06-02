@@ -306,11 +306,11 @@ export default function AboutPage() {
               },
               {
                 title: "Technology with a purpose.",
-                desc: "Every device in the clinic has a designated role in the 4R protocol. Technology is chosen because it&apos;s the right tool for the right tissue at the right phase — not as an impressive add-on.",
+                desc: "Every device in the clinic has a designated role in the 4R protocol. Technology is chosen because it's the right tool for the right tissue at the right phase — not as an impressive add-on.",
               },
               {
                 title: "Transparency, always.",
-                desc: "Dr. Wu explains what he finds, what he&apos;s doing and why, and what you should expect. There are no black boxes in his treatment approach.",
+                desc: "Dr. Wu explains what he finds, what he's doing and why, and what you should expect. There are no black boxes in his treatment approach.",
               },
             ].map((item) => (
               <motion.div

@@ -16,15 +16,15 @@ const faqs = [
   },
   {
     q: "How is Compex EMS different from a TENS unit?",
-    a: "TENS units target sensory nerves for pain relief. Compex EMS targets motor nerves to produce actual muscle contractions — stimulating the same fibers that voluntary exercise would engage. It&apos;s a true rehabilitation and performance tool, not just a pain relief device.",
+    a: "TENS units target sensory nerves for pain relief. Compex EMS targets motor nerves to produce actual muscle contractions — stimulating the same fibers that voluntary exercise would engage. It's a true rehabilitation and performance tool, not just a pain relief device.",
   },
   {
     q: "Can EMS help with muscle atrophy after surgery?",
-    a: "Yes — this is one of EMS&apos;s most evidence-supported applications. Post-surgical inhibition causes rapid muscle loss. Compex EMS activates the muscle safely while voluntary exercise is limited, dramatically reducing atrophy and accelerating return to function.",
+    a: "Yes — this is one of EMS's most evidence-supported applications. Post-surgical inhibition causes rapid muscle loss. Compex EMS activates the muscle safely while voluntary exercise is limited, dramatically reducing atrophy and accelerating return to function.",
   },
   {
     q: "How many EMS sessions do I need?",
-    a: "This depends entirely on your goal. For re-education after injury or surgery: 8–12 sessions. For strength augmentation in athletes: ongoing as part of a performance program. I&apos;ll build a specific EMS protocol into your Human System Reset™ plan.",
+    a: "This depends entirely on your goal. For re-education after injury or surgery: 8–12 sessions. For strength augmentation in athletes: ongoing as part of a performance program. I'll build a specific EMS protocol into your Human System Reset™ plan.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function CompexEMSNYCPage() {
     <ServicePageShell
       eyebrow="Restore & Reinforce Phase · Human System Reset™"
       h1="Compex EMS Therapy in Manhattan, NYC"
-      heroTagline="Your muscles can&apos;t rebuild what they can&apos;t activate."
+      heroTagline="Your muscles can't rebuild what they can't activate."
       lead="Medical-grade electrical muscle stimulation that recruits motor neurons directly — re-educating dormant muscles after injury, accelerating strength gains, and bridging the gap between tissue healing and functional recovery."
       faqs={faqs}
       ctaHeading="Add Compex EMS to Your Recovery Plan"

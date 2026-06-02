@@ -21,7 +21,7 @@ const steps = [
   {
     num: "03",
     title: "Confirm Your Appointment",
-    desc: "You&apos;ll receive a confirmation email with the address, what to bring (insurance card, referral if required), and what to expect.",
+    desc: "You'll receive a confirmation email with the address, what to bring (insurance card, referral if required), and what to expect.",
   },
   {
     num: "04",

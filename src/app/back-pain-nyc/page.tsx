@@ -63,7 +63,7 @@ export default function BackPainNYCPage() {
       <ServicePageShell
         eyebrow="Back Pain · Human System Reset™"
         h1="Back Pain Physical Therapy in Manhattan"
-        heroTagline="You&apos;ve tried everything. You haven&apos;t tried this."
+        heroTagline="You've tried everything. You haven't tried this."
         lead="Chronic back pain rarely lives where it appears. Dr. Wu uses a full-body assessment to find the actual mechanical driver, then systematically removes barriers and rebuilds your movement — so results last."
         faqs={faqs}
         ctaHeading="Start Your Back Pain Assessment"
@@ -145,7 +145,7 @@ export default function BackPainNYCPage() {
               {
                 phase: "REINFORCE",
                 title: "Build Lasting Resilience",
-                desc: "Progressive loading, functional strengthening, and a home program so your spine can tolerate the demands of your life — and you don&apos;t need me forever.",
+                desc: "Progressive loading, functional strengthening, and a home program so your spine can tolerate the demands of your life — and you don't need me forever.",
                 link: null,
               },
             ].map((item) => (

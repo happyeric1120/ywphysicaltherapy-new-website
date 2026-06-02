@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Can I train while doing PT?",
-    a: "In most cases, yes — with appropriate load management. I don&apos;t believe in full rest unless tissue acuity requires it. I work with your training schedule, modifying what needs to be modified while keeping you active.",
+    a: "In most cases, yes — with appropriate load management. I don't believe in full rest unless tissue acuity requires it. I work with your training schedule, modifying what needs to be modified while keeping you active.",
   },
   {
     q: "Do you work with professional athletes?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "What if I have a competition coming up?",
-    a: "Tell me upfront. I&apos;ll build a timeline-aware plan that prioritizes return to performance for your event, while managing tissue load to avoid making the injury worse.",
+    a: "Tell me upfront. I'll build a timeline-aware plan that prioritizes return to performance for your event, while managing tissue load to avoid making the injury worse.",
   },
   {
     q: "I keep getting the same injury. How do you break the cycle?",
@@ -67,7 +67,7 @@ export default function SportsInjuryNYCPage() {
               "Ankle sprains (acute and chronic)",
               "Hamstring strains and tears",
               "Shoulder labrum and rotator cuff",
-              "Tennis / golfer&apos;s elbow",
+              "Tennis / golfer's elbow",
               "Patellar tendinopathy",
               "Achilles tendinopathy",
               "IT band syndrome",

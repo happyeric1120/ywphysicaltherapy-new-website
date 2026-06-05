@@ -289,10 +289,10 @@ export default function NeuralRegulationPage() {
             style={{ borderRadius: "2px" }}
           >
             <Image
-              src="/assets/human-system-profile-report.png"
-              alt="Detailed Human System Profile report with HRV recovery scores and recovery balance metrics"
-              width={800}
-              height={1254}
+              src="/assets/polar-H10-HRV.PNG"
+              alt="Polar H10 heart rate sensor used for HRV recovery assessment at YW Physical Therapy"
+              width={1024}
+              height={1536}
               className="h-auto w-full"
               sizes="(max-width: 1024px) 100vw, 540px"
             />
@@ -327,6 +327,19 @@ export default function NeuralRegulationPage() {
           <h2 className="type-display-m text-brand-white mb-10">
             Measurement first, recovery support second.
           </h2>
+          <div
+            className="relative mb-10 overflow-hidden border border-brand-border bg-white shadow-[0_18px_60px_rgba(0,0,0,0.12)]"
+            style={{ borderRadius: "2px" }}
+          >
+            <Image
+              src="/assets/nuropod-redlight-compression.PNG"
+              alt="Nuropod auricular neuromodulation, red light therapy, and compression therapy setup for Neural Regulation"
+              width={1024}
+              height={1536}
+              className="h-auto w-full"
+              sizes="(max-width: 1024px) 100vw, 960px"
+            />
+          </div>
           <div className="grid md:grid-cols-2 gap-5">
             {interventions.map((item) => (
               <div key={item.title} className="p-8 border border-brand-border bg-white" style={{ borderRadius: "2px" }}>

@@ -18,6 +18,7 @@ const devices = [
   { phase: "RELEASE" as const, name: "Theragun", desc: "Percussive therapy for muscle tension and warm-up.", href: null },
   { phase: "RESTORE" as const, name: "Compex EMS", desc: "Neuromuscular electrical stimulation for muscle re-education.", href: "/compex-ems-nyc" },
   { phase: "RESTORE" as const, name: "Air Compression", desc: "Sequential compression for lymphatic drainage and recovery.", href: null },
+  { phase: "RESTORE" as const, name: "HRV + Neural Regulation", desc: "Recovery-focused assessment and regulation support using Human System Profile™.", href: "/neural-regulation" },
   { phase: "RESTORE" as const, name: "Revenite AI Assessment", desc: "AI-powered movement analysis to map compensation patterns.", href: null },
   { phase: "REINFORCE" as const, name: "TRX Functional Training", desc: "Suspension training for full-body strength and stability.", href: null },
   { phase: "REINFORCE" as const, name: "Smart Gym (Aeke K1)", desc: "Cable resistance system for precise functional loading.", href: null },

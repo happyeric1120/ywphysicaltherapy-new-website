@@ -12,6 +12,7 @@ const servicesCol = [
   { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
   { label: "Movement Analysis", href: "/movement-analysis-nyc" },
   { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
+  { label: "Neural Regulation", href: "/neural-regulation" },
   { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
   { label: "Focused vs Radial Shockwave", href: "/focused-shockwave-vs-radial-shockwave" },

@@ -3,6 +3,7 @@ import HeroSection from "@/components/home/HeroSection";
 import TensionSection from "@/components/home/TensionSection";
 import MethodSection from "@/components/home/MethodSection";
 import MovementMatrixSection from "@/components/home/MovementMatrixSection";
+import NeuralRegulationSection from "@/components/home/NeuralRegulationSection";
 import AudienceSection from "@/components/home/AudienceSection";
 import TechSection from "@/components/home/TechSection";
 import AboutSection from "@/components/home/AboutSection";
@@ -35,6 +36,7 @@ export default function HomePage() {
       <TensionSection />
       <MethodSection />
       <MovementMatrixSection />
+      <NeuralRegulationSection />
       <AudienceSection />
       <TechSection />
       <AboutSection />

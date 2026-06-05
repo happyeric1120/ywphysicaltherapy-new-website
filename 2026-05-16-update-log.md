@@ -166,3 +166,79 @@ Results:
 - Static route generation completed successfully.
 - Sitemap generation completed successfully.
 - Homepage HTML check confirmed the new Movement Dysfunction Matrix renders in server output.
+
+---
+
+# 2026-06-05 Neural Regulation + Booking Update
+
+This section records the Neural Regulation service buildout and booking-routing updates completed on June 5, 2026.
+
+## Source Documents
+
+- Read first: `../neural-regulation-requirement.md`
+
+## Implementation Summary
+
+### Movement Analysis Booking Routing
+
+- Updated `/movement-analysis-nyc` so its service-specific CTA buttons use the Movement Analysis Google Calendar booking link:
+  - Hero button: `Book a Consultation`
+  - Final CTA button: `Book Your Session`
+- Added optional booking URL support to:
+  - `src/components/BookingButton.tsx`
+  - `src/components/ServicePageShell.tsx`
+- Kept the default physical therapy booking link unchanged for other service pages.
+
+### Neural Regulation Service Page
+
+- Added `/neural-regulation`.
+- Built the page as a standalone recovery / wellness service page rather than forcing it into a Human System Reset™ phase shell.
+- Added metadata, canonical URL, Open Graph metadata, FAQ schema, Breadcrumb schema, and Service schema.
+- Added dedicated Neural Regulation booking link:
+  - `https://calendar.app.google/1BkTPd9xWbbQi4v49`
+- Positioned the service as:
+  - HRV-based recovery assessment
+  - Human System Profile™
+  - Neural regulation support
+  - Measure → Regulate → Reassess
+- Used wellness-focused, non-diagnostic language throughout.
+
+### Neural Regulation Visual Assets
+
+- Added `public/assets/human-system-profile-report.png` from the Human System Profile™ report screenshot.
+- Added `public/assets/polar-H10-HRV.PNG` for the Human System Profile™ / HRV measurement section.
+- Added `public/assets/nuropod-redlight-compression.PNG` for the Neural Regulation interventions section.
+- Updated `/neural-regulation` so:
+  - The hero still previews the Human System Profile™ report.
+  - The `How We Measure Recovery / Human System Profile™` section shows the Polar H10 HRV image.
+  - The `Measurement first, recovery support second` interventions section shows the Nuropod / red light / compression setup image.
+
+### Homepage and Site Navigation
+
+- Added `Neural Regulation` to the main navbar.
+- Added `Neural Regulation` to the footer services list.
+- Added `src/components/home/NeuralRegulationSection.tsx`.
+- Inserted the homepage Neural Regulation section after the Movement Dysfunction Matrix and before the Audience section.
+- Added a `HRV + Neural Regulation` card to the homepage Technology section.
+
+## Commits
+
+- `4c6d30b` — Use movement analysis booking link
+- `3fabe69` — Add Neural Regulation service page
+- `4d7048b` — Add Neural Regulation treatment visuals
+
+## Verification
+
+Commands run:
+
+- `npm run lint`
+- `npm run build`
+
+Results:
+
+- Lint passed.
+- Production build passed.
+- `/neural-regulation` generated as a static route.
+- Static route generation completed successfully.
+- Sitemap generation completed successfully.
+- Local HTML check confirmed the Neural Regulation page rendered with the booking link and report image.

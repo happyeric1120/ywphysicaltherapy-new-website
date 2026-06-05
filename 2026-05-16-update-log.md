@@ -221,11 +221,19 @@ This section records the Neural Regulation service buildout and booking-routing 
 - Inserted the homepage Neural Regulation section after the Movement Dysfunction Matrix and before the Audience section.
 - Added a `HRV + Neural Regulation` card to the homepage Technology section.
 
+### Pricing
+
+- Added `Neural Regulation Session` to `/insurance-pricing`.
+- Set self-pay price at `$150`.
+- Described the service as an HRV-based Human System Profile™, guided recovery-focused regulation session, and post-session reassessment.
+- Labeled the service as wellness-focused and self-pay.
+
 ## Commits
 
 - `4c6d30b` — Use movement analysis booking link
 - `3fabe69` — Add Neural Regulation service page
 - `4d7048b` — Add Neural Regulation treatment visuals
+- `83aab72` — Add Neural Regulation pricing
 
 ## Verification
 

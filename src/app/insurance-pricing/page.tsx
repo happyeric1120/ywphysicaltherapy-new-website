@@ -30,6 +30,11 @@ const selfPayTable = [
     price: "$100",
     desc: "10-movement AI scan + auto-generated corrective exercise plan. Great for injury prevention and movement baselines.",
   },
+  {
+    service: "Neural Regulation Session",
+    price: "$150",
+    desc: "HRV-based Human System Profile™, guided recovery-focused regulation session, and post-session reassessment. Wellness-focused and self-pay.",
+  },
 ];
 
 const coverageOptions = [

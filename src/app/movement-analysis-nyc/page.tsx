@@ -87,7 +87,7 @@ export default function MovementAnalysisNYCPage() {
                 <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
                   <p>
                     Movement analysis is the REVEAL phase of the{" "}
-                    <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                    <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                       Human System Reset™
                     </Link>
                     . It looks at how your body organizes movement under real demand: where you

@@ -83,7 +83,7 @@ export default function TechSection() {
               movement floor, AI-assisted assessment tools, shockwave, TECAR, EMS, IASTM, and
               corrective training equipment in one private session environment.
             </p>
-            <Link href="/human-system-reset" className="type-body-m text-brand-gold hover:text-brand-gold-light transition-colors">
+            <Link href="/physical-therapy-near-penn-station" className="type-body-m text-brand-gold hover:text-brand-gold-light transition-colors">
               See how the Human System Reset™ uses this setup →
             </Link>
           </div>

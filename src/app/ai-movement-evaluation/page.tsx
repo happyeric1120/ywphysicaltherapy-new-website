@@ -89,7 +89,7 @@ export default function AIMovementEvaluationPage() {
                   </p>
                   <p>
                     At YW Physical Therapy, AI is used inside the{" "}
-                    <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                    <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                       Human System Reset™
                     </Link>{" "}
                     framework. The technology helps clarify the pattern; Dr. Wu decides what the pattern
@@ -158,7 +158,7 @@ export default function AIMovementEvaluationPage() {
                 For example, desk-related neck tension may be connected to thoracic stiffness,
                 shoulder control, breathing mechanics, or a repetitive screen posture. The plan may
                 then connect to{" "}
-                <Link href="/movement-analysis-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                   movement analysis
                 </Link>
                 ,{" "}

@@ -94,7 +94,7 @@ export default function FocusedVsRadialShockwavePage() {
               <p>
                 At YW Physical Therapy, the choice is based on evaluation findings. Shockwave is
                 not used as a generic add-on; it is part of the RELEASE phase of{" "}
-                <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                   Human System Reset™
                 </Link>
                 , followed by movement retraining when appropriate.
@@ -159,7 +159,7 @@ export default function FocusedVsRadialShockwavePage() {
               </p>
               <p>
                 That is why Dr. Wu may connect shockwave with{" "}
-                <Link href="/movement-analysis-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                   movement analysis
                 </Link>
                 ,{" "}

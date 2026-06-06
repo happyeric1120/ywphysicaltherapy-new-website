@@ -21,6 +21,7 @@ interface Props {
   faqs?: { q: string; a: string }[];
   ctaHeading?: string;
   bookingUrl?: string;
+  showPainMovementLink?: boolean;
 }
 
 export default function ServicePageShell({
@@ -33,6 +34,7 @@ export default function ServicePageShell({
   faqs,
   ctaHeading = "Book Your Reset Session",
   bookingUrl,
+  showPainMovementLink = true,
 }: Props) {
   return (
     <>
@@ -86,13 +88,15 @@ export default function ServicePageShell({
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <BookingButton variant="primary" label="Book a Consultation" href={bookingUrl} />
-            <Link
-              href="/human-system-reset"
-              className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
-              style={{ borderRadius: "2px" }}
-            >
-              See the Full Method
-            </Link>
+            {showPainMovementLink && (
+              <Link
+                href="/physical-therapy-near-penn-station"
+                className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
+                style={{ borderRadius: "2px" }}
+              >
+                See Pain & Movement
+              </Link>
+            )}
           </motion.div>
         </div>
       </section>

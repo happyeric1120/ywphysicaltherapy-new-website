@@ -4,12 +4,11 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Method", href: "/human-system-reset" },
-  { label: "Movement Analysis", href: "/movement-analysis-nyc" },
+  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
   { label: "Neural Regulation", href: "/neural-regulation" },
-  { label: "Desk Reset", href: "/desk-worker-body-reset" },
+  { label: "Conditions", href: "/back-pain-nyc" },
+  { label: "Pricing", href: "/insurance-pricing" },
   { label: "About", href: "/about-dr-eric-wu" },
-  { label: "Insurance", href: "/insurance-pricing" },
 ];
 
 export default function Navbar() {

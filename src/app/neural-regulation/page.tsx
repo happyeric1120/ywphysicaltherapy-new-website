@@ -159,18 +159,25 @@ export default function NeuralRegulationPage() {
         <div className="relative z-10 max-w-6xl mx-auto px-6 grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
             <p className="type-label text-brand-gold mb-5">
-              Neural Regulation · Human System Profile™
+              RESTORE Phase · Human System Reset™
             </p>
             <h1 className="type-display-l text-brand-white mb-6">
-              Understand Your Recovery.
+              Neural Regulation
               <br className="hidden sm:block" />
-              Support Your Nervous System.
+              for Recovery Readiness.
             </h1>
             <p className="type-body-l text-brand-muted max-w-2xl mx-auto lg:mx-0 mb-10">
-              Measure how your system is responding, identify hidden recovery barriers, and explore
-              recovery-focused interventions designed to support nervous system regulation.
+              A RESTORE-phase component of Human System Reset™ that measures recovery signals,
+              identifies hidden recovery barriers, and supports nervous system regulation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                href="/human-system-reset-assessment"
+                className="inline-block font-body font-medium text-sm tracking-wide px-8 py-4 bg-brand-gold text-brand-black hover:opacity-90 transition-opacity"
+                style={{ borderRadius: "2px" }}
+              >
+                Take the Recovery Screening →
+              </Link>
               <BookButton label="Book Now" />
               <Link
                 href="#profile"
@@ -195,6 +202,30 @@ export default function NeuralRegulationPage() {
               className="h-auto w-full"
               sizes="(max-width: 1024px) 100vw, 560px"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-brand-surface border-y border-brand-border">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid md:grid-cols-[1fr_auto] gap-6 items-center p-8 border border-brand-gold/25 bg-white" style={{ borderRadius: "2px" }}>
+            <div>
+              <p className="type-label text-brand-gold mb-3">Not sure if this is right for you?</p>
+              <h2 className="font-display font-bold text-brand-white text-2xl mb-3">
+                Start with the Human System Reset™ Recovery Screening.
+              </h2>
+              <p className="type-body-m text-brand-muted">
+                The questionnaire is private, local-only, and designed to help identify whether an
+                objective HRV assessment may be a useful next step.
+              </p>
+            </div>
+            <Link
+              href="/human-system-reset-assessment"
+              className="inline-block text-center font-body font-medium text-sm tracking-wide px-8 py-4 bg-brand-gold text-brand-black hover:opacity-90 transition-opacity"
+              style={{ borderRadius: "2px" }}
+            >
+              Take Screening →
+            </Link>
           </div>
         </div>
       </section>

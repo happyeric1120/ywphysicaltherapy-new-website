@@ -84,7 +84,7 @@ export default function ShockwaveTherapyNYCPage() {
             <p>
               At YW Physical Therapy, Dr. Wu uses both focused and radial shockwave as part of the
               RELEASE phase of the{" "}
-              <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                 Human System Reset™ method
               </Link>{" "}
               — not as a standalone add-on, but as a precisely chosen tool for specific tissue

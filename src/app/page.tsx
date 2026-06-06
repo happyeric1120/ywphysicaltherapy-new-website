@@ -1,28 +1,27 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
-import TensionSection from "@/components/home/TensionSection";
+import HowWeHelpSection from "@/components/home/HowWeHelpSection";
 import MethodSection from "@/components/home/MethodSection";
-import MovementMatrixSection from "@/components/home/MovementMatrixSection";
-import NeuralRegulationSection from "@/components/home/NeuralRegulationSection";
-import AudienceSection from "@/components/home/AudienceSection";
-import TechSection from "@/components/home/TechSection";
+import FeaturedServicesSection from "@/components/home/FeaturedServicesSection";
+import ConditionsSection from "@/components/home/ConditionsSection";
 import AboutSection from "@/components/home/AboutSection";
+import BookAssessmentSection from "@/components/home/BookAssessmentSection";
 import ReviewsSection from "@/components/home/ReviewsSection";
 import LocationSection from "@/components/home/LocationSection";
 
 export const metadata: Metadata = {
-  title: "Physical Therapy NYC | One-on-One PT Near Penn Station | YW Physical Therapy",
+  title: "Human System Reset™ | Physical Therapy & Recovery NYC | YW Physical Therapy",
   description:
-    "Chronic pain that keeps coming back? One-on-one physical therapy in Midtown Manhattan using shockwave, TECAR, and AI movement analysis to fix the root cause — not just the symptoms.",
+    "Human System Reset™ in Midtown Manhattan: one-on-one physical therapy and recovery combining movement analysis, HRV assessment, recovery technology, and strength retraining.",
   keywords:
-    "physical therapy NYC, physical therapy Midtown Manhattan, PT near Penn Station, shockwave therapy NYC, one-on-one physical therapy New York",
+    "Human System Reset, physical therapy NYC, HRV assessment NYC, neural regulation NYC, movement analysis NYC, physical therapy Midtown Manhattan",
   alternates: {
     canonical: "https://ywphysicaltherapy.com",
   },
   openGraph: {
-    title: "Physical Therapy NYC | YW Physical Therapy | Near Penn Station",
+    title: "Human System Reset™ | YW Physical Therapy NYC",
     description:
-      "One-on-one PT in Midtown Manhattan. Shockwave, TECAR, laser, and AI movement analysis to fix the root cause of your pain.",
+      "A performance-focused physical therapy and recovery clinic using assessment, recovery technology, movement optimization, and nervous system support.",
     url: "https://ywphysicaltherapy.com",
     siteName: "YW Physical Therapy",
     type: "website",
@@ -33,14 +32,13 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <TensionSection />
+      <HowWeHelpSection />
       <MethodSection />
-      <MovementMatrixSection />
-      <NeuralRegulationSection />
-      <AudienceSection />
-      <TechSection />
+      <FeaturedServicesSection />
+      <ConditionsSection />
       <AboutSection />
       <ReviewsSection />
+      <BookAssessmentSection />
       <LocationSection />
     </>
   );

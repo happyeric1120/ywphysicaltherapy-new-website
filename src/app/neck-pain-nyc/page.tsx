@@ -98,7 +98,7 @@ export default function NeckPainNYCPage() {
               shockwave for muscle trigger points
             </Link>
             , and the{" "}
-            <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+            <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
               Human System Reset™ method
             </Link>
             .

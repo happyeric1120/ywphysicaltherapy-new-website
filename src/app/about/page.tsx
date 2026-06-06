@@ -213,7 +213,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <Link
-                href="/human-system-reset"
+                href="/physical-therapy-near-penn-station"
                 className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
                 style={{ borderRadius: "2px" }}
               >
@@ -344,7 +344,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingButton variant="primary" label="Book Your Assessment" />
             <Link
-              href="/human-system-reset"
+              href="/physical-therapy-near-penn-station"
               className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 border border-brand-white/20 text-brand-white hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
               style={{ borderRadius: "2px" }}
             >

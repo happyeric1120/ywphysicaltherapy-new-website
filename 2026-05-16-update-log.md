@@ -250,3 +250,140 @@ Results:
 - Static route generation completed successfully.
 - Sitemap generation completed successfully.
 - Local HTML check confirmed the Neural Regulation page rendered with the booking link and report image.
+
+---
+
+# 2026-06-06 Website Reorganization + Screening Update
+
+This section records the homepage, navigation, Pain & Movement, Neural Regulation, and screening funnel reorganization completed on June 6, 2026.
+
+## Source Documents
+
+- Read first: `../Website-reorganization-requirement_06062026.md`
+- Read first: `../Human_System_Reset_Assessment_PRD.md`
+
+## Implementation Summary
+
+### Human System Reset™ Screening Questionnaire
+
+- Added `/human-system-reset-assessment`.
+- Built a local-only questionnaire for potential clients to self-screen whether an objective HRV assessment may be appropriate.
+- Removed AI interpretation from the concept and kept the output simple, educational, and appointment-focused.
+- Added:
+  - Recovery Load Index
+  - Domain summary bars
+  - Safety / medical caution messaging
+  - CTA to schedule HRV assessment
+- Added links to the screening page from:
+  - `/neural-regulation`
+  - Homepage assessment CTA
+  - Footer
+
+### Homepage Reorganization
+
+- Reframed the homepage around `Human System Reset™` with the headline:
+  - `Human System Reset™`
+  - `Measure. Restore. Adapt.`
+- Reduced the hero headline size so it does not visually collide with the scroll cue.
+- Reorganized the homepage flow to emphasize:
+  - What the clinic does
+  - The 4R framework
+  - Tools and equipment
+  - Common conditions
+  - Reviews
+  - Assessment booking
+  - Location
+- Added new homepage components:
+  - `HowWeHelpSection`
+  - `FeaturedServicesSection`
+  - `ConditionsSection`
+  - `BookAssessmentSection`
+- Replaced the old `Featured Services` cards with a `Tools & Equipment` list grouped by:
+  - Assessment
+  - Tissue Recovery
+  - Neural & Recovery Support
+  - Strength & Retraining
+- Listed clinic tools including:
+  - AI-assisted movement analysis
+  - Polar H10 HRV assessment
+  - Human System Profile™ report
+  - Focused shockwave
+  - Radial shockwave
+  - TECAR therapy
+  - Class IV laser therapy
+  - Manual therapy and IASTM tools
+  - Nuropod auricular neuromodulation
+  - Red and near-infrared light
+  - Sequential pneumatic compression
+  - Compex EMS
+  - Corrective exercise and functional retraining
+
+### Pain & Movement Consolidation
+
+- Reorganized `/physical-therapy-near-penn-station` into the main `Pain & Movement` page.
+- Consolidated the overlapping concepts from:
+  - Human System Reset™ method
+  - Movement Analysis
+  - Physical Therapy near Penn Station
+- Positioned `Pain & Movement` as the musculoskeletal side of Human System Reset™.
+- Added page sections explaining:
+  - Method, movement analysis, and physical therapy are one process
+  - REVEAL → RELEASE → RESTORE → REINFORCE
+  - Movement analysis as the starting point
+  - Common reasons people start care
+  - Penn Station / Midtown location
+- Preserved old routes such as `/human-system-reset` and `/movement-analysis-nyc` so existing links and indexed pages do not break.
+- Updated major internal links so new user flow points to `/physical-therapy-near-penn-station`.
+- Removed the redundant `See Pain & Movement` button from the Pain & Movement page hero.
+
+### Navigation and Site Structure
+
+- Updated the main navbar to:
+  - Pain & Movement
+  - Neural Regulation
+  - Conditions
+  - Pricing
+  - About
+- Removed separate navbar entries that made Method, Movement Analysis, and physical therapy look like unrelated concepts.
+- Updated the footer to prioritize:
+  - Pain & Movement
+  - Recovery Screening
+  - Neural Regulation
+  - Condition pages
+  - Key treatment technology pages
+
+### New Condition Pages
+
+- Added `/shoulder-pain-nyc`.
+- Added `/knee-pain-nyc`.
+- Updated the homepage conditions grid so:
+  - Shoulder Pain links to `/shoulder-pain-nyc`
+  - Running Injury was replaced with Knee Pain and links to `/knee-pain-nyc`
+- Added metadata, canonical URLs, Open Graph metadata, FAQ schema, Breadcrumb schema, and Service schema for both new pages.
+
+### Neural Regulation Refinement
+
+- Repositioned `/neural-regulation` as the RESTORE-phase recovery readiness service within Human System Reset™.
+- Added CTA and supporting copy encouraging visitors to start with the screening questionnaire when appropriate.
+- Kept the dedicated Neural Regulation / HRV booking link:
+  - `https://calendar.app.google/1BkTPd9xWbbQi4v49`
+
+## Verification
+
+Commands run:
+
+- `npm run lint`
+- `npm run build`
+
+Results:
+
+- Lint passed.
+- Production build passed.
+- Static route generation completed successfully.
+- Sitemap generation completed successfully.
+- Local HTML checks confirmed:
+  - Homepage `Pain & Movement`, `Tools & Equipment`, shoulder, and knee links render.
+  - `/physical-therapy-near-penn-station` renders the new Pain & Movement content.
+  - `/shoulder-pain-nyc` renders successfully.
+  - `/knee-pain-nyc` renders successfully.
+  - `/human-system-reset-assessment` renders successfully.

@@ -8,33 +8,33 @@ const steps = [
     number: "01",
     phase: "REVEAL",
     chinese: "找出根源",
-    tagline: "Pain is a symptom. I find the cause.",
-    copy: "Full-body movement assessment powered by AI analysis and clinical expertise. I map how your entire system moves — not just where it hurts.",
-    tags: ["Full-Body Assessment", "Revenite AI", "Postural Screening", "Clinical Interview"],
+    tagline: "Measure before choosing the intervention.",
+    copy: "Physical therapy evaluation, AI movement analysis, and HRV assessment clarify what is limiting movement, recovery, and performance.",
+    tags: ["PT Evaluation", "AI Movement Analysis", "HRV Assessment", "Clinical Reasoning"],
   },
   {
     number: "02",
     phase: "RELEASE",
     chinese: "解除限制",
-    tagline: "Before you can rebuild, you have to let go.",
-    copy: "Precise, layered intervention to remove chronic tension, fascial adhesions, and inflammatory tissue — from surface to source.",
-    tags: ["Manual Therapy", "IASTM", "Theragun", "TECAR Therapy", "Shockwave", "Class IV Laser"],
+    tagline: "Reduce mechanical barriers to movement.",
+    copy: "Targeted hands-on care and recovery technology help address tissue irritability, stiffness, and restrictions when appropriate.",
+    tags: ["Manual Therapy", "Focused Shockwave", "Radial Shockwave", "TECAR Therapy", "Class IV Laser"],
   },
   {
     number: "03",
     phase: "RESTORE",
     chinese: "重建功能",
-    tagline: "Teach your body how to move correctly again.",
-    copy: "Neuromuscular re-education and movement retraining to rebuild efficient, pain-free movement patterns that last.",
-    tags: ["Movement Retraining", "Compex EMS", "Air Compression", "Therapeutic Exercise"],
+    tagline: "Restore recovery capacity and nervous system adaptability.",
+    copy: "Neural Regulation is nested here: HRV-guided recovery, taVNS, red light, and compression may support recovery readiness.",
+    tags: ["Neural Regulation", "HRV-Guided Recovery", "taVNS", "Red / Near-Infrared Light", "Compression"],
   },
   {
     number: "04",
     phase: "REINFORCE",
     chinese: "強化防護",
-    tagline: "A body that's strong doesn't break the same way twice.",
-    copy: "Targeted strength work, functional training, and self-maintenance education — so progress sticks and you don't need me forever.",
-    tags: ["Strength Training", "EMS Power Phase", "Home Program", "Performance Coaching"],
+    tagline: "Build resilience and long-term adaptation.",
+    copy: "Strength training, movement retraining, and performance optimization help your system tolerate real work, sport, and life demands.",
+    tags: ["Strength Training", "Exercise Prescription", "Movement Retraining", "Performance Optimization"],
   },
 ];
 
@@ -61,7 +61,7 @@ export default function MethodSection() {
             transition={{ duration: 0.5 }}
             className="type-label text-brand-gold mb-5"
           >
-            My Proprietary Method
+            Central Framework
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 18 }}
@@ -79,9 +79,20 @@ export default function MethodSection() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="type-body-l text-brand-muted max-w-2xl"
           >
-            A four-phase protocol that systematically identifies, treats, and
-            rebuilds — so results last.
+            Assessment → recovery intervention → adaptation → performance. Individual
+            services are selected as tools inside this process.
           </motion.p>
+        </div>
+
+        <div className="hidden md:grid grid-cols-4 gap-3 mb-10" aria-hidden="true">
+          {steps.map((step, index) => (
+            <div key={step.phase} className="flex items-center gap-3">
+              <div className="flex-1 border border-brand-gold/30 bg-brand-gold-dim px-4 py-3 text-center">
+                <span className="type-label text-brand-gold">{step.phase}</span>
+              </div>
+              {index < steps.length - 1 && <span className="type-label text-brand-muted">→</span>}
+            </div>
+          ))}
         </div>
 
         {/* Steps grid */}
@@ -142,10 +153,10 @@ export default function MethodSection() {
           className="mt-14 text-center"
         >
           <Link
-            href="/human-system-reset"
+            href="/physical-therapy-near-penn-station"
             className="inline-flex items-center gap-2 font-body text-sm text-brand-gold hover:text-brand-gold-light transition-colors tracking-wide"
           >
-            See the Full Method →
+            Explore Pain & Movement →
           </Link>
         </motion.div>
       </div>

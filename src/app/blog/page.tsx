@@ -42,7 +42,7 @@ const posts = [
     title: "5 Signs You Need Physical Therapy (And Why Waiting Makes It Worse)",
     excerpt:
       "Early intervention consistently produces better outcomes than waiting until pain becomes severe. These five signs indicate your movement system needs attention — before it becomes chronic.",
-    href: "/human-system-reset",
+    href: "/physical-therapy-near-penn-station",
   },
 ];
 

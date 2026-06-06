@@ -106,7 +106,7 @@ export default function DeskWorkerPainNYCPage() {
           <div className="grid md:grid-cols-2 gap-8 font-body font-light text-brand-muted text-base leading-relaxed">
             <p>
               Stretching and ergonomic adjustments address symptoms. The{" "}
-              <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+              <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
                 Human System Reset™
               </Link>{" "}
               method

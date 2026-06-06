@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         {/* SEO H1 */}
         <h1 className="sr-only">
-          Physical Therapy in Midtown Manhattan Near Penn Station
+          Human System Reset physical therapy and recovery clinic in Midtown Manhattan
         </h1>
 
         {/* Hero headline */}
@@ -52,12 +52,12 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="type-display-xl text-brand-white mb-6"
+          className="font-display font-bold text-[42px] leading-[1.08] md:text-[64px] lg:text-[72px] text-brand-white mb-6"
           aria-hidden="true"
         >
-          Your body isn&apos;t broken.
+          Human System Reset™
           <br />
-          It just needs a reset.
+          Measure. Restore. Adapt.
         </motion.p>
 
         {/* Supporting copy */}
@@ -67,9 +67,8 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.28 }}
           className="type-body-l text-brand-muted max-w-xl mx-auto mb-10"
         >
-          One-on-one physical therapy in Midtown Manhattan — combining clinical
-          expertise with advanced technology to find the root cause, not just
-          treat the symptoms.
+          One-on-one physical therapy and recovery in Midtown Manhattan combining
+          movement science, recovery technology, and nervous system optimization.
         </motion.p>
 
         {/* CTAs */}
@@ -79,12 +78,12 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.42 }}
           className="flex flex-col sm:flex-row gap-3 justify-center"
         >
-          <BookingButton variant="primary" label="Book a session" />
+          <BookingButton variant="primary" label="Book Assessment" />
           <Link
-            href="/human-system-reset"
+            href="/physical-therapy-near-penn-station"
             className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 rounded-full border border-[rgba(26,26,26,0.2)] text-brand-white hover:border-[rgba(26,26,26,0.5)] hover:bg-[rgba(26,26,26,0.04)] transition-all duration-300"
           >
-            Learn the method
+            Explore Pain & Movement
           </Link>
         </motion.div>
       </div>

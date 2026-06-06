@@ -113,7 +113,7 @@ export default function DeskWorkerBodyResetPage() {
                   phase: "REVEAL",
                   title: "Map the desk worker pattern",
                   desc: "Movement analysis and clinical assessment identify where your body is compensating.",
-                  href: "/movement-analysis-nyc",
+                  href: "/physical-therapy-near-penn-station",
                 },
                 {
                   phase: "RELEASE",
@@ -125,13 +125,13 @@ export default function DeskWorkerBodyResetPage() {
                   phase: "RESTORE",
                   title: "Retrain the stabilizers",
                   desc: "Corrective movement rebuilds neck, shoulder, hip, and trunk control.",
-                  href: "/human-system-reset",
+                  href: "/physical-therapy-near-penn-station",
                 },
                 {
                   phase: "REINFORCE",
                   title: "Make work sustainable",
                   desc: "Desk setup, home program, travel strategy, and load tolerance work help the changes hold.",
-                  href: "/human-system-reset",
+                  href: "/physical-therapy-near-penn-station",
                 },
               ].map((item) => (
                 <div key={item.phase} className="p-7 border border-brand-border bg-brand-surface" style={{ borderRadius: "2px" }}>

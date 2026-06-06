@@ -175,7 +175,7 @@ export default function BackPainNYCPage() {
               Class IV laser
             </Link>{" "}
             when they fit your{" "}
-            <Link href="/human-system-reset" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+            <Link href="/physical-therapy-near-penn-station" className="text-brand-gold hover:text-brand-gold-light transition-colors">
               Human System Reset™
             </Link>{" "}
             plan.

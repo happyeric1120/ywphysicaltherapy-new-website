@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 const navCol = [
-  { label: "Method", href: "/human-system-reset" },
+  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
+  { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "About Dr. Wu", href: "/about-dr-eric-wu" },
   { label: "Insurance & Pricing", href: "/insurance-pricing" },
   { label: "Blog", href: "/blog" },
@@ -10,9 +11,10 @@ const navCol = [
 
 const servicesCol = [
   { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
-  { label: "Movement Analysis", href: "/movement-analysis-nyc" },
+  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
   { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
   { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
   { label: "Focused vs Radial Shockwave", href: "/focused-shockwave-vs-radial-shockwave" },
@@ -21,6 +23,8 @@ const servicesCol = [
   { label: "Compex EMS", href: "/compex-ems-nyc" },
   { label: "Back Pain PT", href: "/back-pain-nyc" },
   { label: "Neck Pain PT", href: "/neck-pain-nyc" },
+  { label: "Shoulder Pain PT", href: "/shoulder-pain-nyc" },
+  { label: "Knee Pain PT", href: "/knee-pain-nyc" },
   { label: "Hip Pain PT", href: "/hip-pain-nyc" },
   { label: "Sports Injury PT", href: "/sports-injury-nyc" },
   { label: "Desk Worker Pain", href: "/desk-worker-pain-nyc" },

@@ -8,6 +8,14 @@ import { useState, useEffect } from "react";
 const BOOKING_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xZH1VXDVjTyJGYTH-ygHvf3JFgbZ7DLUxk3epoqNZwxFwLcQqb4Fti-C2z8kkThjHPylSlBno";
 
+const lpNavLinks = [
+  { label: "Main Site", href: "/" },
+  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
+  { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Pricing", href: "/insurance-pricing" },
+  { label: "About", href: "/about-dr-eric-wu" },
+];
+
 const phases = [
   {
     num: "01",
@@ -92,28 +100,53 @@ export default function LandingPage() {
     >
       {/* ── Minimal Sticky Header ─────────────────────── */}
       <header
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4"
+        className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
         style={{
           backgroundColor: "rgba(10,10,10,0.92)",
           backdropFilter: "blur(14px)",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
-        <div>
-          <span
-            className="font-display font-bold text-sm tracking-tight block"
-            style={{ color: "#f5f3ee" }}
-          >
-            YW Physical Therapy
-          </span>
-          <span
-            className="font-mono text-[9px] tracking-widest uppercase"
-            style={{ color: "rgba(255,119,89,0.7)" }}
-          >
-            Human System Reset™
-          </span>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
+          <Link href="/" className="shrink-0">
+            <span
+              className="font-display font-bold text-sm tracking-tight block"
+              style={{ color: "#f5f3ee" }}
+            >
+              YW Physical Therapy
+            </span>
+            <span
+              className="font-mono text-[9px] tracking-widest uppercase"
+              style={{ color: "rgba(255,119,89,0.7)" }}
+            >
+              Human System Reset™
+            </span>
+          </Link>
+
+          <nav className="hidden items-center gap-7 lg:flex" aria-label="Main website">
+            {lpNavLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-body text-xs font-medium tracking-wide transition-colors"
+                style={{ color: "rgba(245,243,238,0.58)" }}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex shrink-0 items-center gap-3">
+            <Link
+              href="/"
+              className="font-body text-xs font-medium tracking-wide transition-colors lg:hidden"
+              style={{ color: "rgba(245,243,238,0.62)" }}
+            >
+              Main Site
+            </Link>
+            <BookCTA label="Book Now" className="text-xs px-5 py-2.5" />
+          </div>
         </div>
-        <BookCTA label="Book Now" className="text-xs px-5 py-2.5" />
       </header>
 
       {/* ══════════════════════════════════════════════

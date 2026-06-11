@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
   { label: "Neural Regulation", href: "/neural-regulation" },
-  { label: "Conditions", href: "/back-pain-nyc" },
   { label: "Pricing", href: "/insurance-pricing" },
   { label: "About", href: "/about-dr-eric-wu" },
 ];

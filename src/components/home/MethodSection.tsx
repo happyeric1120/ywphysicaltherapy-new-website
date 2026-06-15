@@ -25,8 +25,8 @@ const steps = [
     phase: "RESTORE",
     chinese: "重建功能",
     tagline: "Restore recovery capacity and nervous system adaptability.",
-    copy: "Neural Regulation is nested here: HRV-guided recovery, taVNS, red light, and compression may support recovery readiness.",
-    tags: ["Neural Regulation", "HRV-Guided Recovery", "taVNS", "Red / Near-Infrared Light", "Compression"],
+    copy: "Nervous System Reset is nested here: HRV-guided recovery, taVNS, red light, and compression may support recovery readiness.",
+    tags: ["Nervous System Reset", "HRV-Guided Recovery", "taVNS", "Red / Near-Infrared Light", "Compression"],
   },
   {
     number: "04",
@@ -156,7 +156,7 @@ export default function MethodSection() {
             href="/physical-therapy-near-penn-station"
             className="inline-flex items-center gap-2 font-body text-sm text-brand-gold hover:text-brand-gold-light transition-colors tracking-wide"
           >
-            Explore Pain & Movement →
+            Explore Body Reset →
           </Link>
         </motion.div>
       </div>

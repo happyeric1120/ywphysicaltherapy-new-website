@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
-  { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
+  { label: "Nervous System Reset", href: "/neural-regulation" },
   { label: "Pricing", href: "/insurance-pricing" },
   { label: "About", href: "/about-dr-eric-wu" },
 ];

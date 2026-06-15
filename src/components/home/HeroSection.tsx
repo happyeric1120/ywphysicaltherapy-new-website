@@ -83,7 +83,7 @@ export default function HeroSection() {
             href="/physical-therapy-near-penn-station"
             className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 rounded-full border border-[rgba(26,26,26,0.2)] text-brand-white hover:border-[rgba(26,26,26,0.5)] hover:bg-[rgba(26,26,26,0.04)] transition-all duration-300"
           >
-            Explore Pain & Movement
+            Explore Body Reset
           </Link>
         </motion.div>
       </div>

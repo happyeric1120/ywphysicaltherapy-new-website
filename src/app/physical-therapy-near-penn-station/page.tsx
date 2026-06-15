@@ -6,14 +6,14 @@ import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/se
 const MOVEMENT_ANALYSIS_BOOKING_URL = "https://calendar.app.google/UBFwrnLQVYxQq7t77";
 
 export const metadata: Metadata = {
-  title: "Pain & Movement Physical Therapy NYC | YW Physical Therapy",
+  title: "Body Reset Physical Therapy NYC | YW Physical Therapy",
   description:
-    "Pain & Movement physical therapy in Midtown Manhattan near Penn Station. Movement analysis, Human System Reset™, hands-on care, recovery technology, and strength retraining.",
+    "Body Reset physical therapy in Midtown Manhattan near Penn Station. Movement analysis, Human System Reset™, hands-on care, recovery technology, and strength retraining.",
   alternates: { canonical: "https://ywphysicaltherapy.com/physical-therapy-near-penn-station" },
   openGraph: {
-    title: "Pain & Movement Physical Therapy NYC | YW Physical Therapy",
+    title: "Body Reset Physical Therapy NYC | YW Physical Therapy",
     description:
-      "One-on-one care for pain, posture, movement compensation, and recurring injuries near Penn Station in Midtown Manhattan.",
+      "One-on-one Body Reset care for pain, posture, movement compensation, and recurring injuries near Penn Station in Midtown Manhattan.",
     url: "https://ywphysicaltherapy.com/physical-therapy-near-penn-station",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -61,8 +61,8 @@ const conditions = [
 
 const faqs = [
   {
-    q: "Is Pain & Movement different from the Human System Reset™ method?",
-    a: "It is the same clinical concept presented in patient-friendly language. Pain & Movement is the musculoskeletal side of Human System Reset™: movement analysis, hands-on treatment, recovery technology, and strength retraining.",
+    q: "Is Body Reset different from the Human System Reset™ method?",
+    a: "Body Reset is the musculoskeletal side of Human System Reset™: movement analysis, hands-on treatment, recovery technology, and strength retraining for pain, posture, and recurring movement problems.",
   },
   {
     q: "Is movement analysis a separate service?",
@@ -90,12 +90,12 @@ const pageSchemas = [
   faqPageSchema(faqs),
   breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: "Pain & Movement", path: "/physical-therapy-near-penn-station" },
+    { name: "Body Reset", path: "/physical-therapy-near-penn-station" },
   ]),
   serviceSchema({
-    name: "Pain & Movement Physical Therapy NYC",
+    name: "Body Reset Physical Therapy NYC",
     description:
-      "One-on-one physical therapy near Penn Station for pain, movement compensation, posture issues, and recurring injuries using movement analysis and Human System Reset™.",
+      "One-on-one Body Reset physical therapy near Penn Station for pain, movement compensation, posture issues, and recurring injuries using movement analysis and Human System Reset™.",
     path: "/physical-therapy-near-penn-station",
     serviceType: "Physical therapy",
     areaServed: ["Penn Station", "Midtown Manhattan", "Madison Square Garden", "Herald Square", "Manhattan"],
@@ -113,12 +113,12 @@ export default function PainAndMovementPage() {
         />
       ))}
       <ServicePageShell
-        eyebrow="Pain & Movement · Human System Reset™"
-        h1="Pain & Movement Physical Therapy in Midtown Manhattan"
+        eyebrow="Body Reset · Human System Reset™"
+        h1="Body Reset Physical Therapy in Midtown Manhattan"
         heroTagline="Find the pattern. Treat the barrier. Rebuild the system."
-        lead="This is the musculoskeletal side of Human System Reset™: one-on-one care for pain, posture, movement compensation, and recurring injuries near Penn Station."
+        lead="This is the musculoskeletal reset within Human System Reset™: one-on-one care that finds the driver behind pain, posture strain, movement compensation, and recurring injuries near Penn Station."
         faqs={faqs}
-        ctaHeading="Book a Pain & Movement Assessment"
+        ctaHeading="Book a Body Reset Assessment"
         bookingUrl={MOVEMENT_ANALYSIS_BOOKING_URL}
         showPainMovementLink={false}
       >
@@ -126,7 +126,7 @@ export default function PainAndMovementPage() {
           <div className="max-w-5xl mx-auto px-6">
             <p className="type-label text-brand-gold mb-4">What This Replaces</p>
             <h2 className="type-display-m text-brand-white mb-6">
-              Method, movement analysis, and physical therapy are one process.
+              Movement analysis, treatment, and retraining are one reset process.
             </h2>
             <div className="grid md:grid-cols-2 gap-8 font-body font-light text-brand-muted text-base leading-relaxed">
               <p>
@@ -213,7 +213,7 @@ export default function PainAndMovementPage() {
 
         <section className="py-24 bg-brand-black">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="type-label text-brand-gold mb-4">Common Reasons People Start Here</p>
+            <p className="type-label text-brand-gold mb-4">Common Reasons People Start Body Reset</p>
             <h2 className="type-display-m text-brand-white mb-8">
               For pain, posture, recurring injuries, and movement limitations.
             </h2>

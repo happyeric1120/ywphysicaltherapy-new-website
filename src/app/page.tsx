@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Human System Reset™ in Midtown Manhattan: one-on-one physical therapy and recovery combining movement analysis, HRV assessment, recovery technology, and strength retraining.",
   keywords:
-    "Human System Reset, physical therapy NYC, HRV assessment NYC, neural regulation NYC, movement analysis NYC, physical therapy Midtown Manhattan",
+    "Human System Reset, Body Reset NYC, Nervous System Reset NYC, physical therapy NYC, HRV assessment NYC, neural regulation NYC, movement analysis NYC, physical therapy Midtown Manhattan",
   alternates: {
     canonical: "https://ywphysicaltherapy.com",
   },

@@ -5,15 +5,15 @@ import Link from "next/link";
 
 const pillars = [
   {
-    title: "Pain & Movement",
-    desc: "For neck pain, back pain, posture issues, sports injuries, and movement limitations that need a root-cause plan.",
+    title: "Body Reset",
+    desc: "For neck pain, back pain, posture issues, sports injuries, and movement limitations that need a musculoskeletal reset plan.",
     examples: ["Movement Analysis", "Physical Therapy", "Shockwave", "Strength Retraining"],
     href: "/physical-therapy-near-penn-station",
   },
   {
-    title: "Recovery Systems",
+    title: "Nervous System Reset",
     desc: "For recovery readiness, nervous system load, HRV assessment, and regulation support inside Human System Reset™.",
-    examples: ["HRV Assessment", "Recovery Readiness", "Neural Regulation", "Recovery Technologies"],
+    examples: ["HRV Assessment", "Recovery Readiness", "Nervous System Reset", "Recovery Technologies"],
     href: "/neural-regulation",
   },
 ];

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navCol = [
-  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
+  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "About Dr. Wu", href: "/about-dr-eric-wu" },
   { label: "Insurance & Pricing", href: "/insurance-pricing" },
@@ -11,9 +11,9 @@ const navCol = [
 
 const servicesCol = [
   { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
-  { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
+  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
   { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
-  { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Nervous System Reset", href: "/neural-regulation" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },

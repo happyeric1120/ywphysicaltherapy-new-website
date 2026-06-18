@@ -157,6 +157,37 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
+        <Script id="ga-click-events" strategy="afterInteractive">
+          {`
+            document.addEventListener('click', function(e) {
+              const link = e.target.closest('a');
+              if (!link || typeof gtag !== 'function') return;
+
+              const href = link.href || '';
+
+              if (href.includes('calendar.google.com') || href.includes('calendar.app.google')) {
+                gtag('event', 'book_assessment_click', {
+                  event_category: 'booking',
+                  event_label: href
+                });
+              }
+
+              if (href.startsWith('tel:')) {
+                gtag('event', 'phone_click', {
+                  event_category: 'contact',
+                  event_label: href
+                });
+              }
+
+              if (href.startsWith('mailto:')) {
+                gtag('event', 'email_click', {
+                  event_category: 'contact',
+                  event_label: href
+                });
+              }
+            });
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col bg-brand-black text-brand-white" suppressHydrationWarning>
         <SiteChrome>{children}</SiteChrome>

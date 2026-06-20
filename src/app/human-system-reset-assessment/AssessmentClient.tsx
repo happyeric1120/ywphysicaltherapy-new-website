@@ -95,7 +95,7 @@ function getCategory(score: number) {
     return {
       title: "Moderate Recovery Load",
       summary:
-        "You reported some recovery stress signals. HRV assessment may help clarify recovery readiness and nervous system adaptability.",
+        "You reported some recovery stress signals. HRV assessment may help clarify recovery readiness and baseline recovery patterns.",
       recommendation: "Consider HRV assessment",
     };
   }
@@ -108,9 +108,9 @@ function getCategory(score: number) {
     };
   }
   return {
-    title: "Strong Neural Regulation Candidate",
+      title: "Strong Recovery Assessment Candidate",
     summary:
-      "Your responses suggest a higher recovery load pattern. A Human System Profile™ and Neural Regulation session may help identify how your system is responding.",
+      "Your responses suggest a higher recovery load pattern. A Human System Profile™ and recovery-focused session may help identify your current baseline.",
     recommendation: "Strong candidate for HRV assessment",
   };
 }
@@ -118,7 +118,7 @@ function getCategory(score: number) {
 function getSafetyNotes(selected: string[]) {
   const notes: string[] = [];
   if (selected.includes("Pacemaker or implanted electronic device") || selected.includes("History of seizures")) {
-    notes.push("Auricular neuromodulation may not be appropriate without provider review.");
+    notes.push("Sensory-based recovery tools may not be appropriate without provider review.");
   }
   if (selected.includes("Currently pregnant")) {
     notes.push("Please consult your healthcare provider before scheduling recovery-focused interventions.");
@@ -201,7 +201,7 @@ export default function AssessmentClient() {
           </h1>
           <p className="type-body-l text-brand-muted max-w-2xl mx-auto">
             A private, local-only questionnaire to help you decide whether an objective HRV
-            Assessment or Neural Regulation session may be a good next step.
+            Assessment or recovery-focused session may be a good next step.
           </p>
         </div>
       </section>
@@ -440,7 +440,7 @@ export default function AssessmentClient() {
               <h3 className="type-display-m text-brand-white mb-5">Start with HRV assessment.</h3>
               <p className="type-body-l text-brand-muted max-w-2xl mx-auto mb-8">
                 This questionnaire provides subjective screening. HRV assessment provides objective
-                data about recovery readiness and nervous system adaptability.
+                data about recovery readiness and baseline recovery patterns.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -459,7 +459,7 @@ export default function AssessmentClient() {
                   className="inline-block font-body font-medium text-sm tracking-wide px-8 py-4 border border-brand-border text-brand-white hover:border-brand-gold hover:text-brand-gold transition-colors"
                   style={{ borderRadius: "2px" }}
                 >
-                  Schedule Neural Regulation →
+                  Schedule Recovery Session →
                 </a>
                 <Link
                   href="/physical-therapy-near-penn-station"

@@ -6,14 +6,14 @@ import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/se
 const BOOKING_URL = "https://calendar.app.google/1BkTPd9xWbbQi4v49";
 
 export const metadata: Metadata = {
-  title: "Nervous System Reset NYC | HRV Recovery Assessment | YW Physical Therapy",
+  title: "Neural Regulation & Recovery Assessment NYC | YW Physical Therapy",
   description:
-    "Nervous System Reset in Midtown Manhattan using HRV assessment, Human System Profile™, and recovery-focused interventions to support nervous system regulation.",
+    "Neural Regulation and recovery-focused assessment in Midtown Manhattan using HRV wellness metrics, Human System Profile™, and non-invasive wellness technology.",
   alternates: { canonical: "https://ywphysicaltherapy.com/neural-regulation" },
   openGraph: {
-    title: "Nervous System Reset NYC | YW Physical Therapy",
+    title: "Neural Regulation & Recovery Assessment NYC | YW Physical Therapy",
     description:
-      "Understand your recovery with HRV assessment, Human System Profile™, and Nervous System Reset support near Penn Station.",
+      "Understand your recovery with Neural Regulation, HRV wellness metrics, Human System Profile™, and recovery-focused support near Penn Station.",
     url: "https://ywphysicaltherapy.com/neural-regulation",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 
 const influenceItems = [
   "Recovery Capacity",
-  "Stress Resilience",
+  "Stress Load",
   "Muscle Tension",
   "Breathing Patterns",
   "Focus & Mental Clarity",
   "Sleep Quality",
   "Movement Readiness",
-  "Energy Regulation",
+  "Energy Patterns",
 ];
 
 const signs = [
@@ -43,7 +43,7 @@ const signs = [
 
 const profileMetrics = [
   "Recovery Readiness",
-  "Nervous System Flexibility",
+  "Recovery Flexibility",
   "Adaptive Capacity",
   "Recovery Responsiveness",
   "System Load",
@@ -65,18 +65,18 @@ const states = [
   },
   {
     title: "Balanced Recovery",
-    desc: "Your nervous system demonstrates stronger recovery readiness and physiological flexibility.",
+    desc: "Your measurements suggest stronger recovery readiness and physiological flexibility.",
   },
 ];
 
 const interventions = [
   {
     title: "HRV Assessment",
-    desc: "Provides objective insight into recovery readiness and autonomic nervous system function.",
+    desc: "Provides objective insight into recovery readiness and wellness-related recovery patterns.",
   },
   {
-    title: "Auricular Neuromodulation (taVNS)",
-    desc: "Using the Nuropod system, gentle stimulation is applied to specific regions of the external ear associated with vagal pathways. Current research is investigating the role of auricular neuromodulation in autonomic regulation and recovery support.",
+    title: "Sensory-Based Recovery Support",
+    desc: "Using the Nuropod system, gentle ear-based sensory input may be included as part of a relaxation-focused recovery experience when appropriate.",
   },
   {
     title: "Red Light Therapy",
@@ -90,7 +90,7 @@ const interventions = [
 
 const steps = [
   ["01", "Baseline Human System Profile™"],
-  ["02", "Guided Nervous System Reset Session"],
+  ["02", "Guided Recovery Support Session"],
   ["03", "Post-Session Assessment"],
   ["04", "Review Your Recovery Response"],
 ];
@@ -98,7 +98,7 @@ const steps = [
 const faqs = [
   {
     q: "Is this a medical treatment?",
-    a: "No. Nervous System Reset is a wellness and recovery-focused service designed to support recovery awareness and physiological regulation. It is educational and is not intended to diagnose, treat, or replace medical care.",
+    a: "No. This is a wellness and recovery-focused service designed to support recovery awareness. It is educational and is not intended to diagnose, treat, or replace medical care.",
   },
   {
     q: "Is the session painful?",
@@ -118,18 +118,18 @@ const pageSchemas = [
   faqPageSchema(faqs),
   breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: "Nervous System Reset", path: "/neural-regulation" },
+    { name: "Neural Regulation", path: "/neural-regulation" },
   ]),
   serviceSchema({
-    name: "Nervous System Reset NYC",
+    name: "Neural Regulation & Recovery Assessment NYC",
     description:
-      "Recovery-focused HRV assessment and Nervous System Reset session in Midtown Manhattan using Human System Profile™, neuromodulation, red light, and compression therapy when appropriate.",
+      "Neural Regulation and recovery-focused HRV assessment in Midtown Manhattan using Human System Profile™, non-invasive wellness technology, red light, and compression therapy when appropriate.",
     path: "/neural-regulation",
-    serviceType: "Nervous System Reset",
+    serviceType: "Neural Regulation and recovery assessment",
   }),
 ];
 
-function BookButton({ label = "Book Your Nervous System Reset Session" }: { label?: string }) {
+function BookButton({ label = "Book Your Recovery Assessment" }: { label?: string }) {
   return (
     <a
       href={BOOKING_URL}
@@ -162,13 +162,14 @@ export default function NeuralRegulationPage() {
               RESTORE Phase · Human System Reset™
             </p>
             <h1 className="type-display-l text-brand-white mb-6">
-              Nervous System Reset
+              Neural Regulation
               <br className="hidden sm:block" />
-              for Recovery Readiness.
+              & Recovery Assessment.
             </h1>
             <p className="type-body-l text-brand-muted max-w-2xl mx-auto lg:mx-0 mb-10">
-              A RESTORE-phase component of Human System Reset™ that measures recovery signals,
-              identifies hidden recovery barriers, and supports nervous system regulation.
+              A RESTORE-phase component of Human System Reset™ that combines HRV wellness
+              metrics, recovery screening, and non-invasive wellness tools to support a
+              recovery-focused experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -195,7 +196,7 @@ export default function NeuralRegulationPage() {
           >
             <Image
               src="/assets/Hrv-result-pic.PNG"
-              alt="HRV recovery assessment result showing nervous system reset metrics"
+              alt="HRV recovery assessment result showing recovery metrics"
               width={1024}
               height={1536}
               priority
@@ -232,7 +233,7 @@ export default function NeuralRegulationPage() {
 
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">Why Nervous System Reset?</p>
+          <p className="type-label text-brand-gold mb-4">Why Neural Regulation?</p>
           <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
             <h2 className="type-display-m text-brand-white">
               Most people know when they feel tired. Very few know why.
@@ -240,12 +241,12 @@ export default function NeuralRegulationPage() {
             <div className="space-y-5 type-body-l text-brand-muted">
               <p>
                 Long work hours, poor sleep, chronic stress, travel, pain, intensive training, and
-                constant mental demands may all influence how your nervous system functions and
-                recovers.
+                constant mental demands may all influence how recovered and ready you feel.
               </p>
               <p>
-                Nervous System Reset combines objective physiological assessment with targeted recovery
-                strategies to help you better understand and support your recovery process.
+                Neural Regulation is the recovery-focused part of Human System Reset™. It combines
+                objective recovery metrics with personalized wellness strategies to help you better
+                understand and support your recovery process.
               </p>
             </div>
           </div>
@@ -254,9 +255,9 @@ export default function NeuralRegulationPage() {
 
       <section className="py-24 bg-brand-black">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">System Influence</p>
+          <p className="type-label text-brand-gold mb-4">Recovery Factors</p>
           <h2 className="type-display-m text-brand-white mb-10">
-            Your nervous system influences more than you think.
+            Recovery is influenced by more than you think.
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="grid sm:grid-cols-2 gap-3">
@@ -294,9 +295,9 @@ export default function NeuralRegulationPage() {
             <h2 className="type-display-m text-brand-white mb-6">Human System Profile™</h2>
             <div className="space-y-5 type-body-m text-brand-muted mb-8">
               <p>
-                Every Nervous System Reset session begins with a Heart Rate Variability (HRV)
-                assessment. Rather than relying on guesswork, we measure objective physiological
-                signals to better understand how your nervous system is responding.
+                Every Recovery Assessment session begins with a Heart Rate Variability (HRV)
+                assessment. Rather than relying on guesswork, we measure objective recovery-related
+                signals to better understand your current baseline.
               </p>
               <p>
                 You receive a report designed to translate complex physiological data into practical
@@ -354,7 +355,7 @@ export default function NeuralRegulationPage() {
 
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="type-label text-brand-gold mb-4">Nervous System Reset Interventions</p>
+          <p className="type-label text-brand-gold mb-4">Recovery Support Tools</p>
           <h2 className="type-display-m text-brand-white mb-10">
             Measurement first, recovery support second.
           </h2>
@@ -364,7 +365,7 @@ export default function NeuralRegulationPage() {
           >
             <Image
               src="/assets/nuropod-redlight-compression.PNG"
-              alt="Nuropod auricular neuromodulation, red light therapy, and compression therapy setup for Nervous System Reset"
+              alt="Nuropod sensory-based recovery support, red light therapy, and compression therapy setup"
               width={1024}
               height={1536}
               className="h-auto w-full"
@@ -384,11 +385,10 @@ export default function NeuralRegulationPage() {
               Why combine multiple approaches?
             </h3>
             <p className="type-body-l text-brand-muted">
-              Recovery is influenced by multiple physiological systems. Nervous System Reset combines
-              measurement, neuromodulation, circulatory support, and recovery-focused interventions
-              to create a structured recovery experience. Rather than simply helping you relax, the
-              goal is to better understand how your system responds and support recovery in a
-              measurable way.
+              Recovery is influenced by multiple factors. This session combines measurement,
+              comfort-focused sensory input, circulatory support, and recovery-focused tools
+              to create a structured recovery experience. The goal is to better understand
+              individual responses and support recovery in a measurable way.
             </p>
           </div>
         </div>
@@ -397,7 +397,7 @@ export default function NeuralRegulationPage() {
       <section className="py-24 bg-brand-black">
         <div className="max-w-6xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">What To Expect</p>
-          <h2 className="type-display-m text-brand-white mb-10">Measure → Regulate → Reassess</h2>
+          <h2 className="type-display-m text-brand-white mb-10">Measure → Support → Re-measure</h2>
           <div className="grid md:grid-cols-4 gap-5">
             {steps.map(([num, title]) => (
               <div key={num} className="p-7 border border-brand-border bg-brand-surface" style={{ borderRadius: "2px" }}>
@@ -441,7 +441,7 @@ export default function NeuralRegulationPage() {
           <h2 className="type-display-m text-brand-white mb-6">How recovered is your system?</h2>
           <p className="type-body-l text-brand-muted mb-10 max-w-xl mx-auto">
             Most people track their workouts. Few people track their recovery. Start with a Human
-            System Profile™ and discover how your nervous system is responding.
+            System Profile™ and understand your recovery baseline.
           </p>
           <BookButton />
         </div>

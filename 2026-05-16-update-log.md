@@ -146,3 +146,120 @@ Results:
 - Sitemap generation completed successfully.
 - Local server was restarted successfully on `http://localhost:3000`.
 - Local check confirmed `/neural-regulation` returned `200` and included the new `Hrv-result-pic.PNG` hero image.
+
+---
+
+# 2026-06-20 Human System Reset™ Umbrella + Messaging Update
+
+This section records the June 2026 structure and messaging update for the main website.
+
+## Implementation Summary
+
+### Navigation Update
+
+- Updated the primary navigation to:
+  - Home
+  - Movement Analysis
+  - Physical Therapy
+  - Shockwave Therapy
+  - Human System Reset™
+  - About
+  - Book Now
+- Exposed the existing `/ai-movement-evaluation` page as the primary Movement Analysis destination.
+- Kept existing URLs unchanged.
+
+### Homepage Restructure
+
+- Reframed the hero around visitor needs: pain, recovery, movement, assessment, and tracking.
+- Updated the first major homepage section to `How Can We Help?`.
+- Added two service pathways:
+  - Pain & Injury Recovery
+  - Recovery & Resilience
+- Routed both pathways into the Human System Reset™ umbrella page using anchors:
+  - `/human-system-reset#body-reset`
+  - `/human-system-reset#neural-regulation`
+- Added a new `Start With Measurement` homepage section linking to:
+  - AI Movement Analysis
+  - Physical Therapy Evaluation
+  - Human System Reset™
+- Reintroduced a homepage Neural Regulation section so the service is visible before the 4R Framework.
+
+### Human System Reset™ Umbrella Positioning
+
+- Repositioned `/human-system-reset` as the umbrella framework for:
+  - Body Reset
+  - Neural Regulation
+- Added a `The Big Umbrella` section explaining how both pathways fit under Human System Reset™.
+- Added a `Why Neural Regulation Matters` section explaining recovery readiness, stress load, fatigue, sleep, work demand, and resilience in conservative language.
+- Added `Measure → Support → Re-measure` as the session experience.
+- Preserved the existing 4R Framework:
+  - Reveal
+  - Release
+  - Restore
+  - Reinforce
+
+### 4R Framework Integration
+
+- Updated the homepage 4R section so Body Reset and Neural Regulation both fit inside the same process.
+- Updated the Human System Reset™ 4R section to integrate Neural Regulation interventions across:
+  - REVEAL: HRV wellness metrics, recovery screening, lifestyle factors
+  - RELEASE: relaxation-focused recovery support and non-invasive wellness tools
+  - RESTORE: red / near-infrared light, compression, recovery reassessment
+  - REINFORCE: recovery habits, follow-up measurement, progress tracking
+
+### Movement Analysis Positioning
+
+- Reframed `/ai-movement-evaluation` as `AI-Assisted Movement Analysis`.
+- Focused copy on movement quality, posture, mobility, balance, asymmetry, compensation strategies, and recurring pain patterns.
+- Avoided sports-performance lab positioning.
+
+### Compliance and Claim Softening
+
+- Softened language around recovery, Neural Regulation, HRV, and wellness tools.
+- Removed high-risk language related to:
+  - taVNS
+  - vagus / vagal claims
+  - neuromodulation
+  - autonomic regulation
+  - treating stress or anxiety
+  - improving HRV or vagal tone
+- Replaced with more conservative language such as:
+  - recovery-focused experience
+  - HRV wellness metrics
+  - non-invasive wellness technology
+  - sensory-based recovery support
+  - relaxation-focused protocols
+  - recovery assessment and monitoring
+
+### Technology and Testimonials
+
+- Moved technology lower in the story and reframed it as support for the plan.
+- Updated technology hierarchy around:
+  - What We Measure
+  - What We Support
+  - How We Track Progress
+  - Technologies Used
+- Added testimonial disclaimer:
+  - Individual experiences and results may vary. Testimonials reflect personal experiences and are not a guarantee of future outcomes.
+
+## Verification
+
+Commands run:
+
+- `npm run build`
+- Localhost HTML probes for:
+  - `/`
+  - `/human-system-reset`
+  - `/ai-movement-evaluation`
+  - `/neural-regulation`
+- Search checks for high-risk compliance terms.
+
+Results:
+
+- Production build passed.
+- Static route generation completed successfully.
+- Sitemap generation completed successfully.
+- Homepage rendered the updated pathways, Start With Measurement, and Neural Regulation section.
+- Human System Reset™ page rendered the umbrella structure, Neural Regulation explanation, Measure → Support → Re-measure, and updated 4R copy.
+- Movement Analysis page rendered the updated AI-Assisted Movement Analysis positioning.
+- Search checks did not find the targeted high-risk claim language in the updated source areas.

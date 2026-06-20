@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
-  { label: "Nervous System Reset", href: "/neural-regulation" },
-  { label: "Pricing", href: "/insurance-pricing" },
+  { label: "Home", href: "/" },
+  { label: "Movement Analysis", href: "/ai-movement-evaluation" },
+  { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
+  { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
+  { label: "Human System Reset™", href: "/human-system-reset" },
   { label: "About", href: "/about-dr-eric-wu" },
 ];
 
@@ -50,12 +52,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="font-body text-sm font-normal text-[rgba(26,26,26,0.78)] hover:text-brand-white transition-colors"
+                className="font-body text-xs lg:text-sm font-normal text-[rgba(26,26,26,0.78)] hover:text-brand-white transition-colors"
               >
                 {link.label}
               </Link>

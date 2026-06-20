@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         {/* SEO H1 */}
         <h1 className="sr-only">
-          Human System Reset physical therapy and recovery clinic in Midtown Manhattan
+          Physical therapy, movement analysis, and recovery support in Midtown Manhattan
         </h1>
 
         {/* Hero headline */}
@@ -55,9 +55,9 @@ export default function HeroSection() {
           className="font-display font-bold text-[42px] leading-[1.08] md:text-[64px] lg:text-[72px] text-brand-white mb-6"
           aria-hidden="true"
         >
-          Human System Reset™
+          Pain, recovery, and movement
           <br />
-          Measure. Restore. Adapt.
+          measured clearly.
         </motion.p>
 
         {/* Supporting copy */}
@@ -67,8 +67,8 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.28 }}
           className="type-body-l text-brand-muted max-w-xl mx-auto mb-10"
         >
-          One-on-one physical therapy and recovery in Midtown Manhattan combining
-          movement science, recovery technology, and nervous system optimization.
+          One-on-one physical therapy and recovery support in Midtown Manhattan using
+          clinical assessment, AI Movement Analysis, and progress tracking.
         </motion.p>
 
         {/* CTAs */}
@@ -80,10 +80,10 @@ export default function HeroSection() {
         >
           <BookingButton variant="primary" label="Book Assessment" />
           <Link
-            href="/physical-therapy-near-penn-station"
+            href="/ai-movement-evaluation"
             className="inline-block font-body font-medium text-sm tracking-wide px-7 py-3 rounded-full border border-[rgba(26,26,26,0.2)] text-brand-white hover:border-[rgba(26,26,26,0.5)] hover:bg-[rgba(26,26,26,0.04)] transition-all duration-300"
           >
-            Explore Body Reset
+            Explore Movement Analysis
           </Link>
         </motion.div>
       </div>

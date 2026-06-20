@@ -4,14 +4,14 @@ import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
-  title: "AI Movement Evaluation NYC | YW Physical Therapy Midtown Manhattan",
+  title: "AI Movement Analysis NYC | YW Physical Therapy Midtown Manhattan",
   description:
-    "AI-assisted movement evaluation in NYC to help identify compensation patterns, mobility limits, and movement asymmetries. One-on-one care in Midtown Manhattan.",
+    "AI-assisted movement analysis in NYC to help identify movement quality, posture, mobility limits, balance deficits, and asymmetries. One-on-one care in Midtown Manhattan.",
   alternates: { canonical: "https://ywphysicaltherapy.com/ai-movement-evaluation" },
   openGraph: {
-    title: "AI Movement Evaluation NYC | YW Physical Therapy",
+    title: "AI Movement Analysis NYC | YW Physical Therapy",
     description:
-      "AI-assisted movement evaluation in Midtown Manhattan for chronic tension, posture issues, and movement optimization.",
+      "AI-assisted movement analysis in Midtown Manhattan for posture, mobility, balance, asymmetry, and recurring pain patterns.",
     url: "https://ywphysicaltherapy.com/ai-movement-evaluation",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What is AI-assisted movement evaluation?",
-    a: "AI-assisted movement evaluation uses motion analysis tools to help identify visible asymmetries, compensation patterns, and movement limitations. Dr. Wu interprets the findings clinically and uses them to guide care.",
+    q: "What is AI-assisted movement analysis?",
+    a: "AI-assisted movement analysis uses motion analysis tools to help identify visible asymmetries, compensation patterns, posture changes, balance deficits, and movement limitations. Dr. Wu interprets the findings clinically and uses them to guide care.",
   },
   {
     q: "Does AI replace the physical therapist?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "What can AI help analyze?",
-    a: "AI can help screen movement quality, posture, range of motion, asymmetry, control, and compensation patterns during selected movements.",
+    a: "AI can help screen movement quality, posture, mobility, balance, asymmetry, control, and compensation patterns during selected movements.",
   },
   {
     q: "Is AI movement evaluation useful for desk workers?",
@@ -46,12 +46,12 @@ const pageSchemas = [
   faqPageSchema(faqs),
   breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: "AI Movement Evaluation", path: "/ai-movement-evaluation" },
+    { name: "AI Movement Analysis", path: "/ai-movement-evaluation" },
   ]),
   serviceSchema({
-    name: "AI Movement Evaluation NYC",
+    name: "AI Movement Analysis NYC",
     description:
-      "AI-assisted movement evaluation in Midtown Manhattan to identify compensation patterns, asymmetry, and movement limitations.",
+      "AI-assisted movement analysis in Midtown Manhattan to identify movement quality, posture, mobility limitations, balance deficits, compensation patterns, and asymmetry.",
     path: "/ai-movement-evaluation",
     serviceType: "AI-assisted movement evaluation",
   }),
@@ -68,9 +68,9 @@ export default function AIMovementEvaluationPage() {
         />
       ))}
       <ServicePageShell
-        eyebrow="AI-Assisted Evaluation · Human System Reset™"
-        h1="AI-Assisted Movement Evaluation in NYC"
-        lead="A technology-supported movement screen in Midtown Manhattan that helps make compensation patterns, asymmetries, and movement restrictions easier to see, explain, and track."
+        eyebrow="Movement Analysis · Human System Reset™"
+        h1="AI-Assisted Movement Analysis in NYC"
+        lead="Understand how your body moves before deciding how to support it. This structured assessment helps make posture, mobility, balance, asymmetry, and recurring pain patterns easier to see, explain, and track."
         phase="REVEAL"
         faqs={faqs}
         ctaHeading="Book an AI-Assisted Movement Evaluation"
@@ -80,10 +80,10 @@ export default function AIMovementEvaluationPage() {
             <div className="grid lg:grid-cols-[1fr_0.88fr] gap-10 items-center">
               <div>
                 <p className="type-label text-brand-gold mb-4">Short Definition</p>
-                <h2 className="type-display-m text-brand-white mb-6">What Is AI-Assisted Movement Evaluation?</h2>
+                <h2 className="type-display-m text-brand-white mb-6">What Is AI-Assisted Movement Analysis?</h2>
                 <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
                   <p>
-                    AI-assisted movement evaluation is a structured screen that uses motion analysis
+                    AI-assisted movement analysis is a structured screen that uses motion analysis
                     technology to support the clinical assessment. It can help reveal patterns that are
                     difficult to explain from symptoms alone.
                   </p>
@@ -93,10 +93,10 @@ export default function AIMovementEvaluationPage() {
                       Human System Reset™
                     </Link>{" "}
                     framework. The technology helps clarify the pattern; Dr. Wu decides what the pattern
-                    means and how to treat it.
+                    may mean and how it should inform your plan.
                   </p>
                   <p>
-                    Reports can make asymmetry and movement quality easier to understand, then connect
+                    Reports can make asymmetry, balance, mobility, posture, and movement quality easier to understand, then connect
                     those findings to hands-on care, corrective exercise, and long-term reinforcement.
                   </p>
                 </div>
@@ -119,7 +119,7 @@ export default function AIMovementEvaluationPage() {
         <section className="py-24 bg-brand-black">
           <div className="max-w-5xl mx-auto px-6">
             <p className="type-label text-brand-gold mb-4">Why It Matters</p>
-            <h2 className="type-display-m text-brand-white mb-8">Movement Patterns Matter More Than Posture Alone</h2>
+            <h2 className="type-display-m text-brand-white mb-8">Movement Quality Matters More Than Posture Alone</h2>
             <div className="grid md:grid-cols-3 gap-5">
               {[
                 {

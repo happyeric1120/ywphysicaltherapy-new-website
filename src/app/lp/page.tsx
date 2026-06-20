@@ -11,7 +11,7 @@ const BOOKING_URL =
 const lpNavLinks = [
   { label: "Main Site", href: "/" },
   { label: "Pain & Movement", href: "/physical-therapy-near-penn-station" },
-  { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Recovery Assessment", href: "/neural-regulation" },
   { label: "Pricing", href: "/insurance-pricing" },
   { label: "About", href: "/about-dr-eric-wu" },
 ];
@@ -20,14 +20,14 @@ const phases = [
   {
     num: "01",
     phase: "REVEAL",
-    tagline: "Find the dysfunction",
-    desc: "AI movement analysis + full-body clinical assessment to locate the actual source of your problem.",
+    tagline: "Understand the pattern",
+    desc: "AI movement analysis + full-body clinical assessment to identify meaningful movement patterns and care priorities.",
   },
   {
     num: "02",
     phase: "RELEASE",
     tagline: "Remove restrictions",
-    desc: "Shockwave, TECAR, laser, and manual therapy to break down what's holding your body back.",
+    desc: "Shockwave, TECAR, laser, and manual therapy may support tissue recovery, mobility, and comfort when appropriate.",
   },
   {
     num: "03",
@@ -38,7 +38,7 @@ const phases = [
   {
     num: "04",
     phase: "REINFORCE",
-    tagline: "Maintain results",
+    tagline: "Reinforce progress",
     desc: "Targeted load and performance work so the problem doesn't return.",
   },
 ];

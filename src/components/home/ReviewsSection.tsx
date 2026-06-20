@@ -104,6 +104,11 @@ export default function ReviewsSection() {
           ))}
         </div>
 
+        <p className="mt-6 font-body text-xs leading-relaxed text-brand-muted max-w-3xl">
+          Individual experiences and results may vary. Testimonials reflect personal
+          experiences and are not a guarantee of future outcomes.
+        </p>
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

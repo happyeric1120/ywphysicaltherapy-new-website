@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const equipmentGroups = [
   {
-    category: "Assessment",
+    category: "What We Measure",
     tools: [
       "Clinical physical therapy evaluation",
       "AI-assisted movement analysis",
@@ -13,7 +13,7 @@ const equipmentGroups = [
     ],
   },
   {
-    category: "Tissue Recovery",
+    category: "What We Support",
     tools: [
       "Focused shockwave therapy",
       "Radial shockwave therapy",
@@ -23,21 +23,21 @@ const equipmentGroups = [
     ],
   },
   {
-    category: "Neural & Recovery Support",
+    category: "How We Track Progress",
     tools: [
-      "Nuropod auricular neuromodulation",
-      "Red and near-infrared light",
-      "Sequential pneumatic compression",
+      "Baseline and follow-up comparison",
+      "Recovery questionnaires",
       "Recovery readiness reassessment",
+      "Movement quality updates",
     ],
   },
   {
-    category: "Strength & Retraining",
+    category: "Technologies Used",
     tools: [
+      "Red and near-infrared light",
+      "Sequential pneumatic compression",
       "Compex EMS",
-      "Corrective exercise programming",
-      "TRX and functional training",
-      "Return-to-activity progression",
+      "Corrective exercise tools",
     ],
   },
 ];
@@ -46,12 +46,12 @@ export default function FeaturedServicesSection() {
   return (
     <section className="relative py-24 md:py-32 bg-brand-surface border-y border-brand-border">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="type-label text-brand-gold mb-4">Tools & Equipment</p>
+        <p className="type-label text-brand-gold mb-4">Measurement First</p>
         <h2 className="type-display-m text-brand-white mb-6">
-          The clinic is built for assessment, recovery, and retraining.
+          Technology supports the plan. It is not the plan.
         </h2>
         <p className="type-body-l text-brand-muted max-w-3xl mb-12">
-          Each tool is selected based on what your assessment shows: movement limitation,
+          Each tool is selected based on what your assessment shows: movement quality,
           tissue irritability, recovery load, or strength and control deficits.
         </p>
 

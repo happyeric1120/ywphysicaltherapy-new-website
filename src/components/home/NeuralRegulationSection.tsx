@@ -8,7 +8,7 @@ const signals = [
   "HRV recovery assessment",
   "Human System Profile™",
   "Recovery readiness",
-  "Nervous system flexibility",
+  "Recovery flexibility",
   "System load",
   "Post-session reassessment",
 ];
@@ -42,7 +42,7 @@ export default function NeuralRegulationSection() {
             transition={{ delay: 0.08 }}
             className="type-display-m text-brand-white mb-6"
           >
-            Recovery intelligence for your nervous system.
+            Recovery and resilience support you can measure.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -51,9 +51,9 @@ export default function NeuralRegulationSection() {
             transition={{ delay: 0.14 }}
             className="type-body-l text-brand-muted mb-8"
           >
-            Neural Regulation starts with a Human System Profile™ using HRV-based signals, then
-            pairs recovery-focused interventions with reassessment so you can see how your system
-            responds.
+            Neural Regulation is the recovery-focused pathway inside Human System Reset™. It starts
+            with a Human System Profile™ using HRV-based wellness metrics, then pairs recovery-focused
+            support with reassessment so you can better understand your baseline and response.
           </motion.p>
 
           <motion.div
@@ -99,7 +99,7 @@ export default function NeuralRegulationSection() {
         >
           <Image
             src="/assets/human-system-profile-report.png"
-            alt="Human System Profile HRV recovery report preview for Neural Regulation"
+            alt="Human System Profile HRV recovery report preview for recovery assessment"
             width={800}
             height={1254}
             className="h-auto w-full"

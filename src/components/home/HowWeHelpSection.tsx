@@ -5,16 +5,16 @@ import Link from "next/link";
 
 const pillars = [
   {
-    title: "Body Reset",
-    desc: "For neck pain, back pain, posture issues, sports injuries, and movement limitations that need a musculoskeletal reset plan.",
-    examples: ["Movement Analysis", "Physical Therapy", "Shockwave", "Strength Retraining"],
-    href: "/physical-therapy-near-penn-station",
+    title: "Pain & Injury Recovery",
+    desc: "For neck pain, back pain, shoulder pain, knee pain, tendon injuries, and recurring movement-related pain.",
+    examples: ["Physical Therapy", "Shockwave Therapy", "Movement Analysis"],
+    href: "/human-system-reset#body-reset",
   },
   {
-    title: "Nervous System Reset",
-    desc: "For recovery readiness, nervous system load, HRV assessment, and regulation support inside Human System Reset™.",
-    examples: ["HRV Assessment", "Recovery Readiness", "Nervous System Reset", "Recovery Technologies"],
-    href: "/neural-regulation",
+    title: "Recovery & Resilience",
+    desc: "For high stress, fatigue, recovery challenges, busy lifestyles, and performance demands.",
+    examples: ["Human System Reset™", "Neural Regulation", "Recovery Technologies"],
+    href: "/human-system-reset#neural-regulation",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function HowWeHelpSection() {
           transition={{ delay: 0.08 }}
           className="type-display-m text-brand-white mb-6"
         >
-          One method. Two main entry points.
+          How Can We Help?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 12 }}
@@ -46,8 +46,8 @@ export default function HowWeHelpSection() {
           transition={{ delay: 0.14 }}
           className="type-body-l text-brand-muted max-w-3xl mb-12"
         >
-          Human System Reset™ organizes assessment, recovery technology, movement retraining,
-          and physical therapy into one coherent process.
+          Choose the path that best matches what you are dealing with today. We can refine
+          the plan after assessment and measurement.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-5">
@@ -75,7 +75,7 @@ export default function HowWeHelpSection() {
                 ))}
               </div>
               <Link href={pillar.href} className="type-body-m text-brand-gold hover:text-brand-gold-light transition-colors">
-                Explore →
+                Learn More →
               </Link>
             </motion.div>
           ))}

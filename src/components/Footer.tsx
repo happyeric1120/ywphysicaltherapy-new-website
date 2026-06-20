@@ -1,19 +1,21 @@
 import Link from "next/link";
 
 const navCol = [
-  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
+  { label: "Movement Analysis", href: "/ai-movement-evaluation" },
+  { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
+  { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
+  { label: "Human System Reset™", href: "/human-system-reset" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "About Dr. Wu", href: "/about-dr-eric-wu" },
-  { label: "Insurance & Pricing", href: "/insurance-pricing" },
-  { label: "Blog", href: "/blog" },
   { label: "Book a Session", href: "/book" },
 ];
 
 const servicesCol = [
   { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
-  { label: "Body Reset", href: "/physical-therapy-near-penn-station" },
+  { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
   { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
-  { label: "Nervous System Reset", href: "/neural-regulation" },
+  { label: "Human System Reset™", href: "/human-system-reset" },
+  { label: "Recovery Assessment", href: "/neural-regulation" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
   { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },

@@ -9,8 +9,8 @@ const steps = [
     phase: "REVEAL",
     chinese: "找出根源",
     tagline: "Measure before choosing the intervention.",
-    copy: "Physical therapy evaluation, AI movement analysis, and HRV assessment clarify what is limiting movement, recovery, and performance.",
-    tags: ["PT Evaluation", "AI Movement Analysis", "HRV Assessment", "Clinical Reasoning"],
+    copy: "Physical therapy evaluation, AI Movement Analysis, HRV wellness metrics, and recovery screening clarify movement quality, recovery demands, and priorities for care.",
+    tags: ["PT Evaluation", "AI Movement Analysis", "HRV Wellness Metrics", "Recovery Screening"],
   },
   {
     number: "02",
@@ -24,17 +24,17 @@ const steps = [
     number: "03",
     phase: "RESTORE",
     chinese: "重建功能",
-    tagline: "Restore recovery capacity and nervous system adaptability.",
-    copy: "Nervous System Reset is nested here: HRV-guided recovery, taVNS, red light, and compression may support recovery readiness.",
-    tags: ["Nervous System Reset", "HRV-Guided Recovery", "taVNS", "Red / Near-Infrared Light", "Compression"],
+    tagline: "Support recovery and rebuild usable movement.",
+    copy: "Body Reset rebuilds movement; Neural Regulation supports recovery readiness with relaxation-focused protocols, wellness-oriented recovery tools, and reassessment when appropriate.",
+    tags: ["Movement Retraining", "Neural Regulation", "Red / Near-Infrared Light", "Compression", "Recovery Support"],
   },
   {
     number: "04",
     phase: "REINFORCE",
     chinese: "強化防護",
     tagline: "Build resilience and long-term adaptation.",
-    copy: "Strength training, movement retraining, and performance optimization help your system tolerate real work, sport, and life demands.",
-    tags: ["Strength Training", "Exercise Prescription", "Movement Retraining", "Performance Optimization"],
+    copy: "Strength training, movement retraining, recovery habits, and follow-up measurement help your system tolerate real work, sport, and life demands.",
+    tags: ["Strength Training", "Exercise Prescription", "Recovery Habits", "Progress Tracking"],
   },
 ];
 
@@ -70,7 +70,7 @@ export default function MethodSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="type-display-l text-brand-white mb-6"
           >
-            The Human System Reset™ Method
+            The 4R Framework
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -79,8 +79,9 @@ export default function MethodSection() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="type-body-l text-brand-muted max-w-2xl"
           >
-            Assessment → recovery intervention → adaptation → performance. Individual
-            services are selected as tools inside this process.
+            The 4R Framework serves as the philosophy behind Human System Reset™ and
+            guides how each session is structured. Body Reset and Neural Regulation both
+            fit inside this same process. We Measure. We Support. We Reset.
           </motion.p>
         </div>
 

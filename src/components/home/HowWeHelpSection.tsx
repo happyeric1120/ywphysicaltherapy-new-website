@@ -8,13 +8,15 @@ const pillars = [
     title: "Pain & Injury Recovery",
     desc: "For neck pain, back pain, shoulder pain, knee pain, tendon injuries, and recurring movement-related pain.",
     examples: ["Physical Therapy", "Shockwave Therapy", "Movement Analysis"],
-    href: "/human-system-reset#body-reset",
+    href: "/physical-therapy-near-penn-station",
+    cta: "See Pain & Injury Care",
   },
   {
-    title: "Recovery & Resilience",
+    title: "Recovery & Wellness",
     desc: "For high stress, fatigue, recovery challenges, busy lifestyles, and performance demands.",
     examples: ["Human System Reset™", "Neural Regulation", "Recovery Technologies"],
-    href: "/human-system-reset#neural-regulation",
+    href: "/human-system-reset",
+    cta: "See Recovery & Wellness",
   },
 ];
 
@@ -74,8 +76,12 @@ export default function HowWeHelpSection() {
                   </span>
                 ))}
               </div>
-              <Link href={pillar.href} className="type-body-m text-brand-gold hover:text-brand-gold-light transition-colors">
-                Learn More →
+              <Link
+                href={pillar.href}
+                className="inline-block self-start font-body font-medium text-sm tracking-wide px-6 py-3 bg-brand-gold text-brand-black hover:opacity-90 transition-opacity"
+                style={{ borderRadius: "2px" }}
+              >
+                {pillar.cta} →
               </Link>
             </motion.div>
           ))}

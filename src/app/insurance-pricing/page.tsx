@@ -4,35 +4,44 @@ import { motion } from "framer-motion";
 import BookingButton from "@/components/BookingButton";
 import Link from "next/link";
 
-const selfPayTable = [
+const physicalTherapyPricing = [
   {
     service: "PT Evaluation",
     price: "$200",
+    tag: "Insurance-eligible",
     desc: "Full-body movement screening + AI scan + personalized treatment roadmap. First step in the Human System Reset™ protocol.",
   },
   {
     service: "Follow-Up PT Session (60 min)",
     price: "$150",
+    tag: "Insurance-eligible",
     desc: "Manual therapy, mobility training, neuromuscular retraining, and technology application. Always one-on-one with Dr. Wu.",
   },
   {
     service: "Focused Shockwave",
     price: "$150",
+    tag: "Insurance-eligible",
     desc: "Deep tissue acoustic wave therapy for chronic tendon pain, calcifications, and scar tissue.",
   },
   {
     service: "Radial Shockwave + Class IV Laser",
     price: "$60",
+    tag: "Insurance-eligible",
     desc: "Combination therapy for muscle tension, surface inflammation, and general pain management. Popular standalone session.",
   },
   {
     service: "AI Movement Assessment Only",
     price: "$100",
+    tag: "Insurance-eligible",
     desc: "10-movement AI scan + auto-generated corrective exercise plan. Great for injury prevention and movement baselines.",
   },
+];
+
+const recoveryWellnessPricing = [
   {
-    service: "Recovery Assessment Session",
+    service: "Neural Regulation Session",
     price: "$150",
+    tag: "Self-pay only",
     desc: "HRV-based Human System Profile™, guided recovery-focused support session, and post-session reassessment. Wellness-focused and self-pay.",
   },
 ];
@@ -141,6 +150,17 @@ export default function InsurancePricingPage() {
             I&apos;m an out-of-network provider — which sounds complicated, but for most people
             it&apos;s actually pretty straightforward. Here&apos;s how you can still get coverage:
           </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.18 }}
+            className="type-body-m text-brand-white mb-10 max-w-3xl p-5 border border-brand-gold/20 bg-brand-black"
+            style={{ borderRadius: "2px" }}
+          >
+            Standard physical therapy can be billed to insurance (out-of-network) or paid out of pocket.
+            Recovery & Wellness services are self-pay only.
+          </motion.p>
 
           <div className="space-y-4 mb-10">
             {coverageOptions.map((opt, i) => (
@@ -178,7 +198,7 @@ export default function InsurancePricingPage() {
         </div>
       </section>
 
-      {/* Self-Pay Pricing Table */}
+      {/* Physical Therapy Pricing */}
       <section className="py-24 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6">
           <motion.p
@@ -187,7 +207,7 @@ export default function InsurancePricingPage() {
             viewport={{ once: true }}
             className="type-label text-brand-gold mb-4"
           >
-            Self-Pay Options
+            Physical Therapy
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
@@ -196,7 +216,7 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.08 }}
             className="type-display-m text-brand-white mb-4"
           >
-            Transparent Pricing
+            Physical Therapy — Pricing
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -205,11 +225,11 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.14 }}
             className="type-body-l text-brand-muted mb-10 max-w-2xl"
           >
-            No hidden fees. No package commitments. Pay per session.
+            Billable to insurance via out-of-network benefits, or pay per session.
           </motion.p>
 
           <div className="space-y-3">
-            {selfPayTable.map((row, i) => (
+            {physicalTherapyPricing.map((row, i) => (
               <motion.div
                 key={row.service}
                 initial={{ opacity: 0, y: 16 }}
@@ -221,6 +241,12 @@ export default function InsurancePricingPage() {
               >
                 <div>
                   <h3 className="font-body font-medium text-brand-white text-sm mb-1">{row.service}</h3>
+                  <span
+                    className="type-tag text-brand-muted px-2.5 py-1 border border-brand-border bg-brand-black inline-block"
+                    style={{ borderRadius: "999px" }}
+                  >
+                    {row.tag}
+                  </span>
                 </div>
                 <div className="md:text-right">
                   <span className="font-display font-bold text-brand-gold text-2xl">{row.price}</span>
@@ -245,6 +271,66 @@ export default function InsurancePricingPage() {
                 <span>Focused Shockwave: <strong className="text-brand-white">$60</strong> first visit (regular $150)</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Recovery & Wellness Pricing */}
+      <section className="py-24 bg-brand-surface border-y border-brand-border">
+        <div className="max-w-5xl mx-auto px-6">
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="type-label text-brand-gold mb-4"
+          >
+            Recovery & Wellness
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.08 }}
+            className="type-display-m text-brand-white mb-4"
+          >
+            Recovery & Wellness — Pricing
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.14 }}
+            className="type-body-l text-brand-muted mb-10 max-w-2xl"
+          >
+            Wellness-focused services. Self-pay only — not billed to insurance.
+          </motion.p>
+
+          <div className="space-y-3">
+            {recoveryWellnessPricing.map((row, i) => (
+              <motion.div
+                key={row.service}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.06 }}
+                className="grid md:grid-cols-[1fr_auto_2fr] gap-6 items-start p-7 border border-brand-border bg-brand-black hover:border-brand-gold/20 transition-colors"
+                style={{ borderRadius: "2px" }}
+              >
+                <div>
+                  <h3 className="font-body font-medium text-brand-white text-sm mb-1">{row.service}</h3>
+                  <span
+                    className="type-tag text-brand-muted px-2.5 py-1 border border-brand-border bg-brand-surface inline-block"
+                    style={{ borderRadius: "999px" }}
+                  >
+                    {row.tag}
+                  </span>
+                </div>
+                <div className="md:text-right">
+                  <span className="font-display font-bold text-brand-gold text-2xl">{row.price}</span>
+                </div>
+                <p className="type-body-m text-brand-muted">{row.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

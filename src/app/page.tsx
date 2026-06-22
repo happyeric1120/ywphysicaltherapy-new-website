@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
 import HowWeHelpSection from "@/components/home/HowWeHelpSection";
 import StartWithMeasurementSection from "@/components/home/StartWithMeasurementSection";
-import NeuralRegulationSection from "@/components/home/NeuralRegulationSection";
 import MethodSection from "@/components/home/MethodSection";
 import FeaturedServicesSection from "@/components/home/FeaturedServicesSection";
 import ConditionsSection from "@/components/home/ConditionsSection";
@@ -36,14 +35,13 @@ export default function HomePage() {
       <HeroSection />
       <HowWeHelpSection />
       <StartWithMeasurementSection />
-      <NeuralRegulationSection />
       <MethodSection />
       <FeaturedServicesSection />
       <ConditionsSection />
       <AboutSection />
       <ReviewsSection />
-      <BookAssessmentSection />
       <LocationSection />
+      <BookAssessmentSection />
     </>
   );
 }

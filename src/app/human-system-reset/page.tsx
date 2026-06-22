@@ -124,7 +124,7 @@ const resetPathways = [
   {
     id: "body-reset",
     title: "Body Reset",
-    eyebrow: "Pain & Movement",
+    eyebrow: "Pain & Injury",
     copy: "For pain, injury recovery, mobility limitations, and recurring movement-related symptoms. This side of Human System Reset™ uses physical therapy evaluation, AI Movement Analysis, hands-on care, shockwave therapy when appropriate, and progressive movement retraining.",
     includes: ["Physical Therapy", "AI Movement Analysis", "Shockwave Therapy", "Corrective Exercise"],
     href: "/physical-therapy-near-penn-station",
@@ -133,7 +133,7 @@ const resetPathways = [
   {
     id: "neural-regulation",
     title: "Neural Regulation",
-    eyebrow: "Recovery & Resilience",
+    eyebrow: "Recovery & Wellness",
     copy: "For people who want to understand recovery readiness, stress load, fatigue, and resilience patterns. This side of Human System Reset™ uses HRV wellness metrics, recovery screening, non-invasive wellness tools, and re-measurement to support a recovery-focused experience.",
     includes: ["HRV Wellness Metrics", "Recovery Screening", "Recovery Technologies", "Progress Tracking"],
     href: "/neural-regulation",

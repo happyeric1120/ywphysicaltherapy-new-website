@@ -65,10 +65,19 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.28 }}
-          className="type-body-l text-brand-muted max-w-xl mx-auto mb-10"
+          className="type-body-l text-brand-muted max-w-xl mx-auto mb-4"
         >
           One-on-one physical therapy and recovery support in Midtown Manhattan using
           clinical assessment, AI Movement Analysis, and progress tracking.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.34 }}
+          className="font-body text-sm text-brand-muted max-w-2xl mx-auto mb-10"
+        >
+          Two ways in: fix something that hurts, or recover and build resilience.
+          Not sure? Start with a measurement.
         </motion.p>
 
         {/* CTAs */}

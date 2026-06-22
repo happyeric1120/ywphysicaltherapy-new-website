@@ -263,3 +263,132 @@ Results:
 - Human System Reset™ page rendered the umbrella structure, Neural Regulation explanation, Measure → Support → Re-measure, and updated 4R copy.
 - Movement Analysis page rendered the updated AI-Assisted Movement Analysis positioning.
 - Search checks did not find the targeted high-risk claim language in the updated source areas.
+
+---
+
+# 2026-06-22 Navigation + Pricing Structure Update
+
+This section records the June 22, 2026 implementation based on `yw-site-edit-instructions_06222026.md`.
+
+## Scope Note
+
+- Updated the main website navigation, homepage structure, pricing page, and shared footer.
+- Left `/lp` unchanged because it is an unused legacy landing page with its own header.
+- Kept existing URLs unchanged.
+- Did not change global colors, fonts, animations, or the overall visual style.
+
+## Implementation Summary
+
+### Shared Navbar
+
+- Replaced the tool-name-driven navbar with a need-based structure:
+  - Pain & Injury
+  - Recovery & Wellness
+  - Pricing
+  - About
+  - Book Now
+- Added desktop dropdowns for:
+  - Pain & Injury
+  - Recovery & Wellness
+- Pain & Injury dropdown links:
+  - Physical Therapy
+  - Shockwave Therapy
+  - AI Movement Analysis
+  - Conditions We Treat
+- Recovery & Wellness dropdown links:
+  - Human System Reset™
+  - Neural Regulation (HRV)
+  - Recovery Screening
+- Added mobile hamburger accordion sections using the same grouped navigation.
+- Added active route styling by section.
+- Added dropdown accessibility behavior:
+  - hover
+  - click
+  - focus
+  - escape key
+  - `aria-haspopup`
+  - `aria-expanded`
+
+### Homepage Structure
+
+- Added a plain-language line under the hero subhead:
+  - `Two ways in: fix something that hurts, or recover and build resilience. Not sure? Start with a measurement.`
+- Strengthened the two-path chooser directly under the hero.
+- Updated the two primary cards:
+  - Pain & Injury Recovery → `/physical-therapy-near-penn-station/`
+  - Recovery & Wellness → `/human-system-reset/`
+- Added clear primary CTA buttons:
+  - `See Pain & Injury Care`
+  - `See Recovery & Wellness`
+- Adjusted homepage section order to:
+  - Hero
+  - Two-path chooser
+  - Start With Measurement
+  - 4R Framework
+  - What we measure / support / track
+  - Conditions
+  - Clinician bio
+  - Reviews
+  - Location + Book
+
+### Pricing Page
+
+- Split `/insurance-pricing/` into three distinct sections:
+  - Insurance & Coverage
+  - Physical Therapy — Pricing
+  - Recovery & Wellness — Pricing
+- Added a top insurance summary:
+  - `Standard physical therapy can be billed to insurance (out-of-network) or paid out of pocket. Recovery & Wellness services are self-pay only.`
+- Kept existing insurance explanation cards.
+- Moved PT-related services into the Physical Therapy pricing group:
+  - PT Evaluation
+  - Follow-Up PT Session (60 min)
+  - Focused Shockwave
+  - Radial Shockwave + Class IV Laser
+  - AI Movement Assessment Only
+- Added `Insurance-eligible` tags to PT price cards.
+- Kept the existing insurance patient upgrade box inside the Physical Therapy pricing section.
+- Moved Neural Regulation into the Recovery & Wellness pricing group:
+  - Neural Regulation Session — $150
+- Added a `Self-pay only` tag to the Neural Regulation card.
+- Kept the FAQ section at the bottom.
+
+### Footer
+
+- Reorganized the shared footer into grouped link columns:
+  - Pain & Injury
+  - Recovery & Wellness
+  - Info
+- Kept the same shared footer component site-wide.
+
+## Verification
+
+Commands run:
+
+- `npm run build`
+- Localhost HTML probes for:
+  - `/`
+  - `/insurance-pricing`
+  - `/human-system-reset`
+  - `/physical-therapy-near-penn-station`
+- Localhost link checks for:
+  - `/physical-therapy-near-penn-station`
+  - `/shockwave-therapy-nyc`
+  - `/ai-movement-evaluation`
+  - `/human-system-reset`
+  - `/neural-regulation`
+  - `/human-system-reset-assessment`
+  - `/insurance-pricing`
+  - `/about-dr-eric-wu`
+  - `/book`
+- Search checks for old main-site nav/pricing wording.
+
+Results:
+
+- Production build passed.
+- Static route generation completed successfully.
+- Sitemap generation completed successfully.
+- Main-site representative pages rendered the new grouped nav labels.
+- Pricing page rendered all three required sections.
+- Updated internal navigation links returned `200`.
+- Old main-site nav/pricing wording was not found outside the excluded `/lp` page.

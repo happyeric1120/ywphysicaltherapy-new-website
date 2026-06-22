@@ -1,42 +1,50 @@
 import Link from "next/link";
 
 const navCol = [
-  { label: "Movement Analysis", href: "/ai-movement-evaluation" },
   { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
+  { label: "AI Movement Analysis", href: "/ai-movement-evaluation" },
   { label: "Human System Reset™", href: "/human-system-reset" },
+  { label: "Neural Regulation", href: "/neural-regulation" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
-  { label: "About Dr. Wu", href: "/about-dr-eric-wu" },
-  { label: "Book a Session", href: "/book" },
+  { label: "Pricing", href: "/insurance-pricing" },
+  { label: "About", href: "/about-dr-eric-wu" },
+  { label: "Book", href: "/book" },
 ];
 
-const servicesCol = [
-  { label: "PT Near Penn Station", href: "/physical-therapy-near-penn-station" },
+const painInjuryLinks = [
   { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
-  { label: "AI Movement Evaluation", href: "/ai-movement-evaluation" },
-  { label: "Human System Reset™", href: "/human-system-reset" },
-  { label: "Recovery Assessment", href: "/neural-regulation" },
-  { label: "Recovery Screening", href: "/human-system-reset-assessment" },
-  { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
-  { label: "Focused vs Radial Shockwave", href: "/focused-shockwave-vs-radial-shockwave" },
-  { label: "TECAR Therapy", href: "/tecar-therapy-nyc" },
-  { label: "Class IV Laser", href: "/laser-therapy-nyc" },
-  { label: "Compex EMS", href: "/compex-ems-nyc" },
+  { label: "AI Movement Analysis", href: "/ai-movement-evaluation" },
   { label: "Back Pain PT", href: "/back-pain-nyc" },
   { label: "Neck Pain PT", href: "/neck-pain-nyc" },
   { label: "Shoulder Pain PT", href: "/shoulder-pain-nyc" },
   { label: "Knee Pain PT", href: "/knee-pain-nyc" },
   { label: "Hip Pain PT", href: "/hip-pain-nyc" },
-  { label: "Sports Injury PT", href: "/sports-injury-nyc" },
-  { label: "Desk Worker Pain", href: "/desk-worker-pain-nyc" },
+];
+
+const recoveryWellnessLinks = [
+  { label: "Human System Reset™", href: "/human-system-reset" },
+  { label: "Neural Regulation", href: "/neural-regulation" },
+  { label: "Recovery Screening", href: "/human-system-reset-assessment" },
+  { label: "Desk Worker Body Reset", href: "/desk-worker-body-reset" },
+  { label: "TECAR Therapy", href: "/tecar-therapy-nyc" },
+  { label: "Class IV Laser", href: "/laser-therapy-nyc" },
+  { label: "Compex EMS", href: "/compex-ems-nyc" },
+];
+
+const infoLinks = [
+  { label: "Pricing", href: "/insurance-pricing" },
+  { label: "About", href: "/about-dr-eric-wu" },
+  { label: "Blog", href: "/blog" },
+  { label: "Book", href: "/book" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-brand-surface border-t border-brand-border">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Column 1: Brand */}
           <div>
             <div className="flex items-baseline gap-2 mb-4">
@@ -51,11 +59,11 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Services */}
+          {/* Column 2: Pain & Injury */}
           <div>
-            <h3 className="font-mono text-xs text-[rgba(26,26,26,0.65)] tracking-widest uppercase mb-6">Services</h3>
+            <h3 className="font-mono text-xs text-[rgba(26,26,26,0.65)] tracking-widest uppercase mb-6">Pain & Injury</h3>
             <ul className="space-y-3">
-              {servicesCol.map((item) => (
+              {painInjuryLinks.map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="font-body text-sm text-brand-muted hover:text-brand-white transition-colors">
                     {item.label}
@@ -65,7 +73,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact */}
+          {/* Column 3: Recovery & Wellness */}
+          <div>
+            <h3 className="font-mono text-xs text-[rgba(26,26,26,0.65)] tracking-widest uppercase mb-6">Recovery & Wellness</h3>
+            <ul className="space-y-3">
+              {recoveryWellnessLinks.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="font-body text-sm text-brand-muted hover:text-brand-white transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-mono text-xs text-[rgba(26,26,26,0.65)] tracking-widest uppercase mt-8 mb-4">Info</h3>
+            <ul className="space-y-3">
+              {infoLinks.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="font-body text-sm text-brand-muted hover:text-brand-white transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contact */}
           <div>
             <h3 className="font-mono text-xs text-[rgba(26,26,26,0.65)] tracking-widest uppercase mb-6">Contact</h3>
             <address

@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Insurance & Pricing | YW Physical Therapy NYC",
   description:
-    "Insurance plans accepted (Aetna, UHC, BCBS) and self-pay pricing for physical therapy in Midtown Manhattan. Transparent costs — no surprises.",
+    "Out-of-network coverage information and transparent self-pay pricing for physical therapy and wellness services in Midtown Manhattan.",
   alternates: { canonical: "https://ywphysicaltherapy.com/insurance-pricing" },
   openGraph: {
     title: "Insurance & Pricing | YW Physical Therapy",
     description:
-      "Transparent insurance and pricing info for PT in Midtown Manhattan near Penn Station.",
+      "Out-of-network coverage information and transparent self-pay pricing near Penn Station in Midtown Manhattan.",
     url: "https://ywphysicaltherapy.com/insurance-pricing",
     siteName: "YW Physical Therapy",
     locale: "en_US",

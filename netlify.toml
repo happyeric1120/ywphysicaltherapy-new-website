@@ -5,6 +5,17 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Consolidate the duplicate clinician bio route on the canonical author URL.
+[[redirects]]
+  from   = "/about"
+  to     = "/about-dr-eric-wu/"
+  status = 301
+
+[[redirects]]
+  from   = "/about/"
+  to     = "/about-dr-eric-wu/"
+  status = 301
+
 # ── Old URL redirects (301 permanent) ─────────────────
 [[redirects]]
   from   = "/shockwave/"

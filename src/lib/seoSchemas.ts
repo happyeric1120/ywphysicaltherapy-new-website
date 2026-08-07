@@ -1,5 +1,7 @@
-const SITE_URL = "https://ywphysicaltherapy.com";
-const CLINIC_ID = `${SITE_URL}/#clinic`;
+import { entityIds, siteFacts } from "@/data/siteFacts";
+
+const SITE_URL = siteFacts.url;
+const CLINIC_ID = entityIds.clinic;
 
 type Faq = {
   q: string;

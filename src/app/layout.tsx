@@ -3,9 +3,10 @@ import { Inter, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
+import { entityIds, siteFacts } from "@/data/siteFacts";
 
 const GA_ID = "G-3YEWLJK86Q";
-const SITE_URL = "https://ywphysicaltherapy.com";
+const SITE_URL = siteFacts.url;
 const GOOGLE_BUSINESS_URL = "https://maps.app.goo.gl/o1A2ubZQXV9teScC6";
 
 const siteIdentitySchema = {
@@ -13,14 +14,14 @@ const siteIdentitySchema = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": `${SITE_URL}/#website`,
+      "@id": entityIds.website,
       url: `${SITE_URL}/`,
       name: "YW Physical Therapy",
-      publisher: { "@id": `${SITE_URL}/#clinic` },
+      publisher: { "@id": entityIds.clinic },
     },
     {
       "@type": ["MedicalClinic", "LocalBusiness"],
-      "@id": `${SITE_URL}/#clinic`,
+      "@id": entityIds.clinic,
       name: "YW Physical Therapy",
       legalName: "YW Physical Therapy PLLC",
       url: `${SITE_URL}/`,
@@ -60,12 +61,12 @@ const siteIdentitySchema = {
           closes: "19:00",
         },
       ],
-      founder: { "@id": `${SITE_URL}/#drwu` },
-      employee: { "@id": `${SITE_URL}/#drwu` },
+      founder: { "@id": entityIds.clinician },
+      employee: { "@id": entityIds.clinician },
     },
     {
       "@type": "Person",
-      "@id": `${SITE_URL}/#drwu`,
+      "@id": entityIds.clinician,
       name: "Yu-Kuang Wu",
       honorificPrefix: "Dr.",
       jobTitle: "Doctor of Physical Therapy, PhD",
@@ -103,6 +104,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Physical Therapy in Midtown Manhattan Near Penn Station | YW Physical Therapy",
   description:
     "One-on-one physical therapy in Midtown Manhattan using the Human System Reset™ method. Shockwave, TECAR, Class IV Laser, and AI-guided assessment near Penn Station.",
@@ -139,6 +141,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta property="og:image" content={`${SITE_URL}${siteFacts.defaultSocialImagePath}`} />
+        <meta property="og:image:alt" content="YW Physical Therapy treatment studio in Midtown Manhattan" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

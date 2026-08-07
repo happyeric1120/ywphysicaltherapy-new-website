@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ServicePageShell from "@/components/ServicePageShell";
 import Link from "next/link";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
@@ -96,11 +97,12 @@ export default function ShockwaveTherapyNYCPage() {
           <div className="grid md:grid-cols-2 gap-5">
             <div className="p-8 border border-brand-border bg-brand-black" style={{ borderRadius: "2px" }}>
               <div className="relative aspect-[4/3] overflow-hidden border border-brand-border mb-6 bg-brand-surface" style={{ borderRadius: "2px" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/assets/radial-shockwave-therapy-nyc.png"
                   alt="Radial shockwave therapy device at YW Physical Therapy in Midtown Manhattan"
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <p className="type-label text-cyan-400/80 mb-3">Radial Shockwave (RSWT)</p>
@@ -121,11 +123,12 @@ export default function ShockwaveTherapyNYCPage() {
             </div>
             <div className="p-8 border border-cyan-400/30 bg-brand-black" style={{ borderRadius: "2px" }}>
               <div className="relative aspect-[4/3] overflow-hidden border border-cyan-400/25 mb-6 bg-brand-surface" style={{ borderRadius: "2px" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/assets/focused-shockwave-therapy-nyc.png"
                   alt="Focused shockwave therapy device at YW Physical Therapy in Midtown Manhattan"
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <p className="type-label text-cyan-400 mb-3">Focused Shockwave (FSWT)</p>

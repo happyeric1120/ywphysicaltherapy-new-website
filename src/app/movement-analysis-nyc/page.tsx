@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
@@ -108,11 +109,12 @@ export default function MovementAnalysisNYCPage() {
 
               <div className="relative overflow-hidden border border-brand-border bg-white shadow-[0_24px_80px_rgba(0,0,0,0.16)]" style={{ borderRadius: "2px" }}>
                 <div className="relative aspect-[4/5]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/assets/ai-movement-analysis-report-nyc.png"
                     alt="AI-assisted movement analysis report showing single leg squat metrics at YW Physical Therapy in NYC"
-                    className="h-full w-full object-contain"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    className="object-contain"
                   />
                 </div>
               </div>

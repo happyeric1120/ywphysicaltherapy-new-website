@@ -4,7 +4,8 @@ export const metadata: Metadata = {
   title: "Dr. Yu-Kuang Wu, PT, PhD | YW Physical Therapy NYC",
   description:
     "Meet Dr. Yu-Kuang Wu — physical therapist, researcher, and founder of the Human System Reset™ method. PhD in neuroplasticity. Researcher at Mount Sinai and Bronx VA. Midtown Manhattan.",
-  alternates: { canonical: "https://ywphysicaltherapy.com/about" },
+  alternates: { canonical: "https://ywphysicaltherapy.com/about-dr-eric-wu/" },
+  robots: { index: false, follow: true },
   openGraph: {
     title: "Dr. Yu-Kuang Wu, PT, PhD | YW Physical Therapy",
     description:

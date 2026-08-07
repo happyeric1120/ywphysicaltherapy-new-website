@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
@@ -110,11 +111,12 @@ export default function FocusedVsRadialShockwavePage() {
             <div className="grid md:grid-cols-2 gap-5">
               <div className="p-8 border border-cyan-400/30 bg-brand-surface" style={{ borderRadius: "2px" }}>
                 <div className="relative aspect-[4/3] overflow-hidden border border-cyan-400/25 mb-6 bg-brand-black" style={{ borderRadius: "2px" }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/assets/focused-shockwave-therapy-nyc.png"
                     alt="Focused shockwave therapy equipment in Midtown Manhattan"
-                    className="h-full w-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
                 </div>
                 <p className="type-label text-cyan-400 mb-3">Focused Shockwave</p>
@@ -128,11 +130,12 @@ export default function FocusedVsRadialShockwavePage() {
 
               <div className="p-8 border border-brand-border bg-brand-surface" style={{ borderRadius: "2px" }}>
                 <div className="relative aspect-[4/3] overflow-hidden border border-brand-border mb-6 bg-brand-black" style={{ borderRadius: "2px" }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/assets/radial-shockwave-therapy-nyc.png"
                     alt="Radial shockwave therapy equipment in Midtown Manhattan"
-                    className="h-full w-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
                 </div>
                 <p className="type-label text-brand-gold mb-3">Radial Shockwave</p>

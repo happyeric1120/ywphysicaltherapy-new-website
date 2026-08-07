@@ -94,7 +94,7 @@ export default function AboutSection() {
               ))}
             </div>
 
-            <Link href="/about" className="inline-flex items-center gap-2 font-body text-sm text-brand-gold hover:text-brand-gold-light transition-colors tracking-wide">
+            <Link href="/about-dr-eric-wu" className="inline-flex items-center gap-2 font-body text-sm text-brand-gold hover:text-brand-gold-light transition-colors tracking-wide">
               Full Bio →
             </Link>
           </motion.div>

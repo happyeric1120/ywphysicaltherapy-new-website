@@ -20,19 +20,19 @@ const physicalTherapyPricing = [
   {
     service: "Focused Shockwave",
     price: "$150",
-    tag: "Insurance-eligible",
+    tag: "Self-pay only",
     desc: "Deep tissue acoustic wave therapy for chronic tendon pain, calcifications, and scar tissue.",
   },
   {
     service: "Radial Shockwave + Class IV Laser",
     price: "$60",
-    tag: "Insurance-eligible",
+    tag: "Self-pay only",
     desc: "Combination therapy for muscle tension, surface inflammation, and general pain management. Popular standalone session.",
   },
   {
     service: "AI Movement Assessment Only",
     price: "$100",
-    tag: "Insurance-eligible",
+    tag: "Self-pay only",
     desc: "10-movement AI scan + auto-generated corrective exercise plan. Great for injury prevention and movement baselines.",
   },
 ];
@@ -225,7 +225,8 @@ export default function InsurancePricingPage() {
             transition={{ delay: 0.14 }}
             className="type-body-l text-brand-muted mb-10 max-w-2xl"
           >
-            Billable to insurance via out-of-network benefits, or pay per session.
+            PT evaluations and follow-up PT sessions may be billed through out-of-network benefits.
+            Standalone technology services and AI Movement Assessment Only are self-pay.
           </motion.p>
 
           <div className="space-y-3">

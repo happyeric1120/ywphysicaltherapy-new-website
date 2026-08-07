@@ -392,3 +392,14 @@ Results:
 - Pricing page rendered all three required sections.
 - Updated internal navigation links returned `200`.
 - Old main-site nav/pricing wording was not found outside the excluded `/lp` page.
+
+---
+
+# 2026-08-06 Pricing Insurance Eligibility Correction
+
+- Corrected the following services from `Insurance-eligible` to `Self-pay only`:
+  - Focused Shockwave
+  - Radial Shockwave + Class IV Laser
+  - AI Movement Assessment Only
+- Clarified that only PT evaluations and follow-up PT sessions may be billed through out-of-network benefits; standalone technology services and AI Movement Assessment Only are self-pay.
+- Replaced the Navbar route-change effect with link click handlers that close open navigation menus, resolving the `react-hooks/set-state-in-effect` lint error.

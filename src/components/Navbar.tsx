@@ -62,13 +62,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  useEffect(() => {
-    setMenuOpen(false);
-    setOpenGroup(null);
-  }, [pathname]);
-
   function toggleMobileGroup(label: string) {
     setMobileOpenGroups((current) => ({ ...current, [label]: !current[label] }));
+  }
+
+  function closeNavigation() {
+    setMenuOpen(false);
+    setOpenGroup(null);
   }
 
   return (
@@ -83,7 +83,7 @@ export default function Navbar() {
         ].join(" ")}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-[68px]">
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" onClick={closeNavigation} className="flex items-center gap-2 group">
             <span className="font-display font-bold text-xl text-brand-white tracking-tight">
               YW
             </span>
@@ -138,6 +138,7 @@ export default function Navbar() {
                           key={link.label}
                           href={link.href}
                           role="menuitem"
+                          onClick={closeNavigation}
                           className={[
                             "block px-4 py-3 font-body text-sm transition-colors",
                             isActive(pathname, link.href)
@@ -159,6 +160,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
+                onClick={closeNavigation}
                 className={[
                   "font-body text-xs lg:text-sm font-normal transition-colors",
                   isActive(pathname, link.href) ? "text-brand-white" : "text-[rgba(26,26,26,0.78)] hover:text-brand-white",
@@ -171,6 +173,7 @@ export default function Navbar() {
             <span className="w-px h-5 bg-[rgba(0,0,0,0.12)]" />
             <Link
               href="/book"
+              onClick={closeNavigation}
               className="font-body text-sm font-medium px-5 py-2 rounded-full bg-brand-white text-white hover:bg-[#333333] transition-all duration-200"
             >
               Book Now
@@ -223,7 +226,7 @@ export default function Navbar() {
                       <Link
                         key={link.label}
                         href={link.href}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={closeNavigation}
                         className={[
                           "block font-body text-base transition-colors",
                           isActive(pathname, link.href) ? "text-brand-white" : "text-brand-muted hover:text-brand-gold",
@@ -241,7 +244,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                onClick={() => setMenuOpen(false)}
+                onClick={closeNavigation}
                 className={[
                   "block font-display text-2xl font-bold transition-colors",
                   isActive(pathname, link.href) ? "text-brand-gold" : "text-brand-white hover:text-brand-gold",
@@ -254,7 +257,7 @@ export default function Navbar() {
 
           <Link
             href="/book"
-            onClick={() => setMenuOpen(false)}
+            onClick={closeNavigation}
             className="mt-10 text-center font-body text-base font-medium px-8 py-3 bg-brand-white text-white rounded-full hover:bg-[#333333] transition-all duration-200"
           >
             Book Now

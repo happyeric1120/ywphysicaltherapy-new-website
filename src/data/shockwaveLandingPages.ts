@@ -514,6 +514,6 @@ export const shockwaveFaqs = [
   {
     question: "Is shockwave covered by insurance?",
     answer:
-      "Coverage varies by plan and indication, and shockwave itself is frequently not covered as a standard benefit. Contact YW Physical Therapy for current pricing and coverage information.",
+      "Shockwave is self-pay. If your plan includes applicable physical therapy benefits, the required evaluation and other eligible PT services may be covered or reimbursable after your deductible is met. Coverage depends on your individual plan.",
   },
 ];

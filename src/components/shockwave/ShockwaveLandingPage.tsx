@@ -16,6 +16,21 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const stageNames = ["ASSESS", "REGION", "TARGET", "RECOVERY", "SYSTEM", "REBUILD"];
 
+const googleBusinessUrl = "https://maps.app.goo.gl/o1A2ubZQXV9teScC6";
+
+const shockwaveReviews = [
+  {
+    name: "MC C",
+    quote:
+      "YW has helped my pain and mobility issues more than any other practitioner… The focused shockwave has been the only modality to help.",
+  },
+  {
+    name: "Shao Yun Hsu",
+    quote:
+      "Eric used shockwave therapy and it made a huge difference. The tension eased up after just a couple sessions.",
+  },
+];
+
 const conditionPages = [
   { label: "Tendon Pain", href: "/shockwave-tendon-pain-nyc", note: "Achilles · elbow · patellar · selected shoulder" },
   { label: "Plantar + Heel", href: "/shockwave-plantar-fasciitis-nyc", note: "Plantar region · heel · calf · foot loading" },
@@ -284,6 +299,94 @@ export default function ShockwaveLandingPage({ page }: { page: ShockwaveLandingP
           </div>
         </section>
       )}
+
+      <section className="border-b border-black/10 bg-white py-20 sm:py-28" aria-labelledby="shockwave-pricing-heading">
+        <div className="mx-auto max-w-7xl px-6">
+          <div data-scroll-reveal className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#176bff]">Transparent pricing</p>
+              <h2 id="shockwave-pricing-heading" className="mt-5 max-w-[11ch] text-balance font-display text-[clamp(2.8rem,5.5vw,5.8rem)] font-bold leading-[0.92] tracking-[-0.065em]">
+                One area. One clear price.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-pretty text-lg leading-8 text-[#61666e]">
+              Focused shockwave care is self-pay. The treatment plan may include several tools, but there is no separate add-on fee for the supporting services listed below when they are clinically appropriate.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+            <article data-scroll-reveal className="border border-black/10 bg-[#101114] p-7 text-white sm:p-10">
+              <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-start">
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#6ba6ff]">Follow-up shockwave care</p>
+                  <h3 className="mt-3 font-display text-3xl font-bold tracking-[-0.045em]">One treatment area</h3>
+                </div>
+                <p className="font-display text-6xl font-bold tracking-[-0.07em]">$150</p>
+              </div>
+              <div className="mt-9 grid gap-px bg-white/15 sm:grid-cols-2">
+                {[
+                  "Focused shockwave",
+                  "Radial shockwave when indicated",
+                  "Class IV laser post-shockwave care",
+                  "Rapid Release and guided exercise",
+                ].map((item) => (
+                  <div key={item} className="bg-[#101114] px-4 py-4 text-sm text-white/75">
+                    <span className="mr-2 text-[#6ba6ff]" aria-hidden="true">✓</span>{item}
+                  </div>
+                ))}
+              </div>
+            </article>
+
+            <div className="grid gap-4">
+              <article data-scroll-reveal className="border border-[#176bff]/25 bg-[#edf3ff] p-7 sm:p-8">
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#176bff]">Your first visit</p>
+                <div className="mt-3 flex items-baseline justify-between gap-5">
+                  <h3 className="font-display text-2xl font-bold tracking-[-0.04em]">Evaluation + one area</h3>
+                  <span className="font-display text-4xl font-bold tracking-[-0.055em]">$200</span>
+                </div>
+                <p className="mt-4 text-sm leading-6 text-[#61666e]">A clinical evaluation is required before your first shockwave treatment.</p>
+              </article>
+              <article data-scroll-reveal className="border border-black/10 bg-[#f4f6f8] p-7 sm:p-8">
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#176bff]">Using insurance</p>
+                <p className="mt-4 text-sm leading-6 text-[#61666e]">
+                  Shockwave remains self-pay. If your plan includes applicable physical therapy benefits, the evaluation and other eligible PT services may be covered or reimbursable after your deductible is met. Coverage depends on your individual plan.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-[#101114] py-20 text-white sm:py-28" aria-labelledby="shockwave-reviews-heading">
+        <div className="mx-auto max-w-7xl px-6">
+          <div data-scroll-reveal className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#6ba6ff]">Google Reviews</p>
+              <h2 id="shockwave-reviews-heading" className="mt-5 max-w-[12ch] text-balance font-display text-[clamp(2.7rem,5vw,5rem)] font-bold leading-[0.95] tracking-[-0.06em]">
+                What patients noticed.
+              </h2>
+            </div>
+            <a href={googleBusinessUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-white">
+              View all reviews on Google →
+            </a>
+          </div>
+          <div className="mt-12 grid gap-4 lg:grid-cols-2">
+            {shockwaveReviews.map((review) => (
+              <blockquote key={review.name} data-scroll-reveal className="border border-white/15 bg-white/[0.035] p-7 sm:p-9">
+                <p className="text-lg tracking-[0.08em] text-[#6ba6ff]" aria-label="5 out of 5 stars">★★★★★</p>
+                <p className="mt-6 text-pretty font-display text-2xl font-bold leading-9 tracking-[-0.035em]">“{review.quote}”</p>
+                <footer className="mt-7 border-t border-white/15 pt-5">
+                  <cite className="not-italic text-sm font-medium">{review.name}</cite>
+                  <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.14em] text-white/45">Google Review</span>
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+          <p className="mt-6 max-w-3xl text-xs leading-6 text-white/45">
+            Individual experiences and results may vary. Reviews reflect personal experiences and are not a guarantee of future outcomes.
+          </p>
+        </div>
+      </section>
 
       <section id="approach" className="scroll-mt-24 border-b border-black/10 bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">

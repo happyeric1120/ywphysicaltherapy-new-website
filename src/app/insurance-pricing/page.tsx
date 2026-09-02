@@ -18,16 +18,10 @@ const physicalTherapyPricing = [
     desc: "Manual therapy, mobility training, neuromuscular retraining, and technology application. Always one-on-one with Dr. Wu.",
   },
   {
-    service: "Focused Shockwave",
+    service: "Shockwave Care — One Treatment Area",
     price: "$150",
     tag: "Self-pay only",
-    desc: "Deep tissue acoustic wave therapy for chronic tendon pain, calcifications, and scar tissue.",
-  },
-  {
-    service: "Radial Shockwave + Class IV Laser",
-    price: "$60",
-    tag: "Self-pay only",
-    desc: "Combination therapy for muscle tension, surface inflammation, and general pain management. Popular standalone session.",
+    desc: "Focused shockwave with radial shockwave when indicated, Class IV laser post-shockwave care, Rapid Release, and guided exercise included when clinically appropriate. The required first evaluation and treatment visit is $200.",
   },
   {
     service: "AI Movement Assessment Only",
@@ -79,7 +73,7 @@ const faqs = [
   },
   {
     q: "Are the advanced technologies (shockwave, TECAR, laser) covered?",
-    a: "Standard PT sessions are covered by insurance. Advanced technology upgrades (focused shockwave, TECAR) are self-pay additions. Many patients use the standard PT session for the base work and add the technology upgrade for targeted treatment.",
+    a: "Shockwave and TECAR are self-pay services. If your plan includes applicable physical therapy benefits, evaluations and other eligible PT services may be covered or reimbursable after your deductible is met. Coverage depends on your individual plan.",
   },
   {
     q: "What if I have Aetna, Anthem, UnitedHealthcare, or Oscar?",
@@ -226,7 +220,7 @@ export default function InsurancePricingPage() {
             className="type-body-l text-brand-muted mb-10 max-w-2xl"
           >
             PT evaluations and follow-up PT sessions may be billed through out-of-network benefits.
-            Standalone technology services and AI Movement Assessment Only are self-pay.
+            Shockwave care, other standalone technology services, and AI Movement Assessment Only are self-pay.
           </motion.p>
 
           <div className="space-y-3">
@@ -257,21 +251,23 @@ export default function InsurancePricingPage() {
             ))}
           </div>
 
-          {/* Insurance upgrade note */}
+          {/* Shockwave pricing note */}
           <div className="mt-8 p-7 border border-brand-gold/20 bg-brand-surface" style={{ borderRadius: "2px" }}>
-            <p className="type-label text-brand-gold mb-3">Insurance Patients: Upgrade Options</p>
+            <p className="type-label text-brand-gold mb-3">Shockwave: What the Price Includes</p>
             <p className="type-body-m text-brand-muted mb-3">
-              Standard PT visits are covered by insurance. For first-time insurance patients who want
-              to experience advanced technologies, I offer reduced first-visit rates:
+              The first shockwave visit is <strong className="text-brand-white">$200</strong> because a clinical evaluation is required. Follow-up shockwave care is <strong className="text-brand-white">$150 per treatment area</strong>.
             </p>
             <ul className="space-y-2 font-body font-light text-brand-muted text-sm">
               <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span>
-                <span>Radial Shockwave + Class IV Laser: <strong className="text-brand-white">$30</strong> first visit (regular $60)</span>
+                <span>Focused shockwave, with radial shockwave added when clinically indicated</span>
               </li>
               <li className="flex gap-2"><span className="text-brand-gold shrink-0">—</span>
-                <span>Focused Shockwave: <strong className="text-brand-white">$60</strong> first visit (regular $150)</span>
+                <span>Class IV laser post-shockwave care, Rapid Release, and guided exercise included when appropriate</span>
               </li>
             </ul>
+            <p className="type-body-m text-brand-muted mt-4">
+              Shockwave remains self-pay. Depending on your plan, the evaluation and other eligible PT services may be covered or reimbursable after your deductible is met.
+            </p>
           </div>
         </div>
       </section>

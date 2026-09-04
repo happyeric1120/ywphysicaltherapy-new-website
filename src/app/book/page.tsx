@@ -197,7 +197,7 @@ export default function BookPage() {
                 <div>
                   <p className="type-label text-brand-muted/60 mb-2">Contact</p>
                   <a href="tel:3475715717" className="block text-brand-muted hover:text-brand-white transition-colors">347-571-5717</a>
-                  <a href="mailto:ywphysicaltherapy@gmail.com" className="block text-brand-muted hover:text-brand-white transition-colors mt-1">ywphysicaltherapy@gmail.com</a>
+                  <a href="mailto:info@ywphysicaltherapy.com" className="block text-brand-muted hover:text-brand-white transition-colors mt-1">info@ywphysicaltherapy.com</a>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function BookPage() {
             <a href="tel:3475715717" className="text-brand-white hover:text-brand-gold transition-colors">347-571-5717</a>
           </p>
           <p className="type-body-l text-brand-muted">
-            <a href="mailto:ywphysicaltherapy@gmail.com" className="text-brand-white hover:text-brand-gold transition-colors">ywphysicaltherapy@gmail.com</a>
+            <a href="mailto:info@ywphysicaltherapy.com" className="text-brand-white hover:text-brand-gold transition-colors">info@ywphysicaltherapy.com</a>
           </p>
         </div>
       </section>

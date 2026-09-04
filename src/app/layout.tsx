@@ -27,7 +27,7 @@ const siteIdentitySchema = {
       url: `${SITE_URL}/`,
       medicalSpecialty: "Physiotherapy",
       telephone: "+1-347-571-5717",
-      email: "ywphysicaltherapy@gmail.com",
+      email: "info@ywphysicaltherapy.com",
       image: `${SITE_URL}/assets/human-system-reset-studio-equipment-midtown-manhattan.png`,
       priceRange: "$$$",
       paymentAccepted: "Cash, Credit Card, HSA, FSA, Insurance",

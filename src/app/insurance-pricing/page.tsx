@@ -366,7 +366,7 @@ export default function InsurancePricingPage() {
             <a href="tel:3475715717" className="text-brand-white hover:text-brand-gold transition-colors">347-571-5717</a>
           </p>
           <p className="type-body-l text-brand-muted mb-10">
-            <a href="mailto:ywphysicaltherapy@gmail.com" className="text-brand-white hover:text-brand-gold transition-colors">ywphysicaltherapy@gmail.com</a>
+            <a href="mailto:info@ywphysicaltherapy.com" className="text-brand-white hover:text-brand-gold transition-colors">info@ywphysicaltherapy.com</a>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingButton variant="primary" label="Book Your Session" />

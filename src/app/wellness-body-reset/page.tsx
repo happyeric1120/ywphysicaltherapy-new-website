@@ -666,7 +666,7 @@ export default function WellnessBodyResetPage() {
           <div>
             <p className="type-label text-brand-muted/60 mb-1">Contact</p>
             <a href="tel:3475715717" className="block font-body text-brand-muted text-sm hover:text-brand-white transition-colors">347-571-5717</a>
-            <a href="mailto:ywphysicaltherapy@gmail.com" className="block font-body text-brand-muted text-xs mt-0.5 hover:text-brand-white transition-colors">ywphysicaltherapy@gmail.com</a>
+            <a href="mailto:info@ywphysicaltherapy.com" className="block font-body text-brand-muted text-xs mt-0.5 hover:text-brand-white transition-colors">info@ywphysicaltherapy.com</a>
           </div>
           <div>
             <BookBtn label="Book Now" className="px-7 py-3" />

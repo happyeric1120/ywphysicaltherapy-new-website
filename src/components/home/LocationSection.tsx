@@ -70,8 +70,8 @@ export default function LocationSection() {
                 <a href="tel:3475715717" className="block text-brand-muted hover:text-brand-white transition-colors">
                   347-571-5717
                 </a>
-                <a href="mailto:ywphysicaltherapy@gmail.com" className="block text-brand-muted hover:text-brand-white transition-colors">
-                  ywphysicaltherapy@gmail.com
+                <a href="mailto:info@ywphysicaltherapy.com" className="block text-brand-muted hover:text-brand-white transition-colors">
+                  info@ywphysicaltherapy.com
                 </a>
               </div>
             </div>

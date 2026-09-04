@@ -9,7 +9,7 @@ No unverified fact below was newly published by this run. The repository current
 | Address | 224 W 35th St #301-5, New York, NY 10001 | Confirm suite formatting and directory consistency | Homepage, footer, schema |
 | Coordinates | 40.7516, -73.9905 | Verify precise entrance/location coordinates | Root JSON-LD |
 | Phone | +1-347-571-5717 | Confirm active public number and formatting | Footer, booking, schema |
-| Email | ywphysicaltherapy@gmail.com | Confirm monitored public email | Footer, booking, schema |
+| Email | info@ywphysicaltherapy.com | Confirmed by owner on 2026-09-04 | Footer, booking, schema |
 | Hours | Mon/Wed 10–4; Thu 10–7; appointment only | Confirm current schedule and exceptions | Homepage, booking, schema |
 | Insurance relationship | Out-of-network; some Aetna, Anthem, UnitedHealthcare, or Oscar plans may be handled through a billing partner | Billing/legal approval of exact carrier wording and process | Pricing page |
 | HSA/FSA eligibility | PT and self-pay statements | Confirm with billing/tax guidance; avoid blanket wellness eligibility | Pricing FAQ/schema |

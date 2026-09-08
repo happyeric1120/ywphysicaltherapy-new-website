@@ -142,8 +142,16 @@ export default function Footer() {
         </nav>
 
         {/* Bottom */}
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-muted/75 font-body">
+        <div className="mt-8 flex flex-col items-center gap-4 text-xs text-brand-muted/75 font-body md:flex-row md:justify-between">
           <p>© {new Date().getFullYear()} YW Physical Therapy PLLC. All rights reserved.</p>
+          <nav aria-label="Legal" className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-brand-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/sms-terms" className="hover:text-brand-white transition-colors">
+              SMS Terms &amp; Conditions
+            </Link>
+          </nav>
           <p>Legal entity: YW Physical Therapy PLLC · New York, NY</p>
         </div>
       </div>

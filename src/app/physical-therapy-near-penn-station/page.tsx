@@ -4,7 +4,7 @@ import Link from "next/link";
 import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
-const MOVEMENT_ANALYSIS_BOOKING_URL = "https://calendar.app.google/UBFwrnLQVYxQq7t77";
+const MOVEMENT_ANALYSIS_BOOKING_URL = "https://calendar.app.google/6eVxmMNoQJB1ccam7";
 
 export const metadata: Metadata = {
   title: "Body Reset Physical Therapy NYC | YW Physical Therapy",

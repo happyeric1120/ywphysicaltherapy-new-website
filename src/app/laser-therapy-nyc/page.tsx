@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Is laser covered by insurance?",
-    a: "Class IV laser is available as a self-pay upgrade (often paired with radial shockwave, $60 combined). I'm transparent about all pricing — see my Insurance & Pricing page.",
+    a: "Class IV laser is available as a self-pay service. A standalone session combining laser and radial shockwave is $60 and does not include focused shockwave. Focused shockwave care is a separate service with separate pricing. See the Insurance & Pricing page for details.",
   },
 ];
 
@@ -117,18 +117,21 @@ export default function LaserTherapyNYCPage() {
       <section className="py-24 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
           <p className="type-label text-brand-gold mb-4">Combination Therapy</p>
-          <h2 className="type-display-m text-brand-white mb-6">Laser + Radial Shockwave: $60</h2>
+          <h2 className="type-display-m text-brand-white mb-3">Laser + Radial Shockwave: $60</h2>
+          <p className="type-body-m text-brand-gold mb-8">
+            Standalone combination session · Focused shockwave is not included
+          </p>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 font-body font-light text-brand-muted text-base leading-relaxed">
               <p>
-                My most popular self-pay option combines Class IV laser with radial shockwave in
-                a single 30-minute session. The laser reduces surface inflammation and prepares
-                tissue for shockwave penetration — the two modalities work synergistically.
+                This self-pay option combines Class IV laser with radial shockwave in a single
+                30-minute session. It is a separate service for people who are not receiving focused
+                shockwave during that visit.
               </p>
               <p>
-                This combination is particularly effective for desk workers with chronic muscle
-                tension, athletes with recurring soft tissue issues, and anyone with persistent
-                low-grade pain that comes and goes.
+                Whether this combination is appropriate depends on the treatment area, your symptoms,
+                and the clinical assessment. Focused shockwave care is priced separately and may
+                include radial shockwave and post-shockwave laser when clinically appropriate.
               </p>
             </div>
             <div className="p-8 border border-brand-gold/25 bg-brand-black" style={{ borderRadius: "2px" }}>
@@ -150,6 +153,9 @@ export default function LaserTherapyNYCPage() {
               <div className="mt-6 pt-5 border-t border-brand-border">
                 <span className="font-display font-bold text-brand-white text-3xl">$60</span>
                 <span className="type-body-m text-brand-muted ml-2">per session</span>
+                <p className="mt-3 font-body text-xs leading-relaxed text-brand-muted">
+                  Does not include focused shockwave.
+                </p>
               </div>
             </div>
           </div>

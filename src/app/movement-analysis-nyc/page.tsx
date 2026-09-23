@@ -7,14 +7,14 @@ import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/se
 const MOVEMENT_ANALYSIS_BOOKING_URL = "https://calendar.app.google/UBFwrnLQVYxQq7t77";
 
 export const metadata: Metadata = {
-  title: "Movement Analysis NYC | Compensation Mapping in Midtown Manhattan",
+  title: "Clinical Movement Analysis NYC | Midtown Manhattan Physical Therapy",
   description:
-    "Movement analysis in NYC for chronic tension, posture issues, neck pain, back pain, and compensation patterns. One-on-one assessment at YW Physical Therapy in Midtown Manhattan.",
+    "One-on-one clinical movement analysis in Midtown Manhattan combining history, physical examination, observation, and optional AI-assisted measurement to guide a physical therapy plan.",
   alternates: { canonical: "https://ywphysicaltherapy.com/movement-analysis-nyc" },
   openGraph: {
-    title: "Movement Analysis NYC | YW Physical Therapy",
+    title: "Clinical Movement Analysis NYC | YW Physical Therapy",
     description:
-      "Identify compensation patterns before they become pain. One-on-one movement analysis in Midtown Manhattan.",
+      "A physical therapist-led movement evaluation in Midtown Manhattan with optional AI-assisted measurement.",
     url: "https://ywphysicaltherapy.com/movement-analysis-nyc",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -52,11 +52,11 @@ const pageSchemas = [
     { name: "Movement Analysis NYC", path: "/movement-analysis-nyc" },
   ]),
   serviceSchema({
-    name: "Movement Analysis NYC",
+    name: "Clinical Movement Analysis NYC",
     description:
-      "One-on-one movement analysis in Midtown Manhattan to identify compensation patterns, asymmetry, and movement limitations.",
+      "Physical therapist-led movement analysis in Midtown Manhattan combining history, examination, observation, and optional AI-assisted measurement.",
     path: "/movement-analysis-nyc",
-    serviceType: "Movement Analysis",
+    serviceType: "Clinical movement analysis",
   }),
 ];
 
@@ -72,8 +72,8 @@ export default function MovementAnalysisNYCPage() {
       ))}
       <ServicePageShell
         eyebrow="Reveal Phase · Human System Reset™"
-        h1="Movement Analysis NYC | Identify Compensation Patterns Before They Become Pain"
-        lead="A one-on-one movement analysis in Midtown Manhattan that maps posture, mobility, control, and load transfer so your care starts with the real driver, not just the painful area."
+        h1="Clinical Movement Analysis in Midtown Manhattan"
+        lead="A physical therapist-led evaluation of how symptoms, mobility, strength, control, balance, and real-life demands relate to one another. AI-assisted measurement may be used as one input, while the clinical interpretation and plan come from the full evaluation."
         phase="REVEAL"
         faqs={faqs}
         ctaHeading="Schedule a Movement Analysis"
@@ -83,8 +83,8 @@ export default function MovementAnalysisNYCPage() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
               <div>
-                <p className="type-label text-brand-gold mb-4">What This Page Is About</p>
-                <h2 className="type-display-m text-brand-white mb-6">What Movement Analysis Can Reveal</h2>
+                <p className="type-label text-brand-gold mb-4">Clinician-Led Evaluation</p>
+                <h2 className="type-display-m text-brand-white mb-6">How the Full Evaluation Works</h2>
                 <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
                   <p>
                     Movement analysis is the REVEAL phase of the{" "}
@@ -103,6 +103,13 @@ export default function MovementAnalysisNYCPage() {
                     The goal is to turn compensation patterns into visible information: side-to-side
                     asymmetry, knee alignment, pelvic control, toe alignment, and movement quality
                     findings that guide the treatment plan.
+                  </p>
+                  <p>
+                    Learn what the{" "}
+                    <Link href="/ai-movement-evaluation" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                      AI-assisted movement assessment
+                    </Link>{" "}
+                    measures and how its report can support this clinician-led process.
                   </p>
                 </div>
               </div>

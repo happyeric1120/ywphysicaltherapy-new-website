@@ -6,7 +6,7 @@ module.exports = {
   autoLastmod: false,
   changefreq: "weekly",
   priority: 0.7,
-  exclude: ["/about", "/lp", "/wellness-body-reset"],
+  exclude: ["/about", "/lp", "/sms-opt-in", "/wellness-body-reset"],
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
   },

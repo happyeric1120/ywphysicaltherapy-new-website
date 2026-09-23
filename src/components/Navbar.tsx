@@ -15,7 +15,7 @@ const navGroups = [
     links: [
       { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
       { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
-      { label: "AI Movement Analysis", href: "/ai-movement-evaluation" },
+      { label: "AI Movement Assessment", href: "/ai-movement-evaluation" },
       { label: "Conditions We Treat", href: "/physical-therapy-near-penn-station" },
     ],
   },

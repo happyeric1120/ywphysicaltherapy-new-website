@@ -6,9 +6,9 @@ import BookingButton from "@/components/BookingButton";
 
 const links = [
   {
-    label: "AI Movement Analysis",
+    label: "AI Movement Assessment",
     href: "/ai-movement-evaluation",
-    copy: "Understand movement quality, posture, mobility, balance, asymmetry, and recurring pain patterns.",
+    copy: "Use visual movement data to observe and compare movement quality, mobility, balance, and asymmetry as part of a clinician-led evaluation.",
   },
   {
     label: "Physical Therapy Evaluation",

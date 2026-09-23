@@ -5,14 +5,14 @@ import ServicePageShell from "@/components/ServicePageShell";
 import { breadcrumbSchema, faqPageSchema, jsonLd, serviceSchema } from "@/lib/seoSchemas";
 
 export const metadata: Metadata = {
-  title: "AI Movement Analysis NYC | YW Physical Therapy Midtown Manhattan",
+  title: "AI-Assisted Movement Assessment NYC | YW Physical Therapy",
   description:
-    "AI-assisted movement analysis in NYC to help identify movement quality, posture, mobility limits, balance deficits, and asymmetries. One-on-one care in Midtown Manhattan.",
+    "See how AI-assisted movement measurement records movement quality, balance, mobility, and asymmetry as one part of a clinician-led physical therapy evaluation in Midtown Manhattan.",
   alternates: { canonical: "https://ywphysicaltherapy.com/ai-movement-evaluation" },
   openGraph: {
-    title: "AI Movement Analysis NYC | YW Physical Therapy",
+    title: "AI-Assisted Movement Assessment NYC | YW Physical Therapy",
     description:
-      "AI-assisted movement analysis in Midtown Manhattan for posture, mobility, balance, asymmetry, and recurring pain patterns.",
+      "AI-assisted measurement for movement quality, balance, mobility, and asymmetry as one part of a clinician-led physical therapy evaluation.",
     url: "https://ywphysicaltherapy.com/ai-movement-evaluation",
     siteName: "YW Physical Therapy",
     locale: "en_US",
@@ -47,14 +47,14 @@ const pageSchemas = [
   faqPageSchema(faqs),
   breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: "AI Movement Analysis", path: "/ai-movement-evaluation" },
+    { name: "AI-Assisted Movement Assessment", path: "/ai-movement-evaluation" },
   ]),
   serviceSchema({
-    name: "AI Movement Analysis NYC",
+    name: "AI-Assisted Movement Assessment NYC",
     description:
-      "AI-assisted movement analysis in Midtown Manhattan to identify movement quality, posture, mobility limitations, balance deficits, compensation patterns, and asymmetry.",
+      "AI-assisted movement measurement in Midtown Manhattan that records selected movement-quality, balance, mobility, and asymmetry observations for clinician interpretation.",
     path: "/ai-movement-evaluation",
-    serviceType: "AI-assisted movement evaluation",
+    serviceType: "AI-assisted movement assessment",
   }),
 ];
 
@@ -70,23 +70,23 @@ export default function AIMovementEvaluationPage() {
       ))}
       <ServicePageShell
         eyebrow="Movement Analysis · Human System Reset™"
-        h1="AI-Assisted Movement Analysis in NYC"
-        lead="Understand how your body moves before deciding how to support it. This structured assessment helps make posture, mobility, balance, asymmetry, and recurring pain patterns easier to see, explain, and track."
+        h1="AI-Assisted Movement Assessment in NYC"
+        lead="AI-assisted movement assessment is a measurement tool used to make selected movement patterns easier to observe and compare. It does not diagnose a condition or replace a physical therapist’s examination."
         phase="REVEAL"
         faqs={faqs}
-        ctaHeading="Book an AI-Assisted Movement Evaluation"
+        ctaHeading="Book an AI-Assisted Movement Assessment"
       >
         <section className="py-24 bg-brand-surface border-y border-brand-border">
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid lg:grid-cols-[1fr_0.88fr] gap-10 items-center">
               <div>
                 <p className="type-label text-brand-gold mb-4">Short Definition</p>
-                <h2 className="type-display-m text-brand-white mb-6">What Is AI-Assisted Movement Analysis?</h2>
+                <h2 className="type-display-m text-brand-white mb-6">What Does the Technology Measure?</h2>
                 <div className="space-y-5 font-body font-light text-brand-muted text-base leading-relaxed">
                   <p>
-                    AI-assisted movement analysis is a structured screen that uses motion analysis
-                    technology to support the clinical assessment. It can help reveal patterns that are
-                    difficult to explain from symptoms alone.
+                    AI-assisted movement assessment organizes visual movement data such as balance,
+                    mobility, asymmetry, and movement quality. The report is one source of information
+                    within a broader clinical evaluation—not a diagnosis or treatment decision.
                   </p>
                   <p>
                     At YW Physical Therapy, AI is used inside the{" "}
@@ -99,6 +99,14 @@ export default function AIMovementEvaluationPage() {
                   <p>
                     Reports can make asymmetry, balance, mobility, posture, and movement quality easier to understand, then connect
                     those findings to hands-on care, corrective exercise, and long-term reinforcement.
+                  </p>
+                  <p>
+                    Looking for the full clinician-led process? See how Dr. Wu combines history,
+                    physical examination, observation, and measurement during a{" "}
+                    <Link href="/movement-analysis-nyc" className="text-brand-gold hover:text-brand-gold-light transition-colors">
+                      clinical movement analysis in NYC
+                    </Link>
+                    .
                   </p>
                 </div>
               </div>

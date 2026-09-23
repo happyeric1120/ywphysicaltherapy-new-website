@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "SMS Enrollment | YW Physical Therapy",
   description: "Optional SMS enrollment information for appointment and service-related messages from YW Physical Therapy PLLC.",
   alternates: { canonical: "https://ywphysicaltherapy.com/sms-opt-in" },
+  robots: { index: false, follow: true },
   openGraph: {
     title: "SMS Enrollment | YW Physical Therapy",
     description: "Optional SMS enrollment information for appointment and service-related messages from YW Physical Therapy PLLC.",

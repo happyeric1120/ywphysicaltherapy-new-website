@@ -24,6 +24,12 @@ const physicalTherapyPricing = [
     desc: "Focused shockwave with radial shockwave when indicated, Class IV laser post-shockwave care, Rapid Release, and guided exercise included when clinically appropriate. The required first evaluation and treatment visit is $200.",
   },
   {
+    service: "Laser + Radial Shockwave — Standalone Session",
+    price: "$60",
+    tag: "Self-pay only",
+    desc: "A 30-minute combination session with Class IV laser and radial shockwave. This option does not include focused shockwave and is separate from the $150 focused shockwave care service.",
+  },
+  {
     service: "AI Movement Assessment Only",
     price: "$100",
     tag: "Self-pay only",
@@ -267,6 +273,9 @@ export default function InsurancePricingPage() {
             </ul>
             <p className="type-body-m text-brand-muted mt-4">
               Shockwave remains self-pay. Depending on your plan, the evaluation and other eligible PT services may be covered or reimbursable after your deductible is met.
+            </p>
+            <p className="type-body-m text-brand-muted mt-4 border-t border-brand-border pt-4">
+              The separate <strong className="text-brand-white">$60 Laser + Radial Shockwave session</strong> does not include focused shockwave. It is not the same service as the $150 focused shockwave care visit.
             </p>
           </div>
         </div>

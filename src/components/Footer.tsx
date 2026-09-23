@@ -3,7 +3,7 @@ import Link from "next/link";
 const navCol = [
   { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
-  { label: "AI Movement Analysis", href: "/ai-movement-evaluation" },
+  { label: "AI Movement Assessment", href: "/ai-movement-evaluation" },
   { label: "Human System Reset™", href: "/human-system-reset" },
   { label: "Neural Regulation", href: "/neural-regulation" },
   { label: "Recovery Screening", href: "/human-system-reset-assessment" },
@@ -15,7 +15,7 @@ const navCol = [
 const painInjuryLinks = [
   { label: "Physical Therapy", href: "/physical-therapy-near-penn-station" },
   { label: "Shockwave Therapy", href: "/shockwave-therapy-nyc" },
-  { label: "AI Movement Analysis", href: "/ai-movement-evaluation" },
+  { label: "AI Movement Assessment", href: "/ai-movement-evaluation" },
   { label: "Back Pain PT", href: "/back-pain-nyc" },
   { label: "Neck Pain PT", href: "/neck-pain-nyc" },
   { label: "Shoulder Pain PT", href: "/shoulder-pain-nyc" },

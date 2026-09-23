@@ -18,41 +18,30 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    slug: "why-shockwave-therapy-works",
-    date: "2025-01-15",
-    category: "Technology",
-    title: "Why Shockwave Therapy Works When Everything Else Fails",
+    slug: "shockwave-care-guide",
+    category: "Service Guide",
+    title: "How Shockwave Therapy Fits Into an Assessment-Driven Plan",
     excerpt:
-      "Stubborn tendon pain, calcifications, and scar tissue that don't respond to rest, massage, or standard PT often have one thing in common: they need a mechanical stimulus to restart healing. Here's the science.",
+      "An overview of how YW Physical Therapy evaluates a treatment area, distinguishes focused and radial shockwave, and connects treatment with movement and progressive rehabilitation when appropriate.",
     href: "/shockwave-therapy-nyc",
   },
   {
-    slug: "focused-shockwave-back-pain",
-    date: "2025-02-08",
-    category: "Research",
-    title: "Focused Shockwave: The New Frontier for Chronic Low Back Pain",
+    slug: "shockwave-low-back-guide",
+    category: "Condition Guide",
+    title: "Shockwave Care for Selected Low Back Pain Presentations",
     excerpt:
-      "Emerging research is establishing focused shockwave as a first-line option for chronic LBP — particularly for disc-adjacent pain and myofascial trigger points that compress neural tissue.",
-    href: "/back-pain-nyc",
+      "Learn how assessment helps determine whether a muscular or soft-tissue target may be appropriate for shockwave—and when a broader physical therapy plan should take priority.",
+    href: "/shockwave-low-back-pain-nyc",
   },
   {
-    slug: "5-signs-you-need-pt",
-    date: "2024-12-15",
-    category: "Education",
-    title: "5 Signs You Need Physical Therapy (And Why Waiting Makes It Worse)",
+    slug: "physical-therapy-evaluation-guide",
+    category: "Getting Started",
+    title: "What to Expect From a Physical Therapy Evaluation",
     excerpt:
-      "Early intervention consistently produces better outcomes than waiting until pain becomes severe. These five signs indicate your movement system needs attention — before it becomes chronic.",
+      "See how movement, symptoms, load tolerance, and your goals are reviewed before a one-on-one treatment plan is developed.",
     href: "/physical-therapy-near-penn-station",
   },
 ];
-
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
 
 export default function BlogPage() {
   return (
@@ -80,12 +69,9 @@ export default function BlogPage() {
                 className="group flex flex-col p-8 border border-brand-border bg-brand-black hover:border-brand-gold/25 transition-colors duration-300"
                 style={{ borderRadius: "2px" }}
               >
-                <div className="flex items-center justify-between gap-4 mb-5">
+                <div className="flex items-center gap-4 mb-5">
                   <span className="type-tag text-brand-gold px-2.5 py-1 border border-brand-gold/25" style={{ borderRadius: "2px" }}>
                     {post.category}
-                  </span>
-                  <span className="font-mono text-[10px] text-brand-muted tracking-wide">
-                    {formatDate(post.date)}
                   </span>
                 </div>
                 <h2 className="font-display font-bold text-brand-white text-lg leading-snug mb-4 group-hover:text-brand-gold transition-colors">
@@ -93,7 +79,7 @@ export default function BlogPage() {
                 </h2>
                 <p className="type-body-m text-brand-muted flex-1 mb-6">{post.excerpt}</p>
                 <span className="font-mono text-[10px] text-brand-gold group-hover:text-brand-gold-light tracking-wider uppercase transition-colors">
-                  Read more →
+                  View guide →
                 </span>
               </Link>
             ))}

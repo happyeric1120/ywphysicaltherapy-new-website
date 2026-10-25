@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { formatBlogDate, getPublishedBlogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "PT Insights & Resources | YW Physical Therapy NYC",
@@ -16,34 +17,8 @@ export const metadata: Metadata = {
   },
 };
 
-const posts = [
-  {
-    slug: "shockwave-care-guide",
-    category: "Service Guide",
-    title: "How Shockwave Therapy Fits Into an Assessment-Driven Plan",
-    excerpt:
-      "An overview of how YW Physical Therapy evaluates a treatment area, distinguishes focused and radial shockwave, and connects treatment with movement and progressive rehabilitation when appropriate.",
-    href: "/shockwave-therapy-nyc",
-  },
-  {
-    slug: "shockwave-low-back-guide",
-    category: "Condition Guide",
-    title: "Shockwave Care for Selected Low Back Pain Presentations",
-    excerpt:
-      "Learn how assessment helps determine whether a muscular or soft-tissue target may be appropriate for shockwave—and when a broader physical therapy plan should take priority.",
-    href: "/shockwave-low-back-pain-nyc",
-  },
-  {
-    slug: "physical-therapy-evaluation-guide",
-    category: "Getting Started",
-    title: "What to Expect From a Physical Therapy Evaluation",
-    excerpt:
-      "See how movement, symptoms, load tolerance, and your goals are reviewed before a one-on-one treatment plan is developed.",
-    href: "/physical-therapy-near-penn-station",
-  },
-];
-
 export default function BlogPage() {
+  const posts = getPublishedBlogPosts();
   return (
     <>
       {/* Hero */}
@@ -61,29 +36,43 @@ export default function BlogPage() {
       {/* Posts */}
       <section className="py-16 bg-brand-surface border-y border-brand-border">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-6">
+          {posts.length > 0 ? <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (
               <Link
                 key={post.slug}
-                href={post.href}
+                href={`/blog/${post.slug}`}
                 className="group flex flex-col p-8 border border-brand-border bg-brand-black hover:border-brand-gold/25 transition-colors duration-300"
                 style={{ borderRadius: "2px" }}
               >
-                <div className="flex items-center gap-4 mb-5">
+                <div className="flex items-center justify-between gap-4 mb-5">
                   <span className="type-tag text-brand-gold px-2.5 py-1 border border-brand-gold/25" style={{ borderRadius: "2px" }}>
                     {post.category}
                   </span>
+                  <time dateTime={post.date} className="font-mono text-[10px] tracking-wide text-brand-muted">
+                    {formatBlogDate(post.date)}
+                  </time>
                 </div>
                 <h2 className="font-display font-bold text-brand-white text-lg leading-snug mb-4 group-hover:text-brand-gold transition-colors">
                   {post.title}
                 </h2>
-                <p className="type-body-m text-brand-muted flex-1 mb-6">{post.excerpt}</p>
+                <p className="type-body-m text-brand-muted flex-1 mb-6">{post.meta_description}</p>
                 <span className="font-mono text-[10px] text-brand-gold group-hover:text-brand-gold-light tracking-wider uppercase transition-colors">
-                  View guide →
+                  Read article →
                 </span>
               </Link>
             ))}
-          </div>
+          </div> : (
+            <div className="border border-brand-border bg-brand-black p-10 text-center" style={{ borderRadius: "2px" }}>
+              <p className="type-label text-brand-gold mb-3">Articles in preparation</p>
+              <p className="type-body-m text-brand-muted max-w-xl mx-auto">
+                New evidence-informed articles are being prepared and reviewed. In the meantime, explore our service and condition guides below.
+              </p>
+              <div className="mt-7 flex flex-wrap justify-center gap-4">
+                <Link href="/shockwave-therapy-nyc" className="text-sm font-medium text-brand-gold hover:text-brand-gold-light">Shockwave Therapy →</Link>
+                <Link href="/physical-therapy-near-penn-station" className="text-sm font-medium text-brand-gold hover:text-brand-gold-light">Physical Therapy →</Link>
+              </div>
+            </div>
+          )}
 
           {/* Coming soon notice */}
           <div className="mt-12 p-8 border border-brand-border text-center" style={{ borderRadius: "2px" }}>
